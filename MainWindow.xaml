@@ -1,0 +1,189 @@
+﻿<Window x:Class="PokemonSpeechApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PokemonSpeechApp"
+        mc:Ignorable="d"
+        Title="Pokemon By Voice" Width="500" Height="400"
+        Background="#222"
+        Loaded="OnLoad">
+    <!--SizeToContent="Height"-->
+    <Window.Resources>
+        <local:PercentageConverter x:Key="PercentageConverter"/>
+        <Style x:Key="Rounded" TargetType="Label">
+            <Setter Property="Margin" Value="5,0"/>
+            <Setter Property="Width" Value="96"/>
+            <Setter Property="Height" Value="32"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type Label}">
+                        <Border BorderBrush="Black" BorderThickness="0.5" Background="{TemplateBinding Background}" Padding="{TemplateBinding Padding}" SnapsToDevicePixels="true" CornerRadius="4">
+                            <ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" RecognizesAccessKey="True" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsEnabled" Value="false">
+                                <Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.GrayTextBrushKey}}"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <Style x:Key="TypeBorder" TargetType="Border">
+            <Setter Property="BorderBrush" Value="{x:Null}"/>
+            <Setter Property="Width" Value="96"/>
+            <Setter Property="Height" Value="26"/>
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+        </Style>
+        <Style x:Key="TypeText" TargetType="TextBlock">
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="FontFamily" Value="Fira Sans"/>
+            <Setter Property="FontSize" Value="16"/>
+            <Setter Property="TextAlignment" Value="Center"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+            <Setter Property="Effect">
+                <Setter.Value>
+                    <DropShadowEffect ShadowDepth="1" BlurRadius="0" Direction="315"/>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <Style x:Key="TypeTextOutlined" TargetType="local:OutlinedText">
+            <Setter Property="Fill" Value="White"/>
+            <Setter Property="Font" Value="Fira Sans"/>
+            <Setter Property="FontSize" Value="16"/>
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+            <Setter Property="Stroke" Value="Black"/>
+            <Setter Property="StrokeThickness" Value="0.5"/>
+            <!--<Setter Property="Width" Value="54"/>-->
+            <!--<Setter Property="Padding" Value="10,0"/>-->
+            <!--<Setter Property="Effect">
+                <Setter.Value>
+                    <DropShadowEffect ShadowDepth="1" BlurRadius="4" Direction="315"/>
+                </Setter.Value>
+            </Setter>-->
+        </Style>
+        <Style x:Key="AbilityBorder" TargetType="Border">
+            <Setter Property="BorderBrush" Value="{x:Null}"/>
+            <Setter Property="Width" Value="auto"/>
+            <Setter Property="Height" Value="26"/>
+            <Setter Property="Margin" Value="5,0"/>
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+        </Style>
+        <Style x:Key="AbilityText" TargetType="TextBlock">
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="FontFamily" Value="Fira Sans"/>
+            <Setter Property="FontSize" Value="16"/>
+            <!--<Setter Property="Margin" Value="5,2.5,0,0"/>-->
+            <Setter Property="TextAlignment" Value="Center"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+            <Setter Property="TextDecorations" Value="Underline"/>
+        </Style>
+        <Style x:Key="HiddenImg" TargetType="Image">
+            <Setter Property="Source" Value="Images/Hidden.png"/>
+            <Setter Property="Width" Value="16"/>
+            <Setter Property="Height" Value="16"/>
+            <Setter Property="HorizontalAlignment" Value="Left"/>
+            <Setter Property="Margin" Value="0,0,0,10"/>
+        </Style>
+        <Style x:Key="StatText" TargetType="TextBlock">
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="FontFamily" Value="Fira Sans"/>
+            <Setter Property="FontSize" Value="16"/>
+            <Setter Property="TextAlignment" Value="Center"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+            <Setter Property="HorizontalAlignment" Value="Right"/>
+        </Style>
+        <Style x:Key="StatBorder" TargetType="Border">
+            <Setter Property="Grid.ColumnSpan" Value="3"/>
+            <Setter Property="BorderBrush" Value="White"/>
+            <Setter Property="Opacity" Value="0.25"/>
+            <Setter Property="BorderThickness" Value="0,0.5,0,0"/>
+        </Style>
+        <Style x:Key="StatBar" TargetType="Border">
+            <Setter Property="Grid.Column" Value="2"/>
+            <Setter Property="Margin" Value="10,0,0,0"/>
+            <Setter Property="Width" Value="{Binding Converter={StaticResource PercentageConverter}, ElementName=BarWidth, Path=ActualWidth, ConverterParameter=1}"/>
+            <!--<Setter Property="Width" Value="180"/>-->
+            <Setter Property="Height" Value="10"/>
+            <Setter Property="CornerRadius" Value="2"/>
+            <Setter Property="HorizontalAlignment" Value="Left"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+            <Setter Property="Background" Value="White"/>
+        </Style>
+    </Window.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="6*"/>
+        </Grid.RowDefinitions>
+        <Label x:Name="PokemonName" Content="Pokemon" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Fira Sans SemiBold" FontSize="36"/>
+        <local:AlignableWrapPanel x:Name="TypePanel" Grid.Row="1" VerticalAlignment="Center" HorizontalContentAlignment="Center">
+            <Label x:Name="Type1" Background="#3399FF" Style="{StaticResource Rounded}">
+                <Label.Content>
+                    <Border Style="{StaticResource TypeBorder}">
+                        <TextBlock Text="TYPE1" Style="{StaticResource TypeText}"/>
+                        <!--<local:OutlinedText Text="TYPE1" Style="{StaticResource TypeText}"/>-->
+                    </Border>
+                </Label.Content>
+            </Label>
+        </local:AlignableWrapPanel>
+        <local:AlignableWrapPanel x:Name="AbilityPanel" Grid.Row="2" VerticalAlignment="Center" HorizontalContentAlignment="Center">
+            <!--<Grid>-->
+                <Border Style="{StaticResource AbilityBorder}">
+                    <TextBlock Text="Ability" Style="{StaticResource AbilityText}"/>
+                </Border>
+                <!--<Image Style="{StaticResource HiddenImg}"/>-->
+            <!--</Grid>-->
+        </local:AlignableWrapPanel>
+        <Grid x:Name="StatGrid" Grid.Row="3" Margin="10,5,10,0" Height="150" VerticalAlignment="Top" >
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="2*"/>
+                <ColumnDefinition/>
+                <ColumnDefinition x:Name="BarWidth" Width="10*"/>
+            </Grid.ColumnDefinitions>
+            <TextBlock Text="HP" Grid.Row="0" Grid.Column="0" Opacity="0.5" Style="{StaticResource StatText}"/>
+            <TextBlock Text="Attack" Grid.Row="1" Grid.Column="0" Opacity="0.5" Style="{StaticResource StatText}"/>
+            <TextBlock Text="Defense" Grid.Row="2" Grid.Column="0" Opacity="0.5" Style="{StaticResource StatText}"/>
+            <TextBlock Text="Sp. Atk" Grid.Row="3" Grid.Column="0" Opacity="0.5" Style="{StaticResource StatText}"/>
+            <TextBlock Text="Sp. Def" Grid.Row="4" Grid.Column="0" Opacity="0.5" Style="{StaticResource StatText}"/>
+            <TextBlock Text="Speed" Grid.Row="5" Grid.Column="0" Opacity="0.5" Style="{StaticResource StatText}"/>
+            <TextBlock Text="Total" Grid.Row="6" Grid.Column="0" Opacity="0.5" Style="{StaticResource StatText}"/>
+            <TextBlock x:Name="HP" Text="???" Grid.Row="0" Grid.Column="1" Style="{StaticResource StatText}"/>
+            <TextBlock x:Name="Attack" Text="???" Grid.Row="1" Grid.Column="1" Style="{StaticResource StatText}"/>
+            <TextBlock x:Name="Defense" Text="???" Grid.Row="2" Grid.Column="1" Style="{StaticResource StatText}"/>
+            <TextBlock x:Name="SpAtk" Text="???" Grid.Row="3" Grid.Column="1" Style="{StaticResource StatText}"/>
+            <TextBlock x:Name="SpDef" Text="???" Grid.Row="4" Grid.Column="1" Style="{StaticResource StatText}"/>
+            <TextBlock x:Name="Speed" Text="???" Grid.Row="5" Grid.Column="1" Style="{StaticResource StatText}"/>
+            <TextBlock x:Name="Total" Text="???" Grid.Row="6" Grid.Column="1" FontWeight="Bold" Style="{StaticResource StatText}"/>
+            <Border x:Name="HPBar" Grid.Row="0" Style="{StaticResource StatBar}"/>
+            <Border x:Name="AtkBar" Grid.Row="1" Style="{StaticResource StatBar}"/>
+            <Border x:Name="DefBar" Grid.Row="2" Style="{StaticResource StatBar}"/>
+            <Border x:Name="SpAtkBar" Grid.Row="3" Style="{StaticResource StatBar}"/>
+            <Border x:Name="SpDefBar" Grid.Row="4" Style="{StaticResource StatBar}"/>
+            <Border x:Name="SpdBar" Grid.Row="5" Style="{StaticResource StatBar}"/>
+            <Border Grid.Row="0" Style="{StaticResource StatBorder}"/>
+            <Border Grid.Row="1" Style="{StaticResource StatBorder}"/>
+            <Border Grid.Row="2" Style="{StaticResource StatBorder}"/>
+            <Border Grid.Row="3" Style="{StaticResource StatBorder}"/>
+            <Border Grid.Row="4" Style="{StaticResource StatBorder}"/>
+            <Border Grid.Row="5" Style="{StaticResource StatBorder}"/>
+            <Border Grid.Row="6" BorderThickness="0,0.5,0,0.5" Style="{StaticResource StatBorder}"/>
+            <!--<Rectangle Grid.Row="0" Grid.Column="2" Width="100" Height="15" Fill="Green" RadiusX="5" RadiusY="5"/>-->
+        </Grid>
+    </Grid>
+</Window>
