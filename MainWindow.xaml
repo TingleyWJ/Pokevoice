@@ -123,6 +123,7 @@
             <RowDefinition Height="6*"/>
         </Grid.RowDefinitions>
         <Label x:Name="PokemonName" Content="Pokemon" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Fira Sans SemiBold" FontSize="36"/>
+        <TextBlock x:Name="RenegadeMode" Text="Renegade Mode Active" FontFamily="Fira Sans" Foreground="#F73" FontSize="16" TextWrapping="Wrap" Width="150" HorizontalAlignment="Left" VerticalAlignment="Center" TextAlignment="Center" Opacity="0"/>
         <local:AlignableWrapPanel x:Name="TypePanel" Grid.Row="1" VerticalAlignment="Center" HorizontalContentAlignment="Center">
             <Label x:Name="Type1" Background="#3399FF" Style="{StaticResource Rounded}">
                 <Label.Content>

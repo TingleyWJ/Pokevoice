@@ -55,7 +55,7 @@
     <Resource Include="Fonts\FiraSans-SemiBoldItalic.ttf" />
     <Resource Include="Fonts\FiraSans-Thin.ttf" />
     <Resource Include="Fonts\FiraSans-ThinItalic.ttf" />
-    <Resource Include="Json\pokemon-small.json" />
+    <Resource Include="Json\pokemon.json" />
   </ItemGroup>
 
 </Project>

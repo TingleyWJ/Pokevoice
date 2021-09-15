@@ -12,23 +12,17 @@ namespace PokemonSpeechApp
 
     struct Stats
     {
-        [JsonProperty("HP")]
         public int HP { get; set; }
-        [JsonProperty("Attack")]
         public int Atk { get; set; }
-        [JsonProperty("Defense")]
         public int Def { get; set; }
-        [JsonProperty("Sp. Attack")]
         public int SpAtk { get; set; }
-        [JsonProperty("Sp. Defense")]
         public int SpDef { get; set; }
-        [JsonProperty("Speed")]
         public int Spd { get; set; }
 
-        public int GetTotal()
+        /*public int GetTotal()
         {
             return HP + Atk + Def + SpAtk + SpDef + Spd;
-        }
+        }*/
     }
 
     struct Ability
@@ -42,8 +36,11 @@ namespace PokemonSpeechApp
         public ushort id { get; set; }
         public Names Names { get; set; }
         public IList<string> Types { get; set; }
+        public IList<string> RenTypes { get; set; }
         public Stats Stats { get; set; }
+        public Stats RenStats { get; set; }
         public IList<Ability> Abilities { get; set; }
+        public IList<Ability> RenAbilities { get; set; }
     }
 
     class ConfigData
