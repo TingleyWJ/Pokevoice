@@ -20,6 +20,7 @@ namespace PokemonSpeechApp
     public partial class MainWindow : Window
     {
         List<Pokemon> Pokemon = new();
+        Dictionary<int, Pokemon> PokeDict = new();
         Pokemon CurrentPokemon = null;
         ConfigData config = new();
         bool renegadeMode;
@@ -45,6 +46,11 @@ namespace PokemonSpeechApp
             {
                 string json = r.ReadToEnd();
                 Pokemon = JsonConvert.DeserializeObject<List<Pokemon>>(json);
+                
+                foreach (Pokemon mon in Pokemon)
+                {
+                    PokeDict.Add(mon.id, mon);
+                }
             }
 
             using (StreamReader r = new StreamReader("pack://application:,,,/../../../../../Json/config.json"))
@@ -87,6 +93,7 @@ namespace PokemonSpeechApp
                         if (cleanName.ToUpper() == mon.Names.English.ToUpper())
                         {
                             UpdateUI(mon);
+                            CurrentPokemon = mon;
                         }
                     }
                 };
@@ -204,6 +211,194 @@ namespace PokemonSpeechApp
                         text.Foreground = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#B200FF"));
 
                     AbilityPanel.Children.Add(border);
+                }
+
+                //Clear Evos & Set New Ones
+                EvoPanel.Children.Clear();
+
+                //Resize the EvoRow to accomodate
+                EvoRow.Height = new GridLength(mon.Evolution.Next == null ? 1 : 1 + 0.25 * (mon.Evolution.Next.Count - 1), GridUnitType.Star);
+
+                if (mon.Evolution.Prev.Id != 0)
+                {
+                    TextBlock prevName = new()
+                    {
+                        Text = PokeDict[mon.Evolution.Prev.Id].Names.English,
+                        Style = (Style)FindResource("EvoText")
+                    };
+
+                    EvoPanel.Children.Add(prevName);
+
+                    StackPanel prevArrow = new()
+                    {
+                        Orientation = Orientation.Horizontal
+                    };
+
+                    TextBlock arrow = new()
+                    {
+                        Text = "\u21D2",
+                        Style = (Style)FindResource("EvoArrow")
+                    };
+
+                    TextBlock condition = new()
+                    {
+                        Text = $"({mon.Evolution.Prev.Condition})",
+                        Style = (Style)FindResource("EvoDescText")
+                    };
+
+                    prevArrow.Children.Add(arrow);
+                    prevArrow.Children.Add(condition);
+                    EvoPanel.Children.Add(prevArrow);
+                }
+
+                TextBlock monName = new()
+                {
+                    Text = mon.Evolution.Prev.Id == 0 && mon.Evolution.Next == null ? mon.Names.English + " does not evolve" : mon.Names.English,
+                    FontStyle = mon.Evolution.Prev.Id == 0 && mon.Evolution.Next == null ? FontStyles.Italic : FontStyles.Normal,
+                    Style = (Style)FindResource("EvoText")
+                };
+
+                EvoPanel.Children.Add(monName);
+
+                /*if (mon.Evolution.Next == null || mon.Evolution.Next.Count == 1)
+                {
+                    EvoRow.Height = new GridLength(1, GridUnitType.Star);
+                }
+                else if (mon.Evolution.Next.Count == 3)
+                {
+                    EvoRow.Height = new GridLength(3, GridUnitType.Star);
+                }
+                else
+                {
+                    EvoRow.Height = new GridLength(3, GridUnitType.Star);
+                }*/
+
+                if (mon.Evolution.Next != null)
+                {
+                    StackPanel nextArrows = new()
+                    {
+                        VerticalAlignment = VerticalAlignment.Center
+                    };
+
+                    if (mon.Evolution.Next.Count > 3)
+                    {
+                        StackPanel nextArrow = new()
+                        {
+                            Orientation = Orientation.Horizontal
+                        };
+
+                        TextBlock arrow = new()
+                        {
+                            Text = "\u21D2",
+                            Style = (Style)FindResource("EvoArrow")
+                        };
+
+                        TextBlock condition = new()
+                        {
+                            Text = "(Eevee LMAO)",
+                            Style = (Style)FindResource("EvoDescText")
+                        };
+
+                        nextArrow.Children.Add(arrow);
+                        nextArrow.Children.Add(condition);
+
+                        nextArrows.Children.Add(nextArrow);
+                    }
+                    else if (mon.Evolution.Next.Count == 3)
+                    {
+                        foreach (EvolutionInfo info in mon.Evolution.Next)
+                        {
+                            StackPanel nextArrow = new()
+                            {
+                                Orientation = Orientation.Horizontal
+                            };
+
+                            TextBlock arrow = new()
+                            {
+                                Text = "\u21D2",
+                                Style = (Style)FindResource("EvoArrow")
+                            };
+
+                            TextBlock condition = new()
+                            {
+                                Text = $"({info.Condition})",
+                                Style = (Style)FindResource("EvoDescText")
+                            };
+
+                            nextArrow.Children.Add(arrow);
+                            nextArrow.Children.Add(condition);
+
+                            nextArrows.Children.Add(nextArrow);
+                        }
+                    }
+                    else
+                    {
+                        foreach (EvolutionInfo info in mon.Evolution.Next)
+                        {
+                            StackPanel nextArrow = new()
+                            {
+                                Orientation = Orientation.Horizontal
+                            };
+
+                            TextBlock arrow = new()
+                            {
+                                Text = "\u21D2",
+                                Style = (Style)FindResource("EvoArrow")
+                            };
+
+                            TextBlock condition = new()
+                            {
+                                Text = $"({info.Condition})",
+                                Style = (Style)FindResource("EvoDescText")
+                            };
+
+                            nextArrow.Children.Add(arrow);
+                            nextArrow.Children.Add(condition);
+
+                            nextArrows.Children.Add(nextArrow);
+                        }
+                    }
+
+                    EvoPanel.Children.Add(nextArrows);
+
+                    StackPanel nextNames = new()
+                    {
+                        VerticalAlignment = VerticalAlignment.Center
+                    };
+
+                    if (mon.Evolution.Next.Count > 3)
+                    {
+                        StackPanel nextName = new();
+
+                        TextBlock arrow = new()
+                        {
+                            Text = "Everything",
+                            Style = (Style)FindResource("EvoText")
+                        };
+
+                        nextName.Children.Add(arrow);
+
+                        nextNames.Children.Add(nextName);
+                    }
+                    else
+                    {
+                        foreach (EvolutionInfo info in mon.Evolution.Next)
+                        {
+                            StackPanel nextName = new();
+
+                            TextBlock name = new()
+                            {
+                                Text = PokeDict[info.Id].Names.English,
+                                Style = (Style)FindResource("EvoText")
+                            };
+
+                            nextName.Children.Add(name);
+
+                            nextNames.Children.Add(nextName);
+                        }
+                    }
+
+                    EvoPanel.Children.Add(nextNames);
                 }
 
                 int HPVal = mon.Stats.HP;

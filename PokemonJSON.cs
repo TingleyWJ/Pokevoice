@@ -31,6 +31,18 @@ namespace PokemonSpeechApp
         public bool Hidden { get; set; }
     }
 
+    struct Evolution
+    {
+        public EvolutionInfo Prev { get; set; }
+        public IList<EvolutionInfo> Next { get; set; }
+    }
+
+    struct EvolutionInfo
+    {
+        public int Id { get; set; }
+        public string Condition { get; set; }
+    }
+
     class Pokemon
     {
         public ushort id { get; set; }
@@ -41,6 +53,7 @@ namespace PokemonSpeechApp
         public Stats RenStats { get; set; }
         public IList<Ability> Abilities { get; set; }
         public IList<Ability> RenAbilities { get; set; }
+        public Evolution Evolution { get; set; }
     }
 
     class ConfigData
@@ -101,5 +114,12 @@ namespace PokemonSpeechApp
             else
                 return Red;
         }
+    }
+
+    class Arrows
+    {
+        static string RightArrow { get; } = "\u21D2";
+        static string UpRightArrow { get; } = "\u21D7";
+        static string DownRightArrow { get; } = "\u21D8";
     }
 }
