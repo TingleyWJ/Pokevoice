@@ -46,7 +46,7 @@ namespace PokemonSpeechApp
             {
                 string json = r.ReadToEnd();
                 Pokemon = JsonConvert.DeserializeObject<List<Pokemon>>(json);
-                
+
                 foreach (Pokemon mon in Pokemon)
                 {
                     PokeDict.Add(mon.id, mon);
@@ -79,7 +79,8 @@ namespace PokemonSpeechApp
                 }
                 Trace.WriteLine($"\n{count} Pokemon Names Added to Vocab\n");
                 // Subscribes to events.
-                recognizer.Recognizing += (s, e) => {
+                recognizer.Recognizing += (s, e) =>
+                {
                     Trace.WriteLine($"RECOGNIZING: Text={e.Result.Text}");
 
                     string latest = e.Result.Text.Substring(e.Result.Text.LastIndexOf(" ") + 1);
@@ -98,7 +99,8 @@ namespace PokemonSpeechApp
                     }
                 };
 
-                recognizer.Recognized += (s, e) => {
+                recognizer.Recognized += (s, e) =>
+                {
                     var result = e.Result;
                     Trace.WriteLine($"Reason: {result.Reason}");
                     if (result.Reason == ResultReason.RecognizedSpeech)
@@ -134,15 +136,18 @@ namespace PokemonSpeechApp
                     }
                 };
 
-                recognizer.Canceled += (s, e) => {
+                recognizer.Canceled += (s, e) =>
+                {
                     Trace.WriteLine($"\n    Canceled. Reason: {e.Reason}, CanceledReason: {e.Reason}");
                 };
 
-                recognizer.SessionStarted += (s, e) => {
+                recognizer.SessionStarted += (s, e) =>
+                {
                     Trace.WriteLine("\n    Session started event.");
                 };
 
-                recognizer.SessionStopped += (s, e) => {
+                recognizer.SessionStopped += (s, e) =>
+                {
                     Trace.WriteLine("\n    Session stopped event.");
                 };
 
@@ -153,7 +158,7 @@ namespace PokemonSpeechApp
                 while (true) ;
 
                 // Stops recognition.
-                await recognizer.StopContinuousRecognitionAsync().ConfigureAwait(false);
+                //await recognizer.StopContinuousRecognitionAsync().ConfigureAwait(false);
             }
         }
 
@@ -166,7 +171,8 @@ namespace PokemonSpeechApp
 
                 //Clear Types & Set New Ones
                 TypePanel.Children.Clear();
-                foreach (string t in renegadeMode && mon.RenTypes != null ? mon.RenTypes : mon.Types)
+
+                foreach (string t in renegadeMode && mon.Types.Renegade != null ? mon.Types.Renegade : mon.Types.Base)
                 {
                     //Trace.WriteLine(TypeColors.GetColor(t));
                     TextBlock text = new()
@@ -193,7 +199,7 @@ namespace PokemonSpeechApp
 
                 //Clear Abilities & Set New Ones
                 AbilityPanel.Children.Clear();
-                foreach (Ability a in renegadeMode && mon.RenAbilities != null ? mon.RenAbilities : mon.Abilities)
+                foreach (Ability a in renegadeMode && mon.Abilities.Renegade != null ? mon.Abilities.Renegade : mon.Abilities.Base)
                 {
                     TextBlock text = new()
                     {
@@ -215,15 +221,16 @@ namespace PokemonSpeechApp
 
                 //Clear Evos & Set New Ones
                 EvoPanel.Children.Clear();
+                EvolutionBlock evoBlock = renegadeMode && mon.Evolution.Renegade != null ? mon.Evolution.Renegade : mon.Evolution.Base;
 
                 //Resize the EvoRow to accomodate
-                EvoRow.Height = new GridLength(mon.Evolution.Next == null ? 1 : 1 + 0.25 * (mon.Evolution.Next.Count - 1), GridUnitType.Star);
+                EvoRow.Height = new GridLength(evoBlock.Next == null ? 1 : 1 + 0.25 * (evoBlock.Next.Count - 1), GridUnitType.Star);
 
-                if (mon.Evolution.Prev.Id != 0)
+                if (evoBlock.Prev != null)
                 {
                     TextBlock prevName = new()
                     {
-                        Text = PokeDict[mon.Evolution.Prev.Id].Names.English,
+                        Text = PokeDict[evoBlock.Prev.Id].Names.English,
                         Style = (Style)FindResource("EvoText")
                     };
 
@@ -242,7 +249,7 @@ namespace PokemonSpeechApp
 
                     TextBlock condition = new()
                     {
-                        Text = $"({mon.Evolution.Prev.Condition})",
+                        Text = $"({evoBlock.Prev.Condition})",
                         Style = (Style)FindResource("EvoDescText")
                     };
 
@@ -253,8 +260,8 @@ namespace PokemonSpeechApp
 
                 TextBlock monName = new()
                 {
-                    Text = mon.Evolution.Prev.Id == 0 && mon.Evolution.Next == null ? mon.Names.English + " does not evolve" : mon.Names.English,
-                    FontStyle = mon.Evolution.Prev.Id == 0 && mon.Evolution.Next == null ? FontStyles.Italic : FontStyles.Normal,
+                    Text = evoBlock.Prev == null && evoBlock.Next == null ? mon.Names.English + " does not evolve" : mon.Names.English,
+                    FontStyle = evoBlock.Prev == null && evoBlock.Next == null ? FontStyles.Italic : FontStyles.Normal,
                     Style = (Style)FindResource("EvoText")
                 };
 
@@ -273,14 +280,14 @@ namespace PokemonSpeechApp
                     EvoRow.Height = new GridLength(3, GridUnitType.Star);
                 }*/
 
-                if (mon.Evolution.Next != null)
+                if (evoBlock.Next != null)
                 {
                     StackPanel nextArrows = new()
                     {
                         VerticalAlignment = VerticalAlignment.Center
                     };
 
-                    if (mon.Evolution.Next.Count > 3)
+                    if (evoBlock.Next.Count > 3)
                     {
                         StackPanel nextArrow = new()
                         {
@@ -304,9 +311,9 @@ namespace PokemonSpeechApp
 
                         nextArrows.Children.Add(nextArrow);
                     }
-                    else if (mon.Evolution.Next.Count == 3)
+                    else if (evoBlock.Next.Count == 3)
                     {
-                        foreach (EvolutionInfo info in mon.Evolution.Next)
+                        foreach (EvolutionInfo info in evoBlock.Next)
                         {
                             StackPanel nextArrow = new()
                             {
@@ -333,7 +340,7 @@ namespace PokemonSpeechApp
                     }
                     else
                     {
-                        foreach (EvolutionInfo info in mon.Evolution.Next)
+                        foreach (EvolutionInfo info in evoBlock.Next)
                         {
                             StackPanel nextArrow = new()
                             {
@@ -366,7 +373,7 @@ namespace PokemonSpeechApp
                         VerticalAlignment = VerticalAlignment.Center
                     };
 
-                    if (mon.Evolution.Next.Count > 3)
+                    if (evoBlock.Next.Count > 3)
                     {
                         StackPanel nextName = new();
 
@@ -382,7 +389,7 @@ namespace PokemonSpeechApp
                     }
                     else
                     {
-                        foreach (EvolutionInfo info in mon.Evolution.Next)
+                        foreach (EvolutionInfo info in evoBlock.Next)
                         {
                             StackPanel nextName = new();
 
@@ -401,26 +408,26 @@ namespace PokemonSpeechApp
                     EvoPanel.Children.Add(nextNames);
                 }
 
-                int HPVal = mon.Stats.HP;
-                int AtkVal = mon.Stats.Atk;
-                int DefVal = mon.Stats.Def;
-                int SpAtkVal = mon.Stats.SpAtk;
-                int SpDefVal = mon.Stats.SpDef;
-                int SpdVal = mon.Stats.Spd;
-                if (renegadeMode)
+                int HPVal = mon.Stats.Base.HP;
+                int AtkVal = mon.Stats.Base.Atk;
+                int DefVal = mon.Stats.Base.Def;
+                int SpAtkVal = mon.Stats.Base.SpAtk;
+                int SpDefVal = mon.Stats.Base.SpDef;
+                int SpdVal = mon.Stats.Base.Spd;
+                if (renegadeMode && mon.Stats.Renegade != null)
                 {
-                    if (mon.RenStats.HP != 0)
-                        HPVal = mon.RenStats.HP;
-                    if (mon.RenStats.Atk != 0)
-                        AtkVal = mon.RenStats.Atk;
-                    if (mon.RenStats.Def != 0)
-                        DefVal = mon.RenStats.Def;
-                    if (mon.RenStats.SpAtk != 0)
-                        SpAtkVal = mon.RenStats.SpAtk;
-                    if (mon.RenStats.SpDef != 0)
-                        SpDefVal = mon.RenStats.SpDef;
-                    if (mon.RenStats.Spd != 0)
-                        SpdVal = mon.RenStats.Spd;
+                    if (mon.Stats.Renegade.HP != 0)
+                        HPVal = mon.Stats.Renegade.HP;
+                    if (mon.Stats.Renegade.Atk != 0)
+                        AtkVal = mon.Stats.Renegade.Atk;
+                    if (mon.Stats.Renegade.Def != 0)
+                        DefVal = mon.Stats.Renegade.Def;
+                    if (mon.Stats.Renegade.SpAtk != 0)
+                        SpAtkVal = mon.Stats.Renegade.SpAtk;
+                    if (mon.Stats.Renegade.SpDef != 0)
+                        SpDefVal = mon.Stats.Renegade.SpDef;
+                    if (mon.Stats.Renegade.Spd != 0)
+                        SpdVal = mon.Stats.Renegade.Spd;
                 }
 
                 HP.Text = HPVal.ToString();

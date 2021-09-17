@@ -51,29 +51,26 @@ namespace PokemonSpeechApp
             FontStyle fontStyle = FontStyles.Normal;
             FontWeight fontWeight = FontWeights.Medium;
 
-            if (Bold == true) fontWeight = FontWeights.Bold;
-            if (Italic == true) fontStyle = FontStyles.Italic;
+            if (Bold) fontWeight = FontWeights.Bold;
+            if (Italic) fontStyle = FontStyles.Italic;
 
             // Create the formatted text based on the properties set.
-            /*FormattedText formattedText = new FormattedText(
+            FormattedText formattedText = new FormattedText(
                 Text,
                 CultureInfo.GetCultureInfo("en-us"),
                 FlowDirection.LeftToRight,
                 new Typeface(Font, fontStyle, fontWeight, FontStretches.Normal),
                 FontSize,
-                Brushes.Black // This brush does not matter since we use the geometry of the text. 
+                Brushes.Black, // This brush does not matter since we use the geometry of the text.
+                VisualTreeHelper.GetDpi(this).PixelsPerDip
                 );
 
             // Build the geometry object that represents the text.
             _textGeometry = formattedText.BuildGeometry(new Point(0, 0));
 
-
-
-
             //set the size of the custome control based on the size of the text
-            this.MinWidth = formattedText.Width;
-            this.MinHeight = formattedText.Height;*/
-
+            MinWidth = formattedText.Width;
+            MinHeight = formattedText.Height;
         }
 
         #endregion

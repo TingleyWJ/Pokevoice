@@ -4,20 +4,22 @@ using System.Collections.Generic;
 
 namespace PokemonSpeechApp
 {
-    struct Names
+    class Names
     {
         public string English { get; set; }
         public string French { get; set; }
     }
 
-    struct Stats
+    class Types
     {
-        public int HP { get; set; }
-        public int Atk { get; set; }
-        public int Def { get; set; }
-        public int SpAtk { get; set; }
-        public int SpDef { get; set; }
-        public int Spd { get; set; }
+        public IList<string> Base { get; set; }
+        public IList<string> Renegade { get; set; }
+    }
+
+    class Stats
+    {
+        public StatBlock Base { get; set; }
+        public StatBlock Renegade { get; set; }
 
         /*public int GetTotal()
         {
@@ -25,19 +27,41 @@ namespace PokemonSpeechApp
         }*/
     }
 
-    struct Ability
+    class StatBlock
+    {
+        public int HP { get; set; }
+        public int Atk { get; set; }
+        public int Def { get; set; }
+        public int SpAtk { get; set; }
+        public int SpDef { get; set; }
+        public int Spd { get; set; }
+    }
+
+    class Abilities
+    {
+        public IList<Ability> Base { get; set; }
+        public IList<Ability> Renegade { get; set; }
+    }
+
+    class Ability
     {
         public string Name { get; set; }
         public bool Hidden { get; set; }
     }
 
-    struct Evolution
+    class Evolution
+    {
+        public EvolutionBlock Base { get; set; }
+        public EvolutionBlock Renegade { get; set; }
+    }
+
+    class EvolutionBlock
     {
         public EvolutionInfo Prev { get; set; }
         public IList<EvolutionInfo> Next { get; set; }
     }
 
-    struct EvolutionInfo
+    class EvolutionInfo
     {
         public int Id { get; set; }
         public string Condition { get; set; }
@@ -47,12 +71,9 @@ namespace PokemonSpeechApp
     {
         public ushort id { get; set; }
         public Names Names { get; set; }
-        public IList<string> Types { get; set; }
-        public IList<string> RenTypes { get; set; }
+        public Types Types { get; set; }
         public Stats Stats { get; set; }
-        public Stats RenStats { get; set; }
-        public IList<Ability> Abilities { get; set; }
-        public IList<Ability> RenAbilities { get; set; }
+        public Abilities Abilities { get; set; }
         public Evolution Evolution { get; set; }
     }
 
