@@ -153,7 +153,7 @@
             <RowDefinition Height="3*"/>
         </Grid.RowDefinitions>
         <Label x:Name="PokemonName" Content="Pokemon" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Fira Sans SemiBold" FontSize="36"/>
-        <TextBlock x:Name="RenegadeMode" Text="Renegade Mode Active" FontFamily="Fira Sans" Foreground="#F73" FontSize="16" TextWrapping="Wrap" HorizontalAlignment="Left" VerticalAlignment="Center" TextAlignment="Center" Opacity="0" Width="154"/>
+        <TextBlock x:Name="ModeBlock" Text="Renegade Mode Active" FontFamily="Fira Sans" Foreground="#F73" FontSize="16" TextWrapping="Wrap" HorizontalAlignment="Left" VerticalAlignment="Center" TextAlignment="Center" Opacity="0" Width="154"/>
         <!--<StackPanel x:Name="EvoPanel" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="336,5,0,0" Width="159" Grid.RowSpan="2">
             <TextBlock Text="Bulbasaur" Style="{StaticResource EvoText}"/>
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" Margin="70,0,0,0">

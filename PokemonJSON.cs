@@ -1,9 +1,15 @@
-﻿using Newtonsoft.Json;
-using System;
+﻿using System;
 using System.Collections.Generic;
 
 namespace PokemonSpeechApp
 {
+    enum Mode
+    {
+        Base = 0,
+        Renegade,
+        Eternal
+    }
+
     class Names
     {
         public string English { get; set; }
@@ -14,17 +20,14 @@ namespace PokemonSpeechApp
     {
         public IList<string> Base { get; set; }
         public IList<string> Renegade { get; set; }
+        public IList<string> Eternal { get; set; }
     }
 
     class Stats
     {
         public StatBlock Base { get; set; }
         public StatBlock Renegade { get; set; }
-
-        /*public int GetTotal()
-        {
-            return HP + Atk + Def + SpAtk + SpDef + Spd;
-        }*/
+        public StatBlock Eternal { get; set; }
     }
 
     class StatBlock
@@ -32,15 +35,16 @@ namespace PokemonSpeechApp
         public int HP { get; set; }
         public int Atk { get; set; }
         public int Def { get; set; }
-        public int SpAtk { get; set; }
-        public int SpDef { get; set; }
-        public int Spd { get; set; }
+        public int SpA { get; set; }
+        public int SpD { get; set; }
+        public int Spe { get; set; }
     }
 
     class Abilities
     {
         public IList<Ability> Base { get; set; }
         public IList<Ability> Renegade { get; set; }
+        public IList<Ability> Eternal { get; set; }
     }
 
     class Ability
@@ -53,6 +57,7 @@ namespace PokemonSpeechApp
     {
         public EvolutionBlock Base { get; set; }
         public EvolutionBlock Renegade { get; set; }
+        public EvolutionBlock Eternal { get; set; }
     }
 
     class EvolutionBlock

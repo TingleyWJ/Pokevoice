@@ -23,8 +23,8 @@ namespace PokemonSpeechApp
         Dictionary<int, Pokemon> PokeDict = new();
         Pokemon CurrentPokemon = null;
         ConfigData config = new();
-        bool renegadeMode;
-        string pokemonPattern = @"[^A-Za-z0-9-']";
+        Mode mode;
+        string pokemonPattern = @"[^A-Za-z0-9]";
 
         public MainWindow()
         {
@@ -91,7 +91,8 @@ namespace PokemonSpeechApp
 
                     foreach (Pokemon mon in Pokemon)
                     {
-                        if (cleanName.ToUpper() == mon.Names.English.ToUpper())
+                        string cleanMonName = Regex.Replace(mon.Names.English, pokemonPattern, "");
+                        if (cleanName.ToUpper() == cleanMonName.ToUpper())
                         {
                             UpdateUI(mon);
                             CurrentPokemon = mon;
@@ -112,22 +113,57 @@ namespace PokemonSpeechApp
 
                         if (cleanName.ToUpper() == "ACTIVATERENEGADEMODE")
                         {
-                            renegadeMode = true;
-                            Dispatcher.BeginInvoke(new ThreadStart(() => RenegadeMode.Opacity = 1));
+                            mode = Mode.Renegade;
+                            Dispatcher.BeginInvoke(new ThreadStart(() =>
+                            {
+                                ModeBlock.Opacity = 1;
+                                ModeBlock.Text = "Renegade Mode Active";
+                                ModeBlock.Foreground = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#F73"));
+                            }));
+
                             if (CurrentPokemon != null)
                                 UpdateUI(CurrentPokemon);
                         }
                         else if (cleanName.ToUpper() == "DEACTIVATERENEGADEMODE")
                         {
-                            renegadeMode = false;
-                            Dispatcher.BeginInvoke(new ThreadStart(() => RenegadeMode.Opacity = 0));
+                            mode = Mode.Base;
+                            Dispatcher.BeginInvoke(new ThreadStart(() =>
+                            {
+                                ModeBlock.Opacity = 0;
+                            }));
+
+                            if (CurrentPokemon != null)
+                                UpdateUI(CurrentPokemon);
+                        }
+                        else if (cleanName.ToUpper() == "ACTIVATEETERNALMODE")
+                        {
+                            mode = Mode.Eternal;
+                            Dispatcher.BeginInvoke(new ThreadStart(() =>
+                            {
+                                ModeBlock.Opacity = 1;
+                                ModeBlock.Text = "Eternal Mode Active";
+                                ModeBlock.Foreground = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#D0D"));
+                            }));
+
+                            if (CurrentPokemon != null)
+                                UpdateUI(CurrentPokemon);
+                        }
+                        else if (cleanName.ToUpper() == "DEACTIVATEETERNALMODE")
+                        {
+                            mode = Mode.Base;
+                            Dispatcher.BeginInvoke(new ThreadStart(() =>
+                            {
+                                ModeBlock.Opacity = 0;
+                            }));
+
                             if (CurrentPokemon != null)
                                 UpdateUI(CurrentPokemon);
                         }
 
                         foreach (Pokemon mon in Pokemon)
                         {
-                            if (cleanName.ToUpper() == mon.Names.English.ToUpper())
+                            string cleanMonName = Regex.Replace(mon.Names.English, pokemonPattern, "");
+                            if (cleanName.ToUpper() == cleanMonName.ToUpper())
                             {
                                 UpdateUI(mon);
                                 CurrentPokemon = mon;
@@ -172,7 +208,14 @@ namespace PokemonSpeechApp
                 //Clear Types & Set New Ones
                 TypePanel.Children.Clear();
 
-                foreach (string t in renegadeMode && mon.Types.Renegade != null ? mon.Types.Renegade : mon.Types.Base)
+                var typeList =
+                (mode == Mode.Renegade && mon.Types.Renegade != null) ?
+                mon.Types.Renegade :
+                (mode == Mode.Eternal && mon.Types.Eternal != null) ?
+                mon.Types.Eternal :
+                mon.Types.Base;
+
+                foreach (string t in typeList)
                 {
                     //Trace.WriteLine(TypeColors.GetColor(t));
                     TextBlock text = new()
@@ -199,7 +242,15 @@ namespace PokemonSpeechApp
 
                 //Clear Abilities & Set New Ones
                 AbilityPanel.Children.Clear();
-                foreach (Ability a in renegadeMode && mon.Abilities.Renegade != null ? mon.Abilities.Renegade : mon.Abilities.Base)
+
+                var abilityList =
+                (mode == Mode.Renegade && mon.Abilities.Renegade != null) ?
+                mon.Abilities.Renegade :
+                (mode == Mode.Eternal && mon.Abilities.Eternal != null) ?
+                mon.Abilities.Eternal :
+                mon.Abilities.Base;
+
+                foreach (Ability a in abilityList)
                 {
                     TextBlock text = new()
                     {
@@ -221,7 +272,13 @@ namespace PokemonSpeechApp
 
                 //Clear Evos & Set New Ones
                 EvoPanel.Children.Clear();
-                EvolutionBlock evoBlock = renegadeMode && mon.Evolution.Renegade != null ? mon.Evolution.Renegade : mon.Evolution.Base;
+
+                var evoBlock =
+                (mode == Mode.Renegade && mon.Evolution.Renegade != null) ?
+                mon.Evolution.Renegade :
+                (mode == Mode.Eternal && mon.Evolution.Eternal != null) ?
+                mon.Evolution.Eternal :
+                mon.Evolution.Base;
 
                 //Resize the EvoRow to accomodate
                 EvoRow.Height = new GridLength(evoBlock.Next == null ? 1 : 1 + 0.25 * (evoBlock.Next.Count - 1), GridUnitType.Star);
@@ -266,19 +323,6 @@ namespace PokemonSpeechApp
                 };
 
                 EvoPanel.Children.Add(monName);
-
-                /*if (mon.Evolution.Next == null || mon.Evolution.Next.Count == 1)
-                {
-                    EvoRow.Height = new GridLength(1, GridUnitType.Star);
-                }
-                else if (mon.Evolution.Next.Count == 3)
-                {
-                    EvoRow.Height = new GridLength(3, GridUnitType.Star);
-                }
-                else
-                {
-                    EvoRow.Height = new GridLength(3, GridUnitType.Star);
-                }*/
 
                 if (evoBlock.Next != null)
                 {
@@ -411,10 +455,10 @@ namespace PokemonSpeechApp
                 int HPVal = mon.Stats.Base.HP;
                 int AtkVal = mon.Stats.Base.Atk;
                 int DefVal = mon.Stats.Base.Def;
-                int SpAtkVal = mon.Stats.Base.SpAtk;
-                int SpDefVal = mon.Stats.Base.SpDef;
-                int SpdVal = mon.Stats.Base.Spd;
-                if (renegadeMode && mon.Stats.Renegade != null)
+                int SpAVal = mon.Stats.Base.SpA;
+                int SpDVal = mon.Stats.Base.SpD;
+                int SpeVal = mon.Stats.Base.Spe;
+                if (mode == Mode.Renegade && mon.Stats.Renegade != null)
                 {
                     if (mon.Stats.Renegade.HP != 0)
                         HPVal = mon.Stats.Renegade.HP;
@@ -422,28 +466,43 @@ namespace PokemonSpeechApp
                         AtkVal = mon.Stats.Renegade.Atk;
                     if (mon.Stats.Renegade.Def != 0)
                         DefVal = mon.Stats.Renegade.Def;
-                    if (mon.Stats.Renegade.SpAtk != 0)
-                        SpAtkVal = mon.Stats.Renegade.SpAtk;
-                    if (mon.Stats.Renegade.SpDef != 0)
-                        SpDefVal = mon.Stats.Renegade.SpDef;
-                    if (mon.Stats.Renegade.Spd != 0)
-                        SpdVal = mon.Stats.Renegade.Spd;
+                    if (mon.Stats.Renegade.SpA != 0)
+                        SpAVal = mon.Stats.Renegade.SpA;
+                    if (mon.Stats.Renegade.SpD != 0)
+                        SpDVal = mon.Stats.Renegade.SpD;
+                    if (mon.Stats.Renegade.Spe != 0)
+                        SpeVal = mon.Stats.Renegade.Spe;
+                }
+                else if (mode == Mode.Eternal && mon.Stats.Eternal != null)
+                {
+                    if (mon.Stats.Eternal.HP != 0)
+                        HPVal = mon.Stats.Eternal.HP;
+                    if (mon.Stats.Eternal.Atk != 0)
+                        AtkVal = mon.Stats.Eternal.Atk;
+                    if (mon.Stats.Eternal.Def != 0)
+                        DefVal = mon.Stats.Eternal.Def;
+                    if (mon.Stats.Eternal.SpA != 0)
+                        SpAVal = mon.Stats.Eternal.SpA;
+                    if (mon.Stats.Eternal.SpD != 0)
+                        SpDVal = mon.Stats.Eternal.SpD;
+                    if (mon.Stats.Eternal.Spe != 0)
+                        SpeVal = mon.Stats.Eternal.Spe;
                 }
 
                 HP.Text = HPVal.ToString();
                 Attack.Text = AtkVal.ToString();
                 Defense.Text = DefVal.ToString();
-                SpAtk.Text = SpAtkVal.ToString();
-                SpDef.Text = SpDefVal.ToString();
-                Speed.Text = SpdVal.ToString();
-                Total.Text = (HPVal + AtkVal + DefVal + SpAtkVal + SpDefVal + SpdVal).ToString();
+                SpAtk.Text = SpAVal.ToString();
+                SpDef.Text = SpDVal.ToString();
+                Speed.Text = SpeVal.ToString();
+                Total.Text = (HPVal + AtkVal + DefVal + SpAVal + SpDVal + SpeVal).ToString();
 
                 float HPRatio = Math.Min(HPVal / 180f, 1);
                 float AtkRatio = Math.Min(AtkVal / 180f, 1);
                 float DefRatio = Math.Min(DefVal / 180f, 1);
-                float SpAtkRatio = Math.Min(SpAtkVal / 180f, 1);
-                float SpDefRatio = Math.Min(SpDefVal / 180f, 1);
-                float SpdRatio = Math.Min(SpdVal / 180f, 1);
+                float SpAtkRatio = Math.Min(SpAVal / 180f, 1);
+                float SpDefRatio = Math.Min(SpDVal / 180f, 1);
+                float SpdRatio = Math.Min(SpeVal / 180f, 1);
 
                 //Trace.WriteLine($"{HPRatio}, {AtkRatio}, {DefRatio}, {SpAtkRatio}, {SpDefRatio}, {SpdRatio}");
 
