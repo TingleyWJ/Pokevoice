@@ -68,13 +68,13 @@ namespace PokemonSpeechApp
 
     class EvolutionInfo
     {
-        public int Id { get; set; }
+        public string ID { get; set; }
         public string Condition { get; set; }
     }
 
     class Pokemon
     {
-        public ushort id { get; set; }
+        public string ID { get; set; }
         public Names Names { get; set; }
         public Types Types { get; set; }
         public Stats Stats { get; set; }
@@ -84,8 +84,9 @@ namespace PokemonSpeechApp
 
     class ConfigData
     {
-        public string SubscriptionKey { get; set; }
+        public string EndpointID { get; set; }
         public string Region { get; set; }
+        public string SubscriptionKey { get; set; }
     }
 
     class TypeColors
@@ -142,10 +143,12 @@ namespace PokemonSpeechApp
         }
     }
 
-    class Arrows
+    class UnicodeChars
     {
-        static string RightArrow { get; } = "\u21D2";
-        static string UpRightArrow { get; } = "\u21D7";
-        static string DownRightArrow { get; } = "\u21D8";
+        public static string RightArrow { get; } = "\u21D2";
+        public static string UpRightArrow { get; } = "\u21D7";
+        public static string DownRightArrow { get; } = "\u21D8";
+        public static string Female { get; } = "\u2640";
+        public static string Male { get; } = "\u2642";
     }
 }
