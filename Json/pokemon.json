@@ -10010,7 +10010,7 @@
   {
     "ID": "146-G",
     "Names": {
-      "English": "Moltres",
+      "English": "Galarian Moltres",
       "French": "Sulfura"
     },
     "Types": {
@@ -40670,7 +40670,7 @@
       "Base": {
         "Next": [
           {
-            "ID": "678-M",
+            "ID": "678",
             "Condition": "Level 25"
           },
           {
@@ -40682,7 +40682,7 @@
     }
   },
   {
-    "ID": "678-M",
+    "ID": "678",
     "Names": {
       "English": "Meowstic[Male]",
       "French": "Mistigrix"
@@ -42282,7 +42282,7 @@
     }
   },
   {
-    "ID": "710-S",
+    "ID": "710",
     "Names": {
       "English": "Pumpkaboo",
       "French": "Pitrouille"
@@ -42341,7 +42341,7 @@
       "Base": {
         "Next": [
           {
-            "ID": "711-S",
+            "ID": "711",
             "Condition": "Trade"
           }
         ]
@@ -42349,7 +42349,7 @@
       "Eternal": {
         "Next": [
           {
-            "ID": "711-S",
+            "ID": "711",
             "Condition": "Dusk Stone"
           }
         ]
@@ -42507,7 +42507,7 @@
     }
   },
   {
-    "ID": "710-SS",
+    "ID": "710-S",
     "Names": {
       "English": "Pumpkaboo (Super)",
       "French": "Pitrouille"
@@ -42566,7 +42566,7 @@
       "Base": {
         "Next": [
           {
-            "ID": "711-SS",
+            "ID": "711-S",
             "Condition": "Trade"
           }
         ]
@@ -42574,7 +42574,7 @@
       "Eternal": {
         "Next": [
           {
-            "ID": "711-SS",
+            "ID": "711-S",
             "Condition": "Dusk Stone"
           }
         ]
@@ -42582,7 +42582,7 @@
     }
   },
   {
-    "ID": "711-S",
+    "ID": "711",
     "Names": {
       "English": "Gourgeist",
       "French": "Banshitrouye"
@@ -42640,13 +42640,13 @@
     "Evolution": {
       "Base": {
         "Prev": {
-          "ID": "710-S",
+          "ID": "710",
           "Condition": "Trade"
         }
       },
       "Eternal": {
         "Prev": {
-          "ID": "710-S",
+          "ID": "710",
           "Condition": "Dusk Stone"
         }
       }
@@ -42795,7 +42795,7 @@
     }
   },
   {
-    "ID": "711-SS",
+    "ID": "711-S",
     "Names": {
       "English": "Gourgeist (Super)",
       "French": "Banshitrouye"
@@ -42853,13 +42853,13 @@
     "Evolution": {
       "Base": {
         "Prev": {
-          "ID": "710-SS",
+          "ID": "710-S",
           "Condition": "Trade"
         }
       },
       "Eternal": {
         "Prev": {
-          "ID": "710-SS",
+          "ID": "710-S",
           "Condition": "Dusk Stone"
         }
       }
@@ -50510,7 +50510,7 @@
     }
   },
   {
-    "ID": "876-M",
+    "ID": "876",
     "Names": {
       "English": "Indeedee[Male]",
       "French": "Wimessir"

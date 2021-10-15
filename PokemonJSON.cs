@@ -85,6 +85,7 @@ namespace PokemonSpeechApp
     class ConfigData
     {
         public string EndpointID { get; set; }
+        public string MicrophoneName { get; set; }
         public string Region { get; set; }
         public string SubscriptionKey { get; set; }
     }

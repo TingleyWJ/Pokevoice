@@ -1,4 +1,6 @@
 ﻿using Microsoft.CognitiveServices.Speech;
+using Microsoft.CognitiveServices.Speech.Audio;
+using NAudio.CoreAudioApi;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
@@ -9,6 +11,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Input;
 using System.Windows.Media;
 
 namespace PokemonSpeechApp
@@ -34,6 +37,8 @@ namespace PokemonSpeechApp
         string PokemonPattern { get; } = @"[^A-Za-z0-9]";
         string[] LatestWords { get; set; } = new string[3] { "", "", "" };
 
+        bool End { get; set; }
+
         public MainWindow()
         {
             InitializeComponent();
@@ -44,8 +49,16 @@ namespace PokemonSpeechApp
         {
             Trace.WriteLine("Application Loaded");
             LoadJson();
+            
+            //KeyDown += OnKeyDown;
 
             await SpeechContinuousRecognitionAsync();
+        }
+
+        protected override void OnKeyDown(KeyEventArgs e)
+        {
+            if (e.Key == Key.Escape)
+                End = true;
         }
 
         void LoadJson()
@@ -75,9 +88,37 @@ namespace PokemonSpeechApp
             var speechConfig = SpeechConfig.FromSubscription(Config.SubscriptionKey, Config.Region);
             speechConfig.EndpointId = Config.EndpointID;
 
+            MMDevice micToUse = null;
+            var enumerator = new MMDeviceEnumerator();
+            foreach (var endpoint in enumerator.EnumerateAudioEndPoints(DataFlow.Capture, DeviceState.Active))
+            {
+                //Trace.WriteLine($"Mic Name: {endpoint.FriendlyName}, ID: {endpoint.ID}");
+                //Trace.WriteLine($"Compare: {Config.MicrophoneName}");
+                //Trace.WriteLine($"Same: {endpoint.FriendlyName == Config.MicrophoneName}");
+                if (endpoint.FriendlyName == Config.MicrophoneName)
+                {
+                    micToUse = endpoint;
+                }
+            }
+
+            SpeechRecognizer recognizer = null;
+            AudioConfig audioConfig = null;
+            if (micToUse == null)
+            {
+                Trace.WriteLine("Using Default Microphone");
+                recognizer = new SpeechRecognizer(speechConfig);
+            }
+            else
+            {
+                Trace.WriteLine($"Using {micToUse.FriendlyName}");
+                audioConfig = AudioConfig.FromMicrophoneInput(micToUse.ID);
+                recognizer = new SpeechRecognizer(speechConfig, audioConfig);
+            }
+
             // Creates a speech recognizer from microphone.
-            using var recognizer = new SpeechRecognizer(speechConfig);
-            var phraseList = PhraseListGrammar.FromRecognizer(recognizer);
+            //using var recognizer = new SpeechRecognizer(speechConfig);
+
+            /*var phraseList = PhraseListGrammar.FromRecognizer(recognizer);
 
             int count = 0;
             foreach (Pokemon mon in Pokemon)
@@ -86,7 +127,7 @@ namespace PokemonSpeechApp
                 //Trace.WriteLine($"\nAdded {mon.Names.English}\n");
                 count++;
             }
-            Trace.WriteLine($"\n{count} Pokemon Names Added to Vocab\n");
+            Trace.WriteLine($"\n{count} Pokemon Names Added to Vocab\n");*/
 
             // Subscribes to events.
             recognizer.Recognizing += (s, e) =>
@@ -154,9 +195,9 @@ namespace PokemonSpeechApp
                         Mode = Mode.Renegade;
                         Dispatcher.BeginInvoke(new ThreadStart(() =>
                         {
-                            ModeBlock.Opacity = 1;
-                            ModeBlock.Text = "Renegade Mode Active";
-                            ModeBlock.Foreground = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#F73"));
+                            ModeLabel.Opacity = 1;
+                            ModeLabel.Foreground = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#F73"));
+                            ModeText.Text = "R";
                         }));
 
                         if (CurrentPokemon != null)
@@ -167,7 +208,7 @@ namespace PokemonSpeechApp
                         Mode = Mode.Base;
                         Dispatcher.BeginInvoke(new ThreadStart(() =>
                         {
-                            ModeBlock.Opacity = 0;
+                            ModeLabel.Opacity = 0;
                         }));
 
                         if (CurrentPokemon != null)
@@ -178,9 +219,9 @@ namespace PokemonSpeechApp
                         Mode = Mode.Eternal;
                         Dispatcher.BeginInvoke(new ThreadStart(() =>
                         {
-                            ModeBlock.Opacity = 1;
-                            ModeBlock.Text = "Eternal Mode Active";
-                            ModeBlock.Foreground = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#D0D"));
+                            ModeLabel.Opacity = 1;
+                            ModeLabel.Foreground = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#D0D"));
+                            ModeText.Text = "E";
                         }));
 
                         if (CurrentPokemon != null)
@@ -191,7 +232,7 @@ namespace PokemonSpeechApp
                         Mode = Mode.Base;
                         Dispatcher.BeginInvoke(new ThreadStart(() =>
                         {
-                            ModeBlock.Opacity = 0;
+                            ModeLabel.Opacity = 0;
                         }));
 
                         if (CurrentPokemon != null)
@@ -229,10 +270,21 @@ namespace PokemonSpeechApp
             // Uses StopContinuousRecognitionAsync() to stop recognition.
             await recognizer.StartContinuousRecognitionAsync().ConfigureAwait(false);
 
-            while (true) ;
+            while (!End) ;
 
             // Stops recognition.
-            //await recognizer.StopContinuousRecognitionAsync().ConfigureAwait(false);
+            await recognizer.StopContinuousRecognitionAsync().ConfigureAwait(false);
+            recognizer.Dispose();
+            if (audioConfig != null)
+                audioConfig.Dispose();
+            Dispatcher.Invoke(() =>
+            {
+                Close();
+            });
+            /*await Dispatcher.BeginInvoke(new ThreadStart(() =>
+            {
+                Close();
+            }));*/
         }
 
         void UpdateUI(Pokemon mon)

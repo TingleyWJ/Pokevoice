@@ -18,7 +18,7 @@
             <Setter Property="Template">
                 <Setter.Value>
                     <ControlTemplate TargetType="{x:Type Label}">
-                        <Border BorderBrush="Black" BorderThickness="0.5" Background="{TemplateBinding Background}" Padding="{TemplateBinding Padding}" SnapsToDevicePixels="true" CornerRadius="4">
+                        <Border BorderBrush="Black" BorderThickness="0" Background="{TemplateBinding Background}" Padding="{TemplateBinding Padding}" SnapsToDevicePixels="true" CornerRadius="4">
                             <ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" RecognizesAccessKey="True" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
                         </Border>
                         <ControlTemplate.Triggers>
@@ -27,6 +27,40 @@
                             </Trigger>
                         </ControlTemplate.Triggers>
                     </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <Style x:Key="ModeLabel" TargetType="Label">
+            <Setter Property="Width" Value="40"/>
+            <Setter Property="Height" Value="40"/>
+            <Setter Property="HorizontalAlignment" Value="Left"/>
+            <Setter Property="Margin" Value="5,0"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type Label}">
+                        <Border BorderBrush="Black" BorderThickness="0" Background="{TemplateBinding Background}" Padding="{TemplateBinding Padding}" SnapsToDevicePixels="true" CornerRadius="4">
+                            <ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" RecognizesAccessKey="True" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <Style x:Key="ModeBorder" TargetType="Border">
+            <Setter Property="BorderBrush" Value="{x:Null}"/>
+            <Setter Property="Width" Value="40"/>
+            <Setter Property="Height" Value="40"/>
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+        </Style>
+        <Style x:Key="ModeText" TargetType="TextBlock">
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="FontFamily" Value="Fira Sans"/>
+            <Setter Property="FontSize" Value="24"/>
+            <Setter Property="TextAlignment" Value="Center"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+            <Setter Property="Effect">
+                <Setter.Value>
+                    <DropShadowEffect ShadowDepth="1" BlurRadius="0" Direction="315"/>
                 </Setter.Value>
             </Setter>
         </Style>
@@ -153,7 +187,14 @@
             <RowDefinition Height="3*"/>
         </Grid.RowDefinitions>
         <Label x:Name="PokemonName" Content="Pokemon" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Fira Sans SemiBold" FontSize="36"/>
-        <TextBlock x:Name="ModeBlock" Text="Renegade Mode Active" FontFamily="Fira Sans" Foreground="#F73" FontSize="16" TextWrapping="Wrap" HorizontalAlignment="Left" VerticalAlignment="Center" TextAlignment="Center" Opacity="0" Width="154"/>
+        <Label x:Name="ModeLabel" Background="#F73" Opacity="0" Style="{StaticResource ModeLabel}">
+            <Label.Content>
+                <Border Style="{StaticResource ModeBorder}">
+                    <TextBlock x:Name="ModeText" Text="R" Style="{StaticResource ModeText}"/>
+                </Border>
+            </Label.Content>
+        </Label>
+        <!--<TextBlock x:Name="ModeBlock" Text="Renegade Mode Active" FontFamily="Fira Sans" Foreground="#F73" FontSize="16" TextWrapping="Wrap" HorizontalAlignment="Left" VerticalAlignment="Center" TextAlignment="Center" Opacity="1" Width="154"/>-->
         <!--<StackPanel x:Name="EvoPanel" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="336,5,0,0" Width="159" Grid.RowSpan="2">
             <TextBlock Text="Bulbasaur" Style="{StaticResource EvoText}"/>
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" Margin="70,0,0,0">
