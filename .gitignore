@@ -5,10 +5,8 @@
 
 # My Files
 Json/config.json
-Json/pokemon-old.json
-Json/testmon.json
-Json/types.json
-Images/
+Json-Old/
+Images-Old/
 
 # User-specific files
 *.rsuser

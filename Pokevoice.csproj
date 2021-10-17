@@ -28,7 +28,6 @@
     <None Remove="Fonts\FiraSans-SemiBoldItalic.ttf" />
     <None Remove="Fonts\FiraSans-Thin.ttf" />
     <None Remove="Fonts\FiraSans-ThinItalic.ttf" />
-    <None Remove="pokemon-small.json" />
   </ItemGroup>
 
   <ItemGroup>

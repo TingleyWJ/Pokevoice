@@ -4400,7 +4400,7 @@
         "Next": [
           {
             "ID": "65",
-            "Condition": "High Frienship"
+            "Condition": "High Friendship"
           }
         ]
       }
@@ -6747,6 +6747,18 @@
           "Name": "Cursed Body",
           "Hidden": false
         }
+      ],
+      "Renegade": [
+        {
+          "Name": "Levitate",
+          "Hidden": false
+        }
+      ],
+      "Eternal": [
+        {
+          "Name": "Levitate",
+          "Hidden": false
+        }
       ]
     },
     "Evolution": {
@@ -6765,7 +6777,7 @@
       "Eternal": {
         "Prev": {
           "ID": "93",
-          "Condition": "High Frienship"
+          "Condition": "High Friendship"
         }
       }
     }
@@ -6810,7 +6822,7 @@
       "Eternal": {
         "Prev": {
           "ID": "93",
-          "Condition": "High Frienship"
+          "Condition": "High Friendship"
         }
       }
     }
