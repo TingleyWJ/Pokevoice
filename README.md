@@ -1,11 +1,12 @@
 # Pokevoice
 Pokevoice is a small WPF application that uses Microsoft's Cognitive Speech Service to do real-time Speech to Text for quick reference when playing Pokemon.
 
-The app currently showcases quick information about all 898 pokemon, up to date for Generation 8 (Galar). Additional data for Alolan & Galarian forms, unique forms, e.g. Rotom (Wash) or Indeedee (Male/Female), as well as Megas, is also available.
+The app currently showcases quick information about all 898 pokemon, up to date for Generation 8 (Galar). Additional data for Alolan & Galarian forms, unique forms, e.g. Rotom (Wash) or Indeedee (Male/Female), as well as Mega Evolutions, is also available.
 
 Additionally, Pokevoice supports changes made for popular Pokemon ROM Hacks, Renegade Platinum, and Eternal X/Wilting Y. Stat changes for those can be activated and deactivated by the vocal commands:
-* Activate [Renegade/Eternal] Mode
-* Deactivate [Renegade/Eternal] Mode
+* Renegade Mode
+* Eternal Mode
+* No Mode
 
 ## Current Information Listed
 * Name

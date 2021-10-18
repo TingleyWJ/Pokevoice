@@ -4,6 +4,7 @@ using NAudio.CoreAudioApi;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Diagnostics;
 using System.IO;
 using System.Text.RegularExpressions;
@@ -11,22 +12,20 @@ using System.Threading;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Forms;
 using System.Windows.Input;
 using System.Windows.Media;
+using KeyEventArgs = System.Windows.Input.KeyEventArgs;
+using Label = System.Windows.Controls.Label;
+using Orientation = System.Windows.Controls.Orientation;
 
 namespace PokemonSpeechApp
 {
-    /* TODO
-     * -Add megas & regional forms
-     * -Clear for unicode characters (flabebe)
-    */
-
-    /// <summary>
-    /// Interaction logic for MainWindow.xaml
-    /// </summary>
     public partial class MainWindow : Window
     {
         ConfigData Config { get; set; } = new();
+
+        SpeechRecognizer Recognizer { get; set; }
 
         List<Pokemon> Pokemon { get; set; } = new();
         Dictionary<string, Pokemon> PokeDict { get; set; } = new();
@@ -37,28 +36,183 @@ namespace PokemonSpeechApp
         string PokemonPattern { get; } = @"[^A-Za-z0-9]";
         string[] LatestWords { get; set; } = new string[3] { "", "", "" };
 
-        bool End { get; set; }
+        bool CloseApp { get; set; }
+        bool Recording { get; set; }
+
+        LowLevelKeyboardHook KBH { get; set; }
 
         public MainWindow()
         {
             InitializeComponent();
+            Loaded += OnLoad;
             //Trace.WriteLine("\n\nWINDOW 1\n\n");
         }
 
-        async void OnLoad(object sender, RoutedEventArgs e)
+        #region Callbacks
+        void OnLoad(object sender, RoutedEventArgs e)
         {
             Trace.WriteLine("Application Loaded");
             LoadJson();
-            
-            //KeyDown += OnKeyDown;
 
-            await SpeechContinuousRecognitionAsync();
+            SetUpRecognizer();
+            SetUpRecognizerCallbacks();
+
+            KBH = new();
+            KBH.OnKeyPressed += KBH_OnKeyDown;
+            KBH.OnKeyUnpressed += KBH_OnKeyUp;
+            KBH.HookKeyboard();
+
+            //Old but going to keep for posterity for now
+            //await SpeechContinuousRecognitionAsync();
         }
 
         protected override void OnKeyDown(KeyEventArgs e)
         {
             if (e.Key == Key.Escape)
-                End = true;
+                Close();
+        }
+
+        void KBH_OnKeyDown(object sender, Keys e)
+        {
+            //Trace.WriteLine($"KBH Key Down: {e}");
+            if (e == Keys.F13 && !Recording)
+            {
+                Trace.WriteLine("Recording Beginning");
+                UpdateRecordingUI();
+                Recording = true;
+                Recognizer.StartContinuousRecognitionAsync();
+            }
+        }
+
+        void KBH_OnKeyUp(object sender, Keys e)
+        {
+            //Trace.WriteLine($"KBH Key Up: {e}");
+            if (e == Keys.F13)
+            {
+                Trace.WriteLine("Recording Ending");
+                UpdateRecordingUI();
+                Recording = false;
+                Recognizer.StopContinuousRecognitionAsync();
+            }
+        }
+
+        protected override void OnClosing(CancelEventArgs e)
+        {
+            Trace.WriteLine("Window is Closing");
+            Recognizer.Dispose();
+        }
+
+        void SetUpRecognizerCallbacks()
+        {
+            Recognizer.Recognizing += (s, e) =>
+            {
+                Trace.WriteLine($"RECOGNIZING: Text={e.Result.Text}");
+
+                string latest = e.Result.Text.Substring(e.Result.Text.LastIndexOf(" ") + 1);
+
+                LatestWords[0] = LatestWords[1];
+                LatestWords[1] = LatestWords[2];
+                LatestWords[2] = latest;
+
+                string[] cleanLatest = new string[3] { "", "", "" };
+                for (int i = 0; i < 3; i++)
+                {
+                    if (LatestWords[i] != "")
+                        cleanLatest[i] = Regex.Replace(LatestWords[i], PokemonPattern, "");
+                }
+
+                SwapMode(string.Join("", LatestWords));
+
+                Trace.WriteLine($"LatestWords: {string.Join(", ", LatestWords)}");
+                Trace.WriteLine($"cleanLatest: {string.Join(", ", cleanLatest)}");
+
+                foreach (Pokemon mon in Pokemon)
+                {
+                    string cleanMonName = Regex.Replace(mon.Names.English, PokemonPattern, "");
+                    if ((cleanLatest[0] + cleanLatest[1] + cleanLatest[2]).ToUpper() == cleanMonName.ToUpper() ||
+                        (cleanLatest[1] + cleanLatest[2]).ToUpper() == cleanMonName.ToUpper() ||
+                        cleanLatest[2].ToUpper() == cleanMonName.ToUpper())
+                    {
+                        UpdateUI(mon);
+                        CurrentPokemon = mon;
+                    }
+                }
+            };
+
+            Recognizer.Recognized += (s, e) =>
+            {
+                var result = e.Result;
+                Trace.WriteLine($"Reason: {result.Reason}");
+
+                if (result.Reason == ResultReason.RecognizedSpeech)
+                {
+                    string cleanName = Regex.Replace(result.Text, PokemonPattern, "");
+
+                    Trace.WriteLine($"Final result: {result.Text}");
+                    Trace.WriteLine($"Final clean result: {cleanName}");
+
+                    SwapMode(cleanName);
+
+                    foreach (Pokemon mon in Pokemon)
+                    {
+                        string cleanMonName = Regex.Replace(mon.Names.English, PokemonPattern, "");
+                        if (cleanName.ToUpper() == cleanMonName.ToUpper())
+                        {
+                            UpdateUI(mon);
+                            CurrentPokemon = mon;
+                        }
+                    }
+                }
+            };
+
+            Recognizer.Canceled += (s, e) =>
+            {
+                Trace.WriteLine($"\n    Canceled. Reason: {e.Reason}, CanceledReason: {e.Reason}");
+            };
+
+            Recognizer.SessionStarted += (s, e) =>
+            {
+                Trace.WriteLine("\n    Session started event.");
+            };
+
+            Recognizer.SessionStopped += (s, e) =>
+            {
+                Trace.WriteLine("\n    Session stopped event.");
+            };
+        }
+
+        #endregion
+
+        #region Functions
+        void SetUpRecognizer()
+        {
+            var speechConfig = SpeechConfig.FromSubscription(Config.SubscriptionKey, Config.Region);
+            speechConfig.EndpointId = Config.EndpointID;
+
+            MMDevice micToUse = null;
+            var enumerator = new MMDeviceEnumerator();
+            foreach (var endpoint in enumerator.EnumerateAudioEndPoints(DataFlow.Capture, DeviceState.Active))
+            {
+                //Trace.WriteLine($"Mic Name: {endpoint.FriendlyName}, ID: {endpoint.ID}");
+                //Trace.WriteLine($"Compare: {Config.MicrophoneName}");
+                //Trace.WriteLine($"Same: {endpoint.FriendlyName == Config.MicrophoneName}");
+                if (endpoint.FriendlyName == Config.MicrophoneName)
+                {
+                    micToUse = endpoint;
+                }
+            }
+
+            if (micToUse == null)
+            {
+                Trace.WriteLine("Using Default Microphone");
+                Recognizer = new(speechConfig);
+            }
+            else
+            {
+                Trace.WriteLine($"Using {micToUse.FriendlyName}");
+                using var audioConfig = AudioConfig.FromMicrophoneInput(micToUse.ID);
+                Recognizer = new(speechConfig, audioConfig);
+            }
         }
 
         void LoadJson()
@@ -81,6 +235,7 @@ namespace PokemonSpeechApp
             }
         }
 
+        [Obsolete]
         async Task SpeechContinuousRecognitionAsync()
         {
             // Creates an instance of a speech config with specified subscription key and region.
@@ -106,13 +261,13 @@ namespace PokemonSpeechApp
             if (micToUse == null)
             {
                 Trace.WriteLine("Using Default Microphone");
-                recognizer = new SpeechRecognizer(speechConfig);
+                recognizer = new(speechConfig);
             }
             else
             {
                 Trace.WriteLine($"Using {micToUse.FriendlyName}");
                 audioConfig = AudioConfig.FromMicrophoneInput(micToUse.ID);
-                recognizer = new SpeechRecognizer(speechConfig, audioConfig);
+                recognizer = new(speechConfig, audioConfig);
             }
 
             // Creates a speech recognizer from microphone.
@@ -140,14 +295,6 @@ namespace PokemonSpeechApp
                 LatestWords[1] = LatestWords[2];
                 LatestWords[2] = latest;
 
-                /*if (LatestWords.Length == 0)
-                    LatestWords[1] = latest;
-                else
-                {
-                    LatestWords[0] = LatestWords[1];
-                    LatestWords[1] = latest;
-                }*/
-
                 string[] cleanLatest = new string[3] { "", "", "" };
                 for (int i = 0; i < 3; i++)
                 {
@@ -155,7 +302,7 @@ namespace PokemonSpeechApp
                         cleanLatest[i] = Regex.Replace(LatestWords[i], PokemonPattern, "");
                 }
 
-                //string cleanName = Regex.Replace(latest, PokemonPattern, "");
+                SwapMode(string.Join("", LatestWords));
 
                 Trace.WriteLine($"LatestWords: {string.Join(", ", LatestWords)}");
                 Trace.WriteLine($"cleanLatest: {string.Join(", ", cleanLatest)}");
@@ -163,18 +310,13 @@ namespace PokemonSpeechApp
                 foreach (Pokemon mon in Pokemon)
                 {
                     string cleanMonName = Regex.Replace(mon.Names.English, PokemonPattern, "");
-                    if ((cleanLatest[0] + cleanLatest[1] + cleanLatest[2]).ToUpper() == cleanMonName.ToUpper() || 
+                    if ((cleanLatest[0] + cleanLatest[1] + cleanLatest[2]).ToUpper() == cleanMonName.ToUpper() ||
                         (cleanLatest[1] + cleanLatest[2]).ToUpper() == cleanMonName.ToUpper() ||
                         cleanLatest[2].ToUpper() == cleanMonName.ToUpper())
                     {
                         UpdateUI(mon);
                         CurrentPokemon = mon;
                     }
-                    /*if (cleanName.ToUpper() == cleanMonName.ToUpper())
-                    {
-                        UpdateUI(mon);
-                        CurrentPokemon = mon;
-                    }*/
                 }
             };
 
@@ -190,54 +332,7 @@ namespace PokemonSpeechApp
                     Trace.WriteLine($"Final result: {result.Text}");
                     Trace.WriteLine($"Final clean result: {cleanName}");
 
-                    if (cleanName.ToUpper() == "ACTIVATERENEGADEMODE")
-                    {
-                        Mode = Mode.Renegade;
-                        Dispatcher.BeginInvoke(new ThreadStart(() =>
-                        {
-                            ModeLabel.Opacity = 1;
-                            ModeLabel.Foreground = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#F73"));
-                            ModeText.Text = "R";
-                        }));
-
-                        if (CurrentPokemon != null)
-                            UpdateUI(CurrentPokemon);
-                    }
-                    else if (cleanName.ToUpper() == "DEACTIVATERENEGADEMODE")
-                    {
-                        Mode = Mode.Base;
-                        Dispatcher.BeginInvoke(new ThreadStart(() =>
-                        {
-                            ModeLabel.Opacity = 0;
-                        }));
-
-                        if (CurrentPokemon != null)
-                            UpdateUI(CurrentPokemon);
-                    }
-                    else if (cleanName.ToUpper() == "ACTIVATEETERNALMODE")
-                    {
-                        Mode = Mode.Eternal;
-                        Dispatcher.BeginInvoke(new ThreadStart(() =>
-                        {
-                            ModeLabel.Opacity = 1;
-                            ModeLabel.Foreground = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#D0D"));
-                            ModeText.Text = "E";
-                        }));
-
-                        if (CurrentPokemon != null)
-                            UpdateUI(CurrentPokemon);
-                    }
-                    else if (cleanName.ToUpper() == "DEACTIVATEETERNALMODE")
-                    {
-                        Mode = Mode.Base;
-                        Dispatcher.BeginInvoke(new ThreadStart(() =>
-                        {
-                            ModeLabel.Opacity = 0;
-                        }));
-
-                        if (CurrentPokemon != null)
-                            UpdateUI(CurrentPokemon);
-                    }
+                    SwapMode(cleanName);
 
                     foreach (Pokemon mon in Pokemon)
                     {
@@ -270,10 +365,24 @@ namespace PokemonSpeechApp
             // Uses StopContinuousRecognitionAsync() to stop recognition.
             await recognizer.StartContinuousRecognitionAsync().ConfigureAwait(false);
 
-            while (!End) ;
+            while (!CloseApp) ;
+            /*{
+                if (RecordDown)
+                {
+                    RecordDown = false;
+                    await recognizer.StartContinuousRecognitionAsync().ConfigureAwait(false);
+                }
+                else if (RecordUp)
+                {
+                    RecordUp = false;
+                    await recognizer.StopContinuousRecognitionAsync().ConfigureAwait(false);
+                }
+            }*/
 
             // Stops recognition.
             await recognizer.StopContinuousRecognitionAsync().ConfigureAwait(false);
+
+            //Disposables
             recognizer.Dispose();
             if (audioConfig != null)
                 audioConfig.Dispose();
@@ -281,10 +390,66 @@ namespace PokemonSpeechApp
             {
                 Close();
             });
-            /*await Dispatcher.BeginInvoke(new ThreadStart(() =>
+        }
+
+        void SwapMode(string cleanName)
+        {
+            if (cleanName.ToUpper() == "RENEGADEMODE")
             {
-                Close();
-            }));*/
+                Mode = Mode.Renegade;
+                Dispatcher.Invoke(() =>
+                {
+                    ModeLabel.Opacity = 1;
+                    ModeLabel.Foreground = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#F73"));
+                    ModeText.Text = "R";
+                });
+
+                if (CurrentPokemon != null)
+                    UpdateUI(CurrentPokemon);
+            }
+            /*else if (cleanName.ToUpper() == "DEACTIVATERENEGADEMODE")
+            {
+                Mode = Mode.Base;
+                Dispatcher.Invoke(() =>
+                {
+                    ModeLabel.Opacity = 0;
+                });
+
+                if (CurrentPokemon != null)
+                    UpdateUI(CurrentPokemon);
+            }*/
+            else if (cleanName.ToUpper() == "ETERNALMODE")
+            {
+                Mode = Mode.Eternal;
+                Dispatcher.Invoke(() =>
+                {
+                    ModeLabel.Opacity = 1;
+                    ModeLabel.Foreground = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#D0D"));
+                    ModeText.Text = "E";
+                });
+
+                if (CurrentPokemon != null)
+                    UpdateUI(CurrentPokemon);
+            }
+            else if (cleanName.ToUpper() == "NOMODE")
+            {
+                Mode = Mode.Base;
+                Dispatcher.Invoke(() =>
+                {
+                    ModeLabel.Opacity = 0;
+                });
+
+                if (CurrentPokemon != null)
+                    UpdateUI(CurrentPokemon);
+            }
+        }
+
+        void UpdateRecordingUI()
+        {
+            Dispatcher.BeginInvoke(new ThreadStart(() =>
+            {
+                RecordingLabel.Opacity = !Recording ? 1 : 0;
+            }));
         }
 
         void UpdateUI(Pokemon mon)
@@ -296,12 +461,6 @@ namespace PokemonSpeechApp
                 string formattedName = nameMatch.Success ? nameMatch.Groups[1].Value + (nameMatch.Groups[2].Value == "Male" ? UnicodeChars.Male : UnicodeChars.Female) : mon.Names.English;
 
                 PokemonName.Content = formattedName;
-                /*if (nameMatch.Success)
-                {
-                    PokemonName.Content = nameMatch.Groups[1].Value + (nameMatch.Groups[2].Value == "Male" ? UnicodeChars.Male : UnicodeChars.Female);
-                }
-                else
-                    PokemonName.Content = mon.Names.English;*/
 
                 //Clear Types & Set New Ones
                 TypePanel.Children.Clear();
@@ -315,9 +474,7 @@ namespace PokemonSpeechApp
 
                 foreach (string t in typeList)
                 {
-                    //Trace.WriteLine(TypeColors.GetColor(t));
                     TextBlock text = new()
-                    //OutlinedText text = new()
                     {
                         Text = t.ToUpper(),
                         Style = (Style)FindResource("TypeText")
@@ -385,7 +542,6 @@ namespace PokemonSpeechApp
                 {
                     TextBlock prevName = new()
                     {
-                        //Text = PokeDict[evoBlock.Prev.ID].Names.English,
                         Style = (Style)FindResource("EvoText")
                     };
 
@@ -532,7 +688,6 @@ namespace PokemonSpeechApp
                         };
 
                         nextName.Children.Add(arrow);
-
                         nextNames.Children.Add(nextName);
                     }
                     else
@@ -543,10 +698,9 @@ namespace PokemonSpeechApp
 
                             TextBlock name = new()
                             {
-                                Text = PokeDict[info.ID].Names.English,
                                 Style = (Style)FindResource("EvoText")
                             };
-                            
+
                             Match nextNameMatch = Regex.Match(PokeDict[info.ID].Names.English, @"(\w+)\[(\w+)\]");
                             if (nextNameMatch.Success)
                                 name.Text = nextNameMatch.Groups[1].Value + (nextNameMatch.Groups[2].Value == "Male" ? UnicodeChars.Male : UnicodeChars.Female);
@@ -631,5 +785,6 @@ namespace PokemonSpeechApp
                 SpdBar.Background = new SolidColorBrush((Color)ColorConverter.ConvertFromString(BarColors.GetColor(SpdRatio)));
             }));
         }
+        #endregion
     }
 }
