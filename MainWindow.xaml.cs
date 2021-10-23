@@ -21,11 +21,19 @@ using Orientation = System.Windows.Controls.Orientation;
 
 namespace PokemonSpeechApp
 {
+    /* Ideas & To-do
+     * -Make UI larger for better readability
+     * -Integrate Twitch rewards for memes
+     * -Catch rate
+     * -Weight
+     * -Potentially type matchups
+    */
+
     public partial class MainWindow : Window
     {
-        ConfigData Config { get; set; } = new();
-
+        ConfigData Config { get; set; }
         SpeechRecognizer Recognizer { get; set; }
+        MMDevice MicToUse { get; set; } = null;
 
         List<Pokemon> Pokemon { get; set; } = new();
         Dictionary<string, Pokemon> PokeDict { get; set; } = new();
@@ -45,6 +53,7 @@ namespace PokemonSpeechApp
         {
             InitializeComponent();
             Loaded += OnLoad;
+            Closing += OnClosing;
             //Trace.WriteLine("\n\nWINDOW 1\n\n");
         }
 
@@ -54,8 +63,9 @@ namespace PokemonSpeechApp
             Trace.WriteLine("Application Loaded");
             LoadJson();
 
-            SetUpRecognizer();
-            SetUpRecognizerCallbacks();
+            InitMicrophone();
+            //InitRecognizer();
+            //InitRecognizerCallbacks();
 
             KBH = new();
             KBH.OnKeyPressed += KBH_OnKeyDown;
@@ -80,11 +90,14 @@ namespace PokemonSpeechApp
                 Trace.WriteLine("Recording Beginning");
                 UpdateRecordingUI();
                 Recording = true;
+
+                InitRecognizer();
+                InitRecognizerCallbacks();
                 Recognizer.StartContinuousRecognitionAsync();
             }
         }
 
-        void KBH_OnKeyUp(object sender, Keys e)
+        async void KBH_OnKeyUp(object sender, Keys e)
         {
             //Trace.WriteLine($"KBH Key Up: {e}");
             if (e == Keys.F13)
@@ -92,17 +105,19 @@ namespace PokemonSpeechApp
                 Trace.WriteLine("Recording Ending");
                 UpdateRecordingUI();
                 Recording = false;
-                Recognizer.StopContinuousRecognitionAsync();
+
+                await Recognizer.StopContinuousRecognitionAsync();
+                TerminateRecognizer();
             }
         }
 
-        protected override void OnClosing(CancelEventArgs e)
+        void OnClosing(object sender, CancelEventArgs e)
         {
             Trace.WriteLine("Window is Closing");
-            Recognizer.Dispose();
+            //Recognizer.Dispose();
         }
 
-        void SetUpRecognizerCallbacks()
+        void InitRecognizerCallbacks()
         {
             Recognizer.Recognizing += (s, e) =>
             {
@@ -167,7 +182,7 @@ namespace PokemonSpeechApp
 
             Recognizer.Canceled += (s, e) =>
             {
-                Trace.WriteLine($"\n    Canceled. Reason: {e.Reason}, CanceledReason: {e.Reason}");
+                Trace.WriteLine($"\n    Canceled. Error Code: {e.ErrorCode}. Error Details: {e.ErrorDetails}. Reason: {e.Reason}.");
             };
 
             Recognizer.SessionStarted += (s, e) =>
@@ -184,12 +199,9 @@ namespace PokemonSpeechApp
         #endregion
 
         #region Functions
-        void SetUpRecognizer()
+        void InitMicrophone()
         {
-            var speechConfig = SpeechConfig.FromSubscription(Config.SubscriptionKey, Config.Region);
-            speechConfig.EndpointId = Config.EndpointID;
-
-            MMDevice micToUse = null;
+            //MMDevice micToUse = null;
             var enumerator = new MMDeviceEnumerator();
             foreach (var endpoint in enumerator.EnumerateAudioEndPoints(DataFlow.Capture, DeviceState.Active))
             {
@@ -198,21 +210,33 @@ namespace PokemonSpeechApp
                 //Trace.WriteLine($"Same: {endpoint.FriendlyName == Config.MicrophoneName}");
                 if (endpoint.FriendlyName == Config.MicrophoneName)
                 {
-                    micToUse = endpoint;
+                    MicToUse = endpoint;
                 }
             }
+        }
 
-            if (micToUse == null)
+        void InitRecognizer()
+        {
+            var speechConfig = SpeechConfig.FromSubscription(Config.SubscriptionKey, Config.Region);
+            speechConfig.EndpointId = Config.EndpointID;
+
+            if (MicToUse == null)
             {
                 Trace.WriteLine("Using Default Microphone");
                 Recognizer = new(speechConfig);
             }
             else
             {
-                Trace.WriteLine($"Using {micToUse.FriendlyName}");
-                using var audioConfig = AudioConfig.FromMicrophoneInput(micToUse.ID);
+                Trace.WriteLine($"Using {MicToUse.FriendlyName}");
+                using var audioConfig = AudioConfig.FromMicrophoneInput(MicToUse.ID);
                 Recognizer = new(speechConfig, audioConfig);
             }
+        }
+
+        void TerminateRecognizer()
+        {
+            Recognizer.Dispose();
+            Recognizer = null;
         }
 
         void LoadJson()
@@ -400,7 +424,7 @@ namespace PokemonSpeechApp
                 Dispatcher.Invoke(() =>
                 {
                     ModeLabel.Opacity = 1;
-                    ModeLabel.Foreground = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#F73"));
+                    ModeLabel.Background = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#F73"));
                     ModeText.Text = "R";
                 });
 
@@ -424,7 +448,7 @@ namespace PokemonSpeechApp
                 Dispatcher.Invoke(() =>
                 {
                     ModeLabel.Opacity = 1;
-                    ModeLabel.Foreground = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#D0D"));
+                    ModeLabel.Background = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#D0D"));
                     ModeText.Text = "E";
                 });
 
