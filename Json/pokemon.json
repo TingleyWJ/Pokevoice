@@ -52,7 +52,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 6.9,
+    "CatchRate": 45
   },
   {
     "ID": "2",
@@ -111,7 +113,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 13,
+    "CatchRate": 45
   },
   {
     "ID": "3",
@@ -167,7 +171,9 @@
           "Condition": "Level 32"
         }
       }
-    }
+    },
+    "Weight": 100,
+    "CatchRate": 45
   },
   {
     "ID": "3-M",
@@ -206,7 +212,9 @@
           "Condition": "Level 32"
         }
       }
-    }
+    },
+    "Weight": 155.5,
+    "CatchRate": 45
   },
   {
     "ID": "4",
@@ -260,7 +268,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 8.5,
+    "CatchRate": 45
   },
   {
     "ID": "5",
@@ -318,7 +328,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 19,
+    "CatchRate": 45
   },
   {
     "ID": "6",
@@ -378,7 +390,9 @@
           "Condition": "Level 36"
         }
       }
-    }
+    },
+    "Weight": 90.5,
+    "CatchRate": 45
   },
   {
     "ID": "6-MX",
@@ -417,7 +431,9 @@
           "Condition": "Level 36"
         }
       }
-    }
+    },
+    "Weight": 110.5,
+    "CatchRate": 45
   },
   {
     "ID": "6-MY",
@@ -456,7 +472,9 @@
           "Condition": "Level 36"
         }
       }
-    }
+    },
+    "Weight": 100.5,
+    "CatchRate": 45
   },
   {
     "ID": "7",
@@ -510,7 +528,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 9,
+    "CatchRate": 45
   },
   {
     "ID": "8",
@@ -568,7 +588,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 22.5,
+    "CatchRate": 45
   },
   {
     "ID": "9",
@@ -623,7 +645,9 @@
           "Condition": "Level 36"
         }
       }
-    }
+    },
+    "Weight": 85.5,
+    "CatchRate": 45
   },
   {
     "ID": "9-M",
@@ -661,7 +685,9 @@
           "Condition": "Level 36"
         }
       }
-    }
+    },
+    "Weight": 101.1,
+    "CatchRate": 45
   },
   {
     "ID": "10",
@@ -715,7 +741,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 2.9,
+    "CatchRate": 255
   },
   {
     "ID": "11",
@@ -759,7 +787,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 9.9,
+    "CatchRate": 120
   },
   {
     "ID": "12",
@@ -822,7 +852,9 @@
           "Condition": "Level 10"
         }
       }
-    }
+    },
+    "Weight": 32,
+    "CatchRate": 45
   },
   {
     "ID": "13",
@@ -877,7 +909,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 3.2,
+    "CatchRate": 255
   },
   {
     "ID": "14",
@@ -922,7 +956,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 10,
+    "CatchRate": 120
   },
   {
     "ID": "15",
@@ -985,7 +1021,9 @@
           "Condition": "Level 10"
         }
       }
-    }
+    },
+    "Weight": 29.5,
+    "CatchRate": 45
   },
   {
     "ID": "15-M",
@@ -1024,7 +1062,9 @@
           "Condition": "Level 10"
         }
       }
-    }
+    },
+    "Weight": 40.5,
+    "CatchRate": 45
   },
   {
     "ID": "16",
@@ -1092,7 +1132,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 1.8,
+    "CatchRate": 255
   },
   {
     "ID": "17",
@@ -1164,7 +1206,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 30,
+    "CatchRate": 120
   },
   {
     "ID": "18",
@@ -1240,7 +1284,9 @@
           "Condition": "Level 36"
         }
       }
-    }
+    },
+    "Weight": 39.5,
+    "CatchRate": 45
   },
   {
     "ID": "18-M",
@@ -1279,7 +1325,9 @@
           "Condition": "Level 36"
         }
       }
-    }
+    },
+    "Weight": 50.5,
+    "CatchRate": 45
   },
   {
     "ID": "19",
@@ -1337,7 +1385,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 3.5,
+    "CatchRate": 255
   },
   {
     "ID": "19-A",
@@ -1386,7 +1436,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 3.8,
+    "CatchRate": 255
   },
   {
     "ID": "20",
@@ -1461,7 +1513,9 @@
           "Condition": "Level 20"
         }
       }
-    }
+    },
+    "Weight": 18.5,
+    "CatchRate": 127
   },
   {
     "ID": "20-A",
@@ -1508,7 +1562,9 @@
           "Condition": "Level 20, Nighttime"
         }
       }
-    }
+    },
+    "Weight": 25.5,
+    "CatchRate": 127
   },
   {
     "ID": "21",
@@ -1563,7 +1619,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 2,
+    "CatchRate": 255
   },
   {
     "ID": "22",
@@ -1632,7 +1690,9 @@
           "Condition": "Level 20"
         }
       }
-    }
+    },
+    "Weight": 38,
+    "CatchRate": 90
   },
   {
     "ID": "23",
@@ -1680,7 +1740,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 6.9,
+    "CatchRate": 255
   },
   {
     "ID": "24",
@@ -1740,7 +1802,9 @@
           "Condition": "Level 22"
         }
       }
-    }
+    },
+    "Weight": 65,
+    "CatchRate": 90
   },
   {
     "ID": "25",
@@ -1802,7 +1866,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 6,
+    "CatchRate": 190
   },
   {
     "ID": "26",
@@ -1862,7 +1928,9 @@
           "Condition": "Thunder Stone"
         }
       }
-    }
+    },
+    "Weight": 30,
+    "CatchRate": 75
   },
   {
     "ID": "26-A",
@@ -1901,7 +1969,9 @@
           "Condition": "Thunder Stone in Alola"
         }
       }
-    }
+    },
+    "Weight": 21,
+    "CatchRate": 75
   },
   {
     "ID": "27",
@@ -1945,7 +2015,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 12,
+    "CatchRate": 255
   },
   {
     "ID": "27-A",
@@ -1990,7 +2062,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 40,
+    "CatchRate": 255
   },
   {
     "ID": "28",
@@ -2036,7 +2110,9 @@
           "Condition": "Level 22"
         }
       }
-    }
+    },
+    "Weight": 29.5,
+    "CatchRate": 90
   },
   {
     "ID": "28-A",
@@ -2079,7 +2155,9 @@
           "Condition": "Ice Stone"
         }
       }
-    }
+    },
+    "Weight": 55,
+    "CatchRate": 90
   },
   {
     "ID": "29",
@@ -2127,7 +2205,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 7,
+    "CatchRate": 235
   },
   {
     "ID": "30",
@@ -2179,7 +2259,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 20,
+    "CatchRate": 120
   },
   {
     "ID": "31",
@@ -2226,7 +2308,9 @@
           "Condition": "Moon Stone"
         }
       }
-    }
+    },
+    "Weight": 60,
+    "CatchRate": 45
   },
   {
     "ID": "32",
@@ -2274,7 +2358,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 9,
+    "CatchRate": 235
   },
   {
     "ID": "33",
@@ -2326,7 +2412,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 19.5,
+    "CatchRate": 120
   },
   {
     "ID": "34",
@@ -2373,7 +2461,9 @@
           "Condition": "Moon Stone"
         }
       }
-    }
+    },
+    "Weight": 62,
+    "CatchRate": 45
   },
   {
     "ID": "35",
@@ -2425,7 +2515,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 7.5,
+    "CatchRate": 150
   },
   {
     "ID": "36",
@@ -2471,7 +2563,9 @@
           "Condition": "Moon Stone"
         }
       }
-    }
+    },
+    "Weight": 40,
+    "CatchRate": 25
   },
   {
     "ID": "37",
@@ -2525,7 +2619,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 9.9,
+    "CatchRate": 190
   },
   {
     "ID": "37-A",
@@ -2569,7 +2665,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 9.9,
+    "CatchRate": 190
   },
   {
     "ID": "38",
@@ -2632,7 +2730,9 @@
           "Condition": "Fire Stone"
         }
       }
-    }
+    },
+    "Weight": 19.9,
+    "CatchRate": 75
   },
   {
     "ID": "38-A",
@@ -2675,7 +2775,9 @@
           "Condition": "Ice Stone"
         }
       }
-    }
+    },
+    "Weight": 19.9,
+    "CatchRate": 75
   },
   {
     "ID": "39",
@@ -2764,7 +2866,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 5.5,
+    "CatchRate": 170
   },
   {
     "ID": "40",
@@ -2847,7 +2951,9 @@
           "Condition": "Moon Stone"
         }
       }
-    }
+    },
+    "Weight": 12,
+    "CatchRate": 50
   },
   {
     "ID": "41",
@@ -2892,7 +2998,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 7.5,
+    "CatchRate": 255
   },
   {
     "ID": "42",
@@ -2941,7 +3049,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 55,
+    "CatchRate": 90
   },
   {
     "ID": "43",
@@ -2996,7 +3106,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 5.4,
+    "CatchRate": 255
   },
   {
     "ID": "44",
@@ -3059,7 +3171,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 8.6,
+    "CatchRate": 120
   },
   {
     "ID": "45",
@@ -3119,7 +3233,9 @@
           "Condition": "Leaf Stone"
         }
       }
-    }
+    },
+    "Weight": 18.6,
+    "CatchRate": 45
   },
   {
     "ID": "46",
@@ -3168,7 +3284,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 5.4,
+    "CatchRate": 190
   },
   {
     "ID": "47",
@@ -3225,7 +3343,9 @@
           "Condition": "Level 24"
         }
       }
-    }
+    },
+    "Weight": 29.5,
+    "CatchRate": 75
   },
   {
     "ID": "48",
@@ -3284,7 +3404,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 30,
+    "CatchRate": 190
   },
   {
     "ID": "49",
@@ -3345,7 +3467,9 @@
           "Condition": "Level 31"
         }
       }
-    }
+    },
+    "Weight": 12.5,
+    "CatchRate": 75
   },
   {
     "ID": "50",
@@ -3393,7 +3517,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 0.8,
+    "CatchRate": 255
   },
   {
     "ID": "50-A",
@@ -3442,7 +3568,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 1,
+    "CatchRate": 45
   },
   {
     "ID": "51",
@@ -3488,7 +3616,9 @@
           "Condition": "Level 26"
         }
       }
-    }
+    },
+    "Weight": 33.3,
+    "CatchRate": 50
   },
   {
     "ID": "51-A",
@@ -3535,7 +3665,9 @@
           "Condition": "Level 26"
         }
       }
-    }
+    },
+    "Weight": 66.6,
+    "CatchRate": 50
   },
   {
     "ID": "52",
@@ -3593,7 +3725,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 4.2,
+    "CatchRate": 255
   },
   {
     "ID": "52-A",
@@ -3641,7 +3775,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 4.2,
+    "CatchRate": 255
   },
   {
     "ID": "52-G",
@@ -3689,7 +3825,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 7.5,
+    "CatchRate": 255
   },
   {
     "ID": "53",
@@ -3762,7 +3900,9 @@
           "Condition": "Level 28"
         }
       }
-    }
+    },
+    "Weight": 32,
+    "CatchRate": 90
   },
   {
     "ID": "53-A",
@@ -3808,7 +3948,9 @@
           "Condition": "High Friendship"
         }
       }
-    }
+    },
+    "Weight": 33,
+    "CatchRate": 90
   },
   {
     "ID": "54",
@@ -3856,7 +3998,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 19.6,
+    "CatchRate": 190
   },
   {
     "ID": "55",
@@ -3914,7 +4058,9 @@
           "Condition": "Level 33"
         }
       }
-    }
+    },
+    "Weight": 76.6,
+    "CatchRate": 75
   },
   {
     "ID": "56",
@@ -3962,7 +4108,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 28,
+    "CatchRate": 190
   },
   {
     "ID": "57",
@@ -4012,7 +4160,9 @@
           "Condition": "Level 28"
         }
       }
-    }
+    },
+    "Weight": 32,
+    "CatchRate": 75
   },
   {
     "ID": "58",
@@ -4060,7 +4210,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 19,
+    "CatchRate": 190
   },
   {
     "ID": "59",
@@ -4106,7 +4258,9 @@
           "Condition": "Fire Stone"
         }
       }
-    }
+    },
+    "Weight": 155,
+    "CatchRate": 75
   },
   {
     "ID": "60",
@@ -4154,7 +4308,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 12.4,
+    "CatchRate": 255
   },
   {
     "ID": "61",
@@ -4210,7 +4366,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 20,
+    "CatchRate": 120
   },
   {
     "ID": "62",
@@ -4260,7 +4418,9 @@
           "Condition": "Water Stone"
         }
       }
-    }
+    },
+    "Weight": 54,
+    "CatchRate": 45
   },
   {
     "ID": "63",
@@ -4318,7 +4478,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 19.5,
+    "CatchRate": 200
   },
   {
     "ID": "64",
@@ -4404,7 +4566,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 56.5,
+    "CatchRate": 100
   },
   {
     "ID": "65",
@@ -4472,7 +4636,9 @@
           "Condition": "High Friendship"
         }
       }
-    }
+    },
+    "Weight": 48,
+    "CatchRate": 50
   },
   {
     "ID": "65-M",
@@ -4516,7 +4682,9 @@
           "Condition": "High Friendship"
         }
       }
-    }
+    },
+    "Weight": 48,
+    "CatchRate": 50
   },
   {
     "ID": "66",
@@ -4564,7 +4732,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 19.5,
+    "CatchRate": 180
   },
   {
     "ID": "67",
@@ -4640,7 +4810,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 70.5,
+    "CatchRate": 90
   },
   {
     "ID": "68",
@@ -4692,7 +4864,9 @@
           "Condition": "Level 36"
         }
       }
-    }
+    },
+    "Weight": 130,
+    "CatchRate": 45
   },
   {
     "ID": "69",
@@ -4747,7 +4921,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 4,
+    "CatchRate": 255
   },
   {
     "ID": "70",
@@ -4806,7 +4982,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 6.4,
+    "CatchRate": 120
   },
   {
     "ID": "71",
@@ -4859,7 +5037,9 @@
           "Condition": "Leaf Stone"
         }
       }
-    }
+    },
+    "Weight": 15.5,
+    "CatchRate": 45
   },
   {
     "ID": "72",
@@ -4908,7 +5088,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 45.5,
+    "CatchRate": 190
   },
   {
     "ID": "73",
@@ -4955,7 +5137,9 @@
           "Condition": "Level 30"
         }
       }
-    }
+    },
+    "Weight": 55,
+    "CatchRate": 60
   },
   {
     "ID": "74",
@@ -5004,7 +5188,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 20,
+    "CatchRate": 255
   },
   {
     "ID": "74-A",
@@ -5053,7 +5239,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 20.3,
+    "CatchRate": 255
   },
   {
     "ID": "75",
@@ -5130,7 +5318,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 105,
+    "CatchRate": 120
   },
   {
     "ID": "75-A",
@@ -5183,7 +5373,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 110,
+    "CatchRate": 120
   },
   {
     "ID": "76",
@@ -5246,7 +5438,9 @@
           "Condition": "High Friendship"
         }
       }
-    }
+    },
+    "Weight": 300,
+    "CatchRate": 45
   },
   {
     "ID": "76-A",
@@ -5293,7 +5487,9 @@
           "Condition": "Trade"
         }
       }
-    }
+    },
+    "Weight": 316,
+    "CatchRate": 45
   },
   {
     "ID": "77",
@@ -5369,7 +5565,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 30,
+    "CatchRate": 190
   },
   {
     "ID": "77-G",
@@ -5417,7 +5615,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 30,
+    "CatchRate": 190
   },
   {
     "ID": "78",
@@ -5493,7 +5693,9 @@
           "Condition": "Level 35"
         }
       }
-    }
+    },
+    "Weight": 95,
+    "CatchRate": 60
   },
   {
     "ID": "78-G",
@@ -5540,7 +5742,9 @@
           "Condition": "Level 40"
         }
       }
-    }
+    },
+    "Weight": 80,
+    "CatchRate": 60
   },
   {
     "ID": "79",
@@ -5605,7 +5809,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 36,
+    "CatchRate": 190
   },
   {
     "ID": "79-G",
@@ -5657,7 +5863,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 36,
+    "CatchRate": 190
   },
   {
     "ID": "80",
@@ -5710,7 +5918,9 @@
           "Condition": "Level 33"
         }
       }
-    }
+    },
+    "Weight": 78.5,
+    "CatchRate": 75
   },
   {
     "ID": "80-M",
@@ -5749,7 +5959,9 @@
           "Condition": "Level 37"
         }
       }
-    }
+    },
+    "Weight": 120,
+    "CatchRate": 75
   },
   {
     "ID": "80-G",
@@ -5796,7 +6008,9 @@
           "Condition": "Galarica Cuff"
         }
       }
-    }
+    },
+    "Weight": 70.5,
+    "CatchRate": 75
   },
   {
     "ID": "81",
@@ -5845,7 +6059,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 6,
+    "CatchRate": 190
   },
   {
     "ID": "82",
@@ -5898,7 +6114,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 60,
+    "CatchRate": 60
   },
   {
     "ID": "83",
@@ -5979,7 +6197,9 @@
     },
     "Evolution": {
       "Base": {}
-    }
+    },
+    "Weight": 15,
+    "CatchRate": 45
   },
   {
     "ID": "83-G",
@@ -6023,7 +6243,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 42,
+    "CatchRate": 45
   },
   {
     "ID": "84",
@@ -6082,7 +6304,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 39.2,
+    "CatchRate": 190
   },
   {
     "ID": "85",
@@ -6152,7 +6376,9 @@
           "Condition": "Level 31"
         }
       }
-    }
+    },
+    "Weight": 85.2,
+    "CatchRate": 45
   },
   {
     "ID": "86",
@@ -6210,7 +6436,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 90,
+    "CatchRate": 190
   },
   {
     "ID": "87",
@@ -6275,7 +6503,9 @@
           "Condition": "Level 34"
         }
       }
-    }
+    },
+    "Weight": 120,
+    "CatchRate": 75
   },
   {
     "ID": "88",
@@ -6331,7 +6561,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 30,
+    "CatchRate": 190
   },
   {
     "ID": "88-A",
@@ -6380,7 +6612,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 42,
+    "CatchRate": 190
   },
   {
     "ID": "89",
@@ -6445,7 +6679,9 @@
           "Condition": "Level 35"
         }
       }
-    }
+    },
+    "Weight": 30,
+    "CatchRate": 75
   },
   {
     "ID": "89-A",
@@ -6492,7 +6728,9 @@
           "Condition": "Level 38"
         }
       }
-    }
+    },
+    "Weight": 52,
+    "CatchRate": 75
   },
   {
     "ID": "90",
@@ -6550,7 +6788,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 4,
+    "CatchRate": 190
   },
   {
     "ID": "91",
@@ -6607,7 +6847,9 @@
           "Condition": "Water Stone"
         }
       }
-    }
+    },
+    "Weight": 132.5,
+    "CatchRate": 60
   },
   {
     "ID": "92",
@@ -6648,7 +6890,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 0.1,
+    "CatchRate": 190
   },
   {
     "ID": "93",
@@ -6717,7 +6961,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 0.1,
+    "CatchRate": 90
   },
   {
     "ID": "94",
@@ -6780,7 +7026,9 @@
           "Condition": "High Friendship"
         }
       }
-    }
+    },
+    "Weight": 40.5,
+    "CatchRate": 45
   },
   {
     "ID": "94-M",
@@ -6825,7 +7073,9 @@
           "Condition": "High Friendship"
         }
       }
-    }
+    },
+    "Weight": 40.5,
+    "CatchRate": 45
   },
   {
     "ID": "95",
@@ -6878,7 +7128,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 210,
+    "CatchRate": 45
   },
   {
     "ID": "96",
@@ -6926,7 +7178,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 32.4,
+    "CatchRate": 190
   },
   {
     "ID": "97",
@@ -6976,7 +7230,9 @@
           "Condition": "Level 26"
         }
       }
-    }
+    },
+    "Weight": 75.6,
+    "CatchRate": 75
   },
   {
     "ID": "98",
@@ -7024,7 +7280,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 6.5,
+    "CatchRate": 225
   },
   {
     "ID": "99",
@@ -7073,7 +7331,9 @@
           "Condition": "Level 28"
         }
       }
-    }
+    },
+    "Weight": 60,
+    "CatchRate": 60
   },
   {
     "ID": "100",
@@ -7121,7 +7381,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 10.4,
+    "CatchRate": 190
   },
   {
     "ID": "101",
@@ -7170,7 +7432,9 @@
           "Condition": "Level 30"
         }
       }
-    }
+    },
+    "Weight": 66.6,
+    "CatchRate": 60
   },
   {
     "ID": "102",
@@ -7219,7 +7483,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 2.5,
+    "CatchRate": 90
   },
   {
     "ID": "103",
@@ -7265,7 +7531,9 @@
           "Condition": "Leaf Stone"
         }
       }
-    }
+    },
+    "Weight": 120,
+    "CatchRate": 45
   },
   {
     "ID": "103-A",
@@ -7308,7 +7576,9 @@
           "Condition": "Leaf Stone in Alola"
         }
       }
-    }
+    },
+    "Weight": 415.6,
+    "CatchRate": 45
   },
   {
     "ID": "104",
@@ -7360,7 +7630,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 6.5,
+    "CatchRate": 190
   },
   {
     "ID": "105",
@@ -7410,7 +7682,9 @@
           "Condition": "Level 28"
         }
       }
-    }
+    },
+    "Weight": 45,
+    "CatchRate": 75
   },
   {
     "ID": "105-A",
@@ -7457,7 +7731,9 @@
           "Condition": "Level 28, Nighttime in Alola"
         }
       }
-    }
+    },
+    "Weight": 34,
+    "CatchRate": 75
   },
   {
     "ID": "106",
@@ -7516,7 +7792,9 @@
           "Condition": "Level 20, Attack > Defense"
         }
       }
-    }
+    },
+    "Weight": 49.8,
+    "CatchRate": 45
   },
   {
     "ID": "107",
@@ -7575,7 +7853,9 @@
           "Condition": "Level 20, Attack < Defense"
         }
       }
-    }
+    },
+    "Weight": 50.2,
+    "CatchRate": 45
   },
   {
     "ID": "108",
@@ -7631,7 +7911,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 65.5,
+    "CatchRate": 45
   },
   {
     "ID": "109",
@@ -7683,7 +7965,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 1,
+    "CatchRate": 190
   },
   {
     "ID": "110",
@@ -7732,7 +8016,9 @@
           "Condition": "Level 35"
         }
       }
-    }
+    },
+    "Weight": 9.5,
+    "CatchRate": 60
   },
   {
     "ID": "110-G",
@@ -7779,7 +8065,9 @@
           "Condition": "Level 35 in Galar"
         }
       }
-    }
+    },
+    "Weight": 16,
+    "CatchRate": 60
   },
   {
     "ID": "111",
@@ -7846,7 +8134,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 115,
+    "CatchRate": 120
   },
   {
     "ID": "112",
@@ -7921,7 +8211,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 120,
+    "CatchRate": 60
   },
   {
     "ID": "113",
@@ -7983,7 +8275,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 34.6,
+    "CatchRate": 30
   },
   {
     "ID": "114",
@@ -8039,7 +8333,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 35,
+    "CatchRate": 45
   },
   {
     "ID": "115",
@@ -8090,7 +8386,9 @@
     },
     "Evolution": {
       "Base": {}
-    }
+    },
+    "Weight": 80,
+    "CatchRate": 45
   },
   {
     "ID": "115-M",
@@ -8123,7 +8421,9 @@
     },
     "Evolution": {
       "Base": {}
-    }
+    },
+    "Weight": 100,
+    "CatchRate": 45
   },
   {
     "ID": "116",
@@ -8171,7 +8471,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 8,
+    "CatchRate": 225
   },
   {
     "ID": "117",
@@ -8223,7 +8525,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 25,
+    "CatchRate": 75
   },
   {
     "ID": "118",
@@ -8276,7 +8580,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 15,
+    "CatchRate": 225
   },
   {
     "ID": "119",
@@ -8333,7 +8639,9 @@
           "Condition": "Level 33"
         }
       }
-    }
+    },
+    "Weight": 39,
+    "CatchRate": 60
   },
   {
     "ID": "120",
@@ -8381,7 +8689,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 34.5,
+    "CatchRate": 225
   },
   {
     "ID": "121",
@@ -8428,7 +8738,9 @@
           "Condition": "Water Stone"
         }
       }
-    }
+    },
+    "Weight": 80,
+    "CatchRate": 60
   },
   {
     "ID": "122",
@@ -8499,7 +8811,9 @@
           "Condition": "Learn Mimic @ 18"
         }
       }
-    }
+    },
+    "Weight": 54.5,
+    "CatchRate": 45
   },
   {
     "ID": "122-G",
@@ -8548,7 +8862,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 56.8,
+    "CatchRate": 45
   },
   {
     "ID": "123",
@@ -8607,7 +8923,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 56,
+    "CatchRate": 45
   },
   {
     "ID": "124",
@@ -8672,7 +8990,9 @@
           "Condition": "Level 30"
         }
       }
-    }
+    },
+    "Weight": 40.6,
+    "CatchRate": 45
   },
   {
     "ID": "125",
@@ -8730,7 +9050,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 30,
+    "CatchRate": 45
   },
   {
     "ID": "126",
@@ -8788,7 +9110,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 44.5,
+    "CatchRate": 45
   },
   {
     "ID": "127",
@@ -8829,7 +9153,9 @@
     },
     "Evolution": {
       "Base": {}
-    }
+    },
+    "Weight": 55,
+    "CatchRate": 45
   },
   {
     "ID": "127-M",
@@ -8863,7 +9189,9 @@
     },
     "Evolution": {
       "Base": {}
-    }
+    },
+    "Weight": 59,
+    "CatchRate": 45
   },
   {
     "ID": "128",
@@ -8907,7 +9235,9 @@
     },
     "Evolution": {
       "Base": {}
-    }
+    },
+    "Weight": 88.4,
+    "CatchRate": 45
   },
   {
     "ID": "129",
@@ -8951,7 +9281,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 10,
+    "CatchRate": 255
   },
   {
     "ID": "130",
@@ -8994,7 +9326,9 @@
           "Condition": "Level 20"
         }
       }
-    }
+    },
+    "Weight": 235,
+    "CatchRate": 45
   },
   {
     "ID": "130-M",
@@ -9033,7 +9367,9 @@
           "Condition": "Level 20"
         }
       }
-    }
+    },
+    "Weight": 305,
+    "CatchRate": 45
   },
   {
     "ID": "131",
@@ -9078,7 +9414,9 @@
     },
     "Evolution": {
       "Base": {}
-    }
+    },
+    "Weight": 220,
+    "CatchRate": 45
   },
   {
     "ID": "132",
@@ -9115,7 +9453,9 @@
     },
     "Evolution": {
       "Base": {}
-    }
+    },
+    "Weight": 4,
+    "CatchRate": 35
   },
   {
     "ID": "133",
@@ -9263,7 +9603,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 6.5,
+    "CatchRate": 45
   },
   {
     "ID": "134",
@@ -9305,7 +9647,9 @@
           "Condition": "Water Stone"
         }
       }
-    }
+    },
+    "Weight": 29,
+    "CatchRate": 45
   },
   {
     "ID": "135",
@@ -9347,7 +9691,9 @@
           "Condition": "Thunder Stone"
         }
       }
-    }
+    },
+    "Weight": 24.5,
+    "CatchRate": 45
   },
   {
     "ID": "136",
@@ -9401,7 +9747,9 @@
           "Condition": "Fire Stone"
         }
       }
-    }
+    },
+    "Weight": 25,
+    "CatchRate": 45
   },
   {
     "ID": "137",
@@ -9449,7 +9797,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 36.5,
+    "CatchRate": 45
   },
   {
     "ID": "138",
@@ -9506,7 +9856,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 7.5,
+    "CatchRate": 45
   },
   {
     "ID": "139",
@@ -9559,7 +9911,9 @@
           "Condition": "Level 30"
         }
       }
-    }
+    },
+    "Weight": 35,
+    "CatchRate": 45
   },
   {
     "ID": "140",
@@ -9616,7 +9970,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 11.5,
+    "CatchRate": 45
   },
   {
     "ID": "141",
@@ -9669,7 +10025,9 @@
           "Condition": "Level 30"
         }
       }
-    }
+    },
+    "Weight": 40.5,
+    "CatchRate": 45
   },
   {
     "ID": "142",
@@ -9711,7 +10069,9 @@
     },
     "Evolution": {
       "Base": {}
-    }
+    },
+    "Weight": 59,
+    "CatchRate": 45
   },
   {
     "ID": "142-M",
@@ -9745,7 +10105,9 @@
     },
     "Evolution": {
       "Base": {}
-    }
+    },
+    "Weight": 79,
+    "CatchRate": 45
   },
   {
     "ID": "143",
@@ -9801,7 +10163,9 @@
           "Condition": "High Friendship"
         }
       }
-    }
+    },
+    "Weight": 460,
+    "CatchRate": 25
   },
   {
     "ID": "144",
@@ -9853,7 +10217,9 @@
     },
     "Evolution": {
       "Base": {}
-    }
+    },
+    "Weight": 55.4,
+    "CatchRate": 3
   },
   {
     "ID": "144-G",
@@ -9887,7 +10253,9 @@
     },
     "Evolution": {
       "Base": {}
-    }
+    },
+    "Weight": 50.9,
+    "CatchRate": 3
   },
   {
     "ID": "145",
@@ -9935,7 +10303,9 @@
     },
     "Evolution": {
       "Base": {}
-    }
+    },
+    "Weight": 52.6,
+    "CatchRate": 3
   },
   {
     "ID": "145-G",
@@ -9969,7 +10339,9 @@
     },
     "Evolution": {
       "Base": {}
-    }
+    },
+    "Weight": 58.2,
+    "CatchRate": 3
   },
   {
     "ID": "146",
@@ -10017,7 +10389,9 @@
     },
     "Evolution": {
       "Base": {}
-    }
+    },
+    "Weight": 60,
+    "CatchRate": 3
   },
   {
     "ID": "146-G",
@@ -10051,7 +10425,9 @@
     },
     "Evolution": {
       "Base": {}
-    }
+    },
+    "Weight": 66,
+    "CatchRate": 3
   },
   {
     "ID": "147",
@@ -10105,7 +10481,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 3.3,
+    "CatchRate": 45
   },
   {
     "ID": "148",
@@ -10163,7 +10541,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 16.5,
+    "CatchRate": 45
   },
   {
     "ID": "149",
@@ -10216,7 +10596,9 @@
           "Condition": "Level 55"
         }
       }
-    }
+    },
+    "Weight": 210,
+    "CatchRate": 45
   },
   {
     "ID": "150",
@@ -10253,7 +10635,9 @@
     },
     "Evolution": {
       "Base": {}
-    }
+    },
+    "Weight": 122,
+    "CatchRate": 3
   },
   {
     "ID": "150-MX",
@@ -10287,7 +10671,9 @@
     },
     "Evolution": {
       "Base": {}
-    }
+    },
+    "Weight": 127,
+    "CatchRate": 3
   },
   {
     "ID": "150-MY",
@@ -10320,7 +10706,9 @@
     },
     "Evolution": {
       "Base": {}
-    }
+    },
+    "Weight": 33,
+    "CatchRate": 3
   },
   {
     "ID": "151",
@@ -10353,7 +10741,9 @@
     },
     "Evolution": {
       "Base": {}
-    }
+    },
+    "Weight": 4,
+    "CatchRate": 45
   },
   {
     "ID": "152",
@@ -10417,7 +10807,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 6.4,
+    "CatchRate": 45
   },
   {
     "ID": "153",
@@ -10485,7 +10877,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 15.8,
+    "CatchRate": 45
   },
   {
     "ID": "154",
@@ -10557,7 +10951,9 @@
           "Condition": "Level 32"
         }
       }
-    }
+    },
+    "Weight": 100.5,
+    "CatchRate": 45
   },
   {
     "ID": "155",
@@ -10611,7 +11007,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 7.9,
+    "CatchRate": 45
   },
   {
     "ID": "156",
@@ -10669,7 +11067,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 19,
+    "CatchRate": 45
   },
   {
     "ID": "157",
@@ -10728,7 +11128,9 @@
           "Condition": "Level 36"
         }
       }
-    }
+    },
+    "Weight": 79.5,
+    "CatchRate": 45
   },
   {
     "ID": "158",
@@ -10782,7 +11184,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 9.5,
+    "CatchRate": 45
   },
   {
     "ID": "159",
@@ -10840,7 +11244,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 25,
+    "CatchRate": 45
   },
   {
     "ID": "160",
@@ -10899,7 +11305,9 @@
           "Condition": "Level 30"
         }
       }
-    }
+    },
+    "Weight": 88.8,
+    "CatchRate": 45
   },
   {
     "ID": "161",
@@ -10963,7 +11371,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 6,
+    "CatchRate": 255
   },
   {
     "ID": "162",
@@ -11037,7 +11447,9 @@
           "Condition": "Level 15"
         }
       }
-    }
+    },
+    "Weight": 32.5,
+    "CatchRate": 90
   },
   {
     "ID": "163",
@@ -11096,7 +11508,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 21.2,
+    "CatchRate": 255
   },
   {
     "ID": "164",
@@ -11168,7 +11582,9 @@
           "Condition": "Level 20"
         }
       }
-    }
+    },
+    "Weight": 40.8,
+    "CatchRate": 90
   },
   {
     "ID": "165",
@@ -11245,7 +11661,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 10.8,
+    "CatchRate": 255
   },
   {
     "ID": "166",
@@ -11322,7 +11740,9 @@
           "Condition": "Level 18"
         }
       }
-    }
+    },
+    "Weight": 35.6,
+    "CatchRate": 90
   },
   {
     "ID": "167",
@@ -11375,7 +11795,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 8.5,
+    "CatchRate": 255
   },
   {
     "ID": "168",
@@ -11433,7 +11855,9 @@
           "Condition": "Level 22"
         }
       }
-    }
+    },
+    "Weight": 33.5,
+    "CatchRate": 90
   },
   {
     "ID": "169",
@@ -11476,7 +11900,9 @@
           "Condition": "High Friendship"
         }
       }
-    }
+    },
+    "Weight": 75,
+    "CatchRate": 90
   },
   {
     "ID": "170",
@@ -11535,7 +11961,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 12,
+    "CatchRate": 190
   },
   {
     "ID": "171",
@@ -11592,7 +12020,9 @@
           "Condition": "Level 27"
         }
       }
-    }
+    },
+    "Weight": 22.5,
+    "CatchRate": 75
   },
   {
     "ID": "172",
@@ -11646,7 +12076,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 2,
+    "CatchRate": 190
   },
   {
     "ID": "173",
@@ -11694,7 +12126,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 3,
+    "CatchRate": 150
   },
   {
     "ID": "174",
@@ -11753,7 +12187,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 1,
+    "CatchRate": 170
   },
   {
     "ID": "175",
@@ -11811,7 +12247,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 1.5,
+    "CatchRate": 190
   },
   {
     "ID": "176",
@@ -11874,7 +12312,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 3.2,
+    "CatchRate": 75
   },
   {
     "ID": "177",
@@ -11923,7 +12363,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 2,
+    "CatchRate": 190
   },
   {
     "ID": "178",
@@ -11974,7 +12416,9 @@
           "Condition": "Level 25"
         }
       }
-    }
+    },
+    "Weight": 15,
+    "CatchRate": 75
   },
   {
     "ID": "179",
@@ -12028,7 +12472,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 7.8,
+    "CatchRate": 235
   },
   {
     "ID": "180",
@@ -12086,7 +12532,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 13.3,
+    "CatchRate": 120
   },
   {
     "ID": "181",
@@ -12146,7 +12594,9 @@
           "Condition": "Level 30"
         }
       }
-    }
+    },
+    "Weight": 61.5,
+    "CatchRate": 45
   },
   {
     "ID": "181-M",
@@ -12185,7 +12635,9 @@
           "Condition": "Level 30"
         }
       }
-    }
+    },
+    "Weight": 61.5,
+    "CatchRate": 45
   },
   {
     "ID": "182",
@@ -12240,7 +12692,9 @@
           "Condition": "Sun Stone"
         }
       }
-    }
+    },
+    "Weight": 5.8,
+    "CatchRate": 45
   },
   {
     "ID": "183",
@@ -12306,7 +12760,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 8.5,
+    "CatchRate": 190
   },
   {
     "ID": "184",
@@ -12367,7 +12823,9 @@
           "Condition": "Level 18"
         }
       }
-    }
+    },
+    "Weight": 28.5,
+    "CatchRate": 75
   },
   {
     "ID": "185",
@@ -12439,7 +12897,9 @@
           "Condition": "Learn Mimic @ 17"
         }
       }
-    }
+    },
+    "Weight": 38,
+    "CatchRate": 65
   },
   {
     "ID": "186",
@@ -12495,7 +12955,9 @@
           "Condition": "King's Rock"
         }
       }
-    }
+    },
+    "Weight": 33.9,
+    "CatchRate": 45
   },
   {
     "ID": "187",
@@ -12547,7 +13009,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 0.5,
+    "CatchRate": 255
   },
   {
     "ID": "188",
@@ -12603,7 +13067,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 1,
+    "CatchRate": 120
   },
   {
     "ID": "189",
@@ -12657,7 +13123,9 @@
           "Condition": "Level 27"
         }
       }
-    }
+    },
+    "Weight": 3,
+    "CatchRate": 45
   },
   {
     "ID": "190",
@@ -12705,7 +13173,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 11.5,
+    "CatchRate": 45
   },
   {
     "ID": "191",
@@ -12753,7 +13223,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 1.8,
+    "CatchRate": 235
   },
   {
     "ID": "192",
@@ -12810,7 +13282,9 @@
           "Condition": "Sun Stone"
         }
       }
-    }
+    },
+    "Weight": 8.5,
+    "CatchRate": 120
   },
   {
     "ID": "193",
@@ -12859,7 +13333,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 38,
+    "CatchRate": 75
   },
   {
     "ID": "194",
@@ -12922,7 +13398,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 8.5,
+    "CatchRate": 255
   },
   {
     "ID": "195",
@@ -12987,7 +13465,9 @@
           "Condition": "Level 20"
         }
       }
-    }
+    },
+    "Weight": 75,
+    "CatchRate": 90
   },
   {
     "ID": "196",
@@ -13035,7 +13515,9 @@
           "Condition": "Sun Stone"
         }
       }
-    }
+    },
+    "Weight": 26.5,
+    "CatchRate": 45
   },
   {
     "ID": "197",
@@ -13093,7 +13575,9 @@
           "Condition": "Moon Stone"
         }
       }
-    }
+    },
+    "Weight": 27,
+    "CatchRate": 45
   },
   {
     "ID": "198",
@@ -13152,7 +13636,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 2.1,
+    "CatchRate": 30
   },
   {
     "ID": "199",
@@ -13199,7 +13685,9 @@
           "Condition": "King's Rock"
         }
       }
-    }
+    },
+    "Weight": 79.5,
+    "CatchRate": 70
   },
   {
     "ID": "199-G",
@@ -13246,7 +13734,9 @@
           "Condition": "Galarica Wreath"
         }
       }
-    }
+    },
+    "Weight": 79.5,
+    "CatchRate": 70
   },
   {
     "ID": "200",
@@ -13294,7 +13784,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 1,
+    "CatchRate": 45
   },
   {
     "ID": "201",
@@ -13335,7 +13827,9 @@
     },
     "Evolution": {
       "Base": {}
-    }
+    },
+    "Weight": 5,
+    "CatchRate": 225
   },
   {
     "ID": "202",
@@ -13377,7 +13871,9 @@
           "Condition": "Level 15"
         }
       }
-    }
+    },
+    "Weight": 28.5,
+    "CatchRate": 45
   },
   {
     "ID": "203",
@@ -13434,7 +13930,9 @@
     },
     "Evolution": {
       "Base": {}
-    }
+    },
+    "Weight": 41.5,
+    "CatchRate": 60
   },
   {
     "ID": "204",
@@ -13478,7 +13976,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 7.2,
+    "CatchRate": 190
   },
   {
     "ID": "205",
@@ -13526,7 +14026,9 @@
           "Condition": "Level 31"
         }
       }
-    }
+    },
+    "Weight": 125.8,
+    "CatchRate": 75
   },
   {
     "ID": "206",
@@ -13590,7 +14092,9 @@
     },
     "Evolution": {
       "Base": {}
-    }
+    },
+    "Weight": 14,
+    "CatchRate": 190
   },
   {
     "ID": "207",
@@ -13649,7 +14153,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 64.8,
+    "CatchRate": 60
   },
   {
     "ID": "208",
@@ -13715,7 +14221,9 @@
           "Condition": "Metal Coat"
         }
       }
-    }
+    },
+    "Weight": 400,
+    "CatchRate": 25
   },
   {
     "ID": "208-M",
@@ -13754,7 +14262,9 @@
           "Condition": "Metal Coat"
         }
       }
-    }
+    },
+    "Weight": 740,
+    "CatchRate": 25
   },
   {
     "ID": "209",
@@ -13802,7 +14312,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 7.8,
+    "CatchRate": 190
   },
   {
     "ID": "210",
@@ -13856,7 +14368,9 @@
           "Condition": "Level 23"
         }
       }
-    }
+    },
+    "Weight": 48.7,
+    "CatchRate": 75
   },
   {
     "ID": "211",
@@ -13917,7 +14431,9 @@
     },
     "Evolution": {
       "Base": {}
-    }
+    },
+    "Weight": 3.9,
+    "CatchRate": 45
   },
   {
     "ID": "212",
@@ -13974,7 +14490,9 @@
           "Condition": "Metal Coat"
         }
       }
-    }
+    },
+    "Weight": 118,
+    "CatchRate": 25
   },
   {
     "ID": "212-M",
@@ -14013,7 +14531,9 @@
           "Condition": "Metal Coat"
         }
       }
-    }
+    },
+    "Weight": 125,
+    "CatchRate": 25
   },
   {
     "ID": "213",
@@ -14055,7 +14575,9 @@
     },
     "Evolution": {
       "Base": {}
-    }
+    },
+    "Weight": 20.5,
+    "CatchRate": 190
   },
   {
     "ID": "214",
@@ -14107,7 +14629,9 @@
     },
     "Evolution": {
       "Base": {}
-    }
+    },
+    "Weight": 54,
+    "CatchRate": 45
   },
   {
     "ID": "214-M",
@@ -14141,7 +14665,9 @@
     },
     "Evolution": {
       "Base": {}
-    }
+    },
+    "Weight": 62.5,
+    "CatchRate": 45
   },
   {
     "ID": "215",
@@ -14210,7 +14736,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 28,
+    "CatchRate": 60
   },
   {
     "ID": "216",
@@ -14258,7 +14786,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 8.8,
+    "CatchRate": 120
   },
   {
     "ID": "217",
@@ -14307,7 +14837,9 @@
           "Condition": "Level 30"
         }
       }
-    }
+    },
+    "Weight": 125.8,
+    "CatchRate": 60
   },
   {
     "ID": "218",
@@ -14370,7 +14902,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 35,
+    "CatchRate": 190
   },
   {
     "ID": "219",
@@ -14448,7 +14982,9 @@
           "Condition": "Level 32"
         }
       }
-    }
+    },
+    "Weight": 55,
+    "CatchRate": 75
   },
   {
     "ID": "220",
@@ -14507,7 +15043,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 6.5,
+    "CatchRate": 225
   },
   {
     "ID": "221",
@@ -14570,7 +15108,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 55.8,
+    "CatchRate": 75
   },
   {
     "ID": "222",
@@ -14632,7 +15172,9 @@
     },
     "Evolution": {
       "Base": {}
-    }
+    },
+    "Weight": 5,
+    "CatchRate": 60
   },
   {
     "ID": "222-G",
@@ -14676,7 +15218,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 0.5,
+    "CatchRate": 60
   },
   {
     "ID": "223",
@@ -14724,7 +15268,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 12,
+    "CatchRate": 190
   },
   {
     "ID": "224",
@@ -14777,7 +15323,9 @@
           "Condition": "Level 25"
         }
       }
-    }
+    },
+    "Weight": 28.5,
+    "CatchRate": 75
   },
   {
     "ID": "225",
@@ -14850,7 +15398,9 @@
     },
     "Evolution": {
       "Base": {}
-    }
+    },
+    "Weight": 16,
+    "CatchRate": 45
   },
   {
     "ID": "226",
@@ -14897,7 +15447,9 @@
           "Condition": "Remoraid in Party"
         }
       }
-    }
+    },
+    "Weight": 220,
+    "CatchRate": 25
   },
   {
     "ID": "227",
@@ -14939,7 +15491,9 @@
     },
     "Evolution": {
       "Base": {}
-    }
+    },
+    "Weight": 50.5,
+    "CatchRate": 25
   },
   {
     "ID": "228",
@@ -14998,7 +15552,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 10.8,
+    "CatchRate": 120
   },
   {
     "ID": "229",
@@ -15055,7 +15611,9 @@
           "Condition": "Level 24"
         }
       }
-    }
+    },
+    "Weight": 35,
+    "CatchRate": 45
   },
   {
     "ID": "229-M",
@@ -15094,7 +15652,9 @@
           "Condition": "Level 24"
         }
       }
-    }
+    },
+    "Weight": 49.5,
+    "CatchRate": 45
   },
   {
     "ID": "230",
@@ -15141,7 +15701,9 @@
           "Condition": "Dragon Scale"
         }
       }
-    }
+    },
+    "Weight": 152,
+    "CatchRate": 45
   },
   {
     "ID": "231",
@@ -15195,7 +15757,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 33.5,
+    "CatchRate": 120
   },
   {
     "ID": "232",
@@ -15251,7 +15815,9 @@
           "Condition": "Level 25"
         }
       }
-    }
+    },
+    "Weight": 120,
+    "CatchRate": 60
   },
   {
     "ID": "233",
@@ -15303,7 +15869,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 32.5,
+    "CatchRate": 45
   },
   {
     "ID": "234",
@@ -15348,7 +15916,9 @@
     },
     "Evolution": {
       "Base": {}
-    }
+    },
+    "Weight": 71.2,
+    "CatchRate": 45
   },
   {
     "ID": "235",
@@ -15399,7 +15969,9 @@
     },
     "Evolution": {
       "Base": {}
-    }
+    },
+    "Weight": 58,
+    "CatchRate": 45
   },
   {
     "ID": "236",
@@ -15465,7 +16037,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 21,
+    "CatchRate": 75
   },
   {
     "ID": "237",
@@ -15524,7 +16098,9 @@
           "Condition": "Level 20, Attack = Defense"
         }
       }
-    }
+    },
+    "Weight": 48,
+    "CatchRate": 45
   },
   {
     "ID": "238",
@@ -15586,7 +16162,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 6,
+    "CatchRate": 45
   },
   {
     "ID": "239",
@@ -15640,7 +16218,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 23.5,
+    "CatchRate": 45
   },
   {
     "ID": "240",
@@ -15694,7 +16274,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 21.4,
+    "CatchRate": 45
   },
   {
     "ID": "241",
@@ -15738,7 +16320,9 @@
     },
     "Evolution": {
       "Base": {}
-    }
+    },
+    "Weight": 75.5,
+    "CatchRate": 45
   },
   {
     "ID": "242",
@@ -15794,7 +16378,9 @@
           "Condition": "High Friendship"
         }
       }
-    }
+    },
+    "Weight": 46.8,
+    "CatchRate": 30
   },
   {
     "ID": "243",
@@ -15841,7 +16427,9 @@
     },
     "Evolution": {
       "Base": {}
-    }
+    },
+    "Weight": 178,
+    "CatchRate": 3
   },
   {
     "ID": "244",
@@ -15888,7 +16476,9 @@
     },
     "Evolution": {
       "Base": {}
-    }
+    },
+    "Weight": 198,
+    "CatchRate": 3
   },
   {
     "ID": "245",
@@ -15935,7 +16525,9 @@
     },
     "Evolution": {
       "Base": {}
-    }
+    },
+    "Weight": 187,
+    "CatchRate": 3
   },
   {
     "ID": "246",
@@ -15980,7 +16572,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 72,
+    "CatchRate": 45
   },
   {
     "ID": "247",
@@ -16035,7 +16629,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 152,
+    "CatchRate": 45
   },
   {
     "ID": "248",
@@ -16078,7 +16674,9 @@
           "Condition": "Level 55"
         }
       }
-    }
+    },
+    "Weight": 202,
+    "CatchRate": 45
   },
   {
     "ID": "248-M",
@@ -16117,7 +16715,9 @@
           "Condition": "Level 55"
         }
       }
-    }
+    },
+    "Weight": 255,
+    "CatchRate": 45
   },
   {
     "ID": "249",
@@ -16155,7 +16755,9 @@
     },
     "Evolution": {
       "Base": {}
-    }
+    },
+    "Weight": 216,
+    "CatchRate": 3
   },
   {
     "ID": "250",
@@ -16193,7 +16795,9 @@
     },
     "Evolution": {
       "Base": {}
-    }
+    },
+    "Weight": 199,
+    "CatchRate": 3
   },
   {
     "ID": "251",
@@ -16227,7 +16831,9 @@
     },
     "Evolution": {
       "Base": {}
-    }
+    },
+    "Weight": 5,
+    "CatchRate": 45
   },
   {
     "ID": "252",
@@ -16285,7 +16891,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 5,
+    "CatchRate": 45
   },
   {
     "ID": "253",
@@ -16347,7 +16955,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 21.6,
+    "CatchRate": 45
   },
   {
     "ID": "254",
@@ -16416,7 +17026,9 @@
           "Condition": "Level 36"
         }
       }
-    }
+    },
+    "Weight": 52.2,
+    "CatchRate": 45
   },
   {
     "ID": "254-M",
@@ -16455,7 +17067,9 @@
           "Condition": "Level 36"
         }
       }
-    }
+    },
+    "Weight": 55.2,
+    "CatchRate": 45
   },
   {
     "ID": "255",
@@ -16509,7 +17123,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 2.5,
+    "CatchRate": 45
   },
   {
     "ID": "256",
@@ -16568,7 +17184,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 19.5,
+    "CatchRate": 45
   },
   {
     "ID": "257",
@@ -16624,7 +17242,9 @@
           "Condition": "Level 36"
         }
       }
-    }
+    },
+    "Weight": 52,
+    "CatchRate": 45
   },
   {
     "ID": "257-M",
@@ -16663,7 +17283,9 @@
           "Condition": "Level 36"
         }
       }
-    }
+    },
+    "Weight": 52,
+    "CatchRate": 45
   },
   {
     "ID": "258",
@@ -16727,7 +17349,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 7.6,
+    "CatchRate": 45
   },
   {
     "ID": "259",
@@ -16796,7 +17420,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 28,
+    "CatchRate": 45
   },
   {
     "ID": "260",
@@ -16859,7 +17485,9 @@
           "Condition": "Level 36"
         }
       }
-    }
+    },
+    "Weight": 81.9,
+    "CatchRate": 45
   },
   {
     "ID": "260-M",
@@ -16898,7 +17526,9 @@
           "Condition": "Level 36"
         }
       }
-    }
+    },
+    "Weight": 102,
+    "CatchRate": 45
   },
   {
     "ID": "261",
@@ -16950,7 +17580,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 13.6,
+    "CatchRate": 255
   },
   {
     "ID": "262",
@@ -17004,7 +17636,9 @@
           "Condition": "Level 18"
         }
       }
-    }
+    },
+    "Weight": 37,
+    "CatchRate": 127
   },
   {
     "ID": "263",
@@ -17055,7 +17689,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 17.5,
+    "CatchRate": 255
   },
   {
     "ID": "263-G",
@@ -17104,7 +17740,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 17.5,
+    "CatchRate": 255
   },
   {
     "ID": "264",
@@ -17161,7 +17799,9 @@
           "Condition": "Level 20"
         }
       }
-    }
+    },
+    "Weight": 32.5,
+    "CatchRate": 90
   },
   {
     "ID": "264-G",
@@ -17214,7 +17854,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 32.5,
+    "CatchRate": 90
   },
   {
     "ID": "265",
@@ -17272,7 +17914,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 3.6,
+    "CatchRate": 255
   },
   {
     "ID": "266",
@@ -17316,7 +17960,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 10,
+    "CatchRate": 120
   },
   {
     "ID": "267",
@@ -17382,7 +18028,9 @@
           "Condition": "Level 10"
         }
       }
-    }
+    },
+    "Weight": 28.4,
+    "CatchRate": 45
   },
   {
     "ID": "268",
@@ -17426,7 +18074,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 11.5,
+    "CatchRate": 120
   },
   {
     "ID": "269",
@@ -17489,7 +18139,9 @@
           "Condition": "Level 10"
         }
       }
-    }
+    },
+    "Weight": 31.6,
+    "CatchRate": 45
   },
   {
     "ID": "270",
@@ -17538,7 +18190,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 2.6,
+    "CatchRate": 255
   },
   {
     "ID": "271",
@@ -17591,7 +18245,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 32.5,
+    "CatchRate": 120
   },
   {
     "ID": "272",
@@ -17642,7 +18298,9 @@
           "Condition": "Water Stone"
         }
       }
-    }
+    },
+    "Weight": 55,
+    "CatchRate": 45
   },
   {
     "ID": "273",
@@ -17690,7 +18348,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 4,
+    "CatchRate": 255
   },
   {
     "ID": "274",
@@ -17743,7 +18403,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 28,
+    "CatchRate": 120
   },
   {
     "ID": "275",
@@ -17794,7 +18456,9 @@
           "Condition": "Leaf Stone"
         }
       }
-    }
+    },
+    "Weight": 59.6,
+    "CatchRate": 45
   },
   {
     "ID": "276",
@@ -17849,7 +18513,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 2.3,
+    "CatchRate": 200
   },
   {
     "ID": "277",
@@ -17910,7 +18576,9 @@
           "Condition": "Level 22"
         }
       }
-    }
+    },
+    "Weight": 19.8,
+    "CatchRate": 45
   },
   {
     "ID": "278",
@@ -17969,7 +18637,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 9.5,
+    "CatchRate": 190
   },
   {
     "ID": "279",
@@ -18030,7 +18700,9 @@
           "Condition": "Level 25"
         }
       }
-    }
+    },
+    "Weight": 28,
+    "CatchRate": 45
   },
   {
     "ID": "280",
@@ -18083,7 +18755,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 6.6,
+    "CatchRate": 235
   },
   {
     "ID": "281",
@@ -18140,7 +18814,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 20.2,
+    "CatchRate": 120
   },
   {
     "ID": "282",
@@ -18187,7 +18863,9 @@
           "Condition": "Level 30"
         }
       }
-    }
+    },
+    "Weight": 48.4,
+    "CatchRate": 45
   },
   {
     "ID": "282-M",
@@ -18226,7 +18904,9 @@
           "Condition": "Level 30"
         }
       }
-    }
+    },
+    "Weight": 48.4,
+    "CatchRate": 45
   },
   {
     "ID": "283",
@@ -18276,7 +18956,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 1.7,
+    "CatchRate": 200
   },
   {
     "ID": "284",
@@ -18338,7 +19020,9 @@
           "Condition": "Level 22"
         }
       }
-    }
+    },
+    "Weight": 3.6,
+    "CatchRate": 75
   },
   {
     "ID": "285",
@@ -18396,7 +19080,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 4.5,
+    "CatchRate": 255
   },
   {
     "ID": "286",
@@ -18453,7 +19139,9 @@
           "Condition": "Level 23"
         }
       }
-    }
+    },
+    "Weight": 39.2,
+    "CatchRate": 90
   },
   {
     "ID": "287",
@@ -18493,7 +19181,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 24,
+    "CatchRate": 255
   },
   {
     "ID": "288",
@@ -18537,7 +19227,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 46.5,
+    "CatchRate": 120
   },
   {
     "ID": "289",
@@ -18575,7 +19267,9 @@
           "Condition": "Level 36"
         }
       }
-    }
+    },
+    "Weight": 130.5,
+    "CatchRate": 45
   },
   {
     "ID": "290",
@@ -18624,7 +19318,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 5.5,
+    "CatchRate": 255
   },
   {
     "ID": "291",
@@ -18670,7 +19366,9 @@
           "Condition": "Level 20"
         }
       }
-    }
+    },
+    "Weight": 12,
+    "CatchRate": 120
   },
   {
     "ID": "292",
@@ -18712,7 +19410,9 @@
           "Condition": "Level 20, Empty Party Spot w/ Pokéball"
         }
       }
-    }
+    },
+    "Weight": 1.2,
+    "CatchRate": 45
   },
   {
     "ID": "293",
@@ -18766,7 +19466,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 16.3,
+    "CatchRate": 190
   },
   {
     "ID": "294",
@@ -18824,7 +19526,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 40.5,
+    "CatchRate": 120
   },
   {
     "ID": "295",
@@ -18880,7 +19584,9 @@
           "Condition": "Level 40"
         }
       }
-    }
+    },
+    "Weight": 84,
+    "CatchRate": 45
   },
   {
     "ID": "296",
@@ -18928,7 +19634,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 86.4,
+    "CatchRate": 180
   },
   {
     "ID": "297",
@@ -18979,7 +19687,9 @@
           "Condition": "Level 24"
         }
       }
-    }
+    },
+    "Weight": 253.8,
+    "CatchRate": 200
   },
   {
     "ID": "298",
@@ -19041,7 +19751,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 2,
+    "CatchRate": 150
   },
   {
     "ID": "299",
@@ -19093,7 +19805,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 97,
+    "CatchRate": 255
   },
   {
     "ID": "300",
@@ -19148,7 +19862,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 11,
+    "CatchRate": 255
   },
   {
     "ID": "301",
@@ -19204,7 +19920,9 @@
           "Condition": "Moon Stone"
         }
       }
-    }
+    },
+    "Weight": 32.6,
+    "CatchRate": 60
   },
   {
     "ID": "302",
@@ -19262,7 +19980,9 @@
     },
     "Evolution": {
       "Base": {}
-    }
+    },
+    "Weight": 11,
+    "CatchRate": 45
   },
   {
     "ID": "302-M",
@@ -19296,7 +20016,9 @@
     },
     "Evolution": {
       "Base": {}
-    }
+    },
+    "Weight": 161,
+    "CatchRate": 45
   },
   {
     "ID": "303",
@@ -19353,7 +20075,9 @@
     },
     "Evolution": {
       "Base": {}
-    }
+    },
+    "Weight": 11.5,
+    "CatchRate": 45
   },
   {
     "ID": "303-M",
@@ -19387,7 +20111,9 @@
     },
     "Evolution": {
       "Base": {}
-    }
+    },
+    "Weight": 23.5,
+    "CatchRate": 45
   },
   {
     "ID": "304",
@@ -19454,7 +20180,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 60,
+    "CatchRate": 180
   },
   {
     "ID": "305",
@@ -19529,7 +20257,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 120,
+    "CatchRate": 90
   },
   {
     "ID": "306",
@@ -19592,7 +20322,9 @@
           "Condition": "Level 40"
         }
       }
-    }
+    },
+    "Weight": 360,
+    "CatchRate": 45
   },
   {
     "ID": "306-M",
@@ -19630,7 +20362,9 @@
           "Condition": "Level 42"
         }
       }
-    }
+    },
+    "Weight": 395,
+    "CatchRate": 45
   },
   {
     "ID": "307",
@@ -19686,7 +20420,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 11.2,
+    "CatchRate": 180
   },
   {
     "ID": "308",
@@ -19741,7 +20477,9 @@
           "Condition": "Level 33"
         }
       }
-    }
+    },
+    "Weight": 31.5,
+    "CatchRate": 90
   },
   {
     "ID": "308-M",
@@ -19780,7 +20518,9 @@
           "Condition": "Level 37"
         }
       }
-    }
+    },
+    "Weight": 31.5,
+    "CatchRate": 90
   },
   {
     "ID": "309",
@@ -19828,7 +20568,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 15.2,
+    "CatchRate": 120
   },
   {
     "ID": "310",
@@ -19874,7 +20616,9 @@
           "Condition": "Level 26"
         }
       }
-    }
+    },
+    "Weight": 40.2,
+    "CatchRate": 45
   },
   {
     "ID": "310-M",
@@ -19912,7 +20656,9 @@
           "Condition": "Level 26"
         }
       }
-    }
+    },
+    "Weight": 44,
+    "CatchRate": 45
   },
   {
     "ID": "311",
@@ -19969,7 +20715,9 @@
     },
     "Evolution": {
       "Base": {}
-    }
+    },
+    "Weight": 4.2,
+    "CatchRate": 200
   },
   {
     "ID": "312",
@@ -20026,7 +20774,9 @@
     },
     "Evolution": {
       "Base": {}
-    }
+    },
+    "Weight": 4.2,
+    "CatchRate": 200
   },
   {
     "ID": "313",
@@ -20093,7 +20843,9 @@
     },
     "Evolution": {
       "Base": {}
-    }
+    },
+    "Weight": 17.7,
+    "CatchRate": 150
   },
   {
     "ID": "314",
@@ -20162,7 +20914,9 @@
     },
     "Evolution": {
       "Base": {}
-    }
+    },
+    "Weight": 17.7,
+    "CatchRate": 150
   },
   {
     "ID": "315",
@@ -20237,7 +20991,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 2,
+    "CatchRate": 150
   },
   {
     "ID": "316",
@@ -20285,7 +21041,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 10.3,
+    "CatchRate": 225
   },
   {
     "ID": "317",
@@ -20337,7 +21095,9 @@
           "Condition": "Level 26"
         }
       }
-    }
+    },
+    "Weight": 80,
+    "CatchRate": 75
   },
   {
     "ID": "318",
@@ -20392,7 +21152,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 20.8,
+    "CatchRate": 225
   },
   {
     "ID": "319",
@@ -20448,7 +21210,9 @@
           "Condition": "Level 30"
         }
       }
-    }
+    },
+    "Weight": 88.8,
+    "CatchRate": 60
   },
   {
     "ID": "319-M",
@@ -20487,7 +21251,9 @@
           "Condition": "Level 30"
         }
       }
-    }
+    },
+    "Weight": 130.3,
+    "CatchRate": 60
   },
   {
     "ID": "320",
@@ -20543,7 +21309,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 130,
+    "CatchRate": 125
   },
   {
     "ID": "321",
@@ -20613,7 +21381,9 @@
           "Condition": "Level 36"
         }
       }
-    }
+    },
+    "Weight": 398,
+    "CatchRate": 60
   },
   {
     "ID": "322",
@@ -20676,7 +21446,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 24,
+    "CatchRate": 255
   },
   {
     "ID": "323",
@@ -20748,7 +21520,9 @@
           "Condition": "Level 33"
         }
       }
-    }
+    },
+    "Weight": 220,
+    "CatchRate": 150
   },
   {
     "ID": "323-M",
@@ -20787,7 +21561,9 @@
           "Condition": "Level 33"
         }
       }
-    }
+    },
+    "Weight": 320.5,
+    "CatchRate": 150
   },
   {
     "ID": "324",
@@ -20841,7 +21617,9 @@
     },
     "Evolution": {
       "Base": {}
-    }
+    },
+    "Weight": 80.4,
+    "CatchRate": 90
   },
   {
     "ID": "325",
@@ -20889,7 +21667,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 30.6,
+    "CatchRate": 255
   },
   {
     "ID": "326",
@@ -20939,7 +21719,9 @@
           "Condition": "Level 32"
         }
       }
-    }
+    },
+    "Weight": 71.5,
+    "CatchRate": 60
   },
   {
     "ID": "327",
@@ -20993,7 +21775,9 @@
     },
     "Evolution": {
       "Base": {}
-    }
+    },
+    "Weight": 5,
+    "CatchRate": 255
   },
   {
     "ID": "328",
@@ -21056,7 +21840,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 15,
+    "CatchRate": 255
   },
   {
     "ID": "329",
@@ -21130,7 +21916,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 15.3,
+    "CatchRate": 120
   },
   {
     "ID": "330",
@@ -21203,7 +21991,9 @@
           "Condition": "Level 45"
         }
       }
-    }
+    },
+    "Weight": 82,
+    "CatchRate": 45
   },
   {
     "ID": "331",
@@ -21257,7 +22047,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 51.3,
+    "CatchRate": 190
   },
   {
     "ID": "332",
@@ -21323,7 +22115,9 @@
           "Condition": "Level 32"
         }
       }
-    }
+    },
+    "Weight": 77.4,
+    "CatchRate": 60
   },
   {
     "ID": "333",
@@ -21386,7 +22180,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 1.2,
+    "CatchRate": 255
   },
   {
     "ID": "334",
@@ -21450,7 +22246,9 @@
           "Condition": "Level 35"
         }
       }
-    }
+    },
+    "Weight": 20.6,
+    "CatchRate": 45
   },
   {
     "ID": "334-M",
@@ -21489,7 +22287,9 @@
           "Condition": "Level 35"
         }
       }
-    }
+    },
+    "Weight": 20.6,
+    "CatchRate": 45
   },
   {
     "ID": "335",
@@ -21535,7 +22335,9 @@
     },
     "Evolution": {
       "Base": {}
-    }
+    },
+    "Weight": 40.3,
+    "CatchRate": 90
   },
   {
     "ID": "336",
@@ -21585,7 +22387,9 @@
     },
     "Evolution": {
       "Base": {}
-    }
+    },
+    "Weight": 52.5,
+    "CatchRate": 90
   },
   {
     "ID": "337",
@@ -21626,7 +22430,9 @@
     },
     "Evolution": {
       "Base": {}
-    }
+    },
+    "Weight": 168,
+    "CatchRate": 45
   },
   {
     "ID": "338",
@@ -21667,7 +22473,9 @@
     },
     "Evolution": {
       "Base": {}
-    }
+    },
+    "Weight": 154,
+    "CatchRate": 45
   },
   {
     "ID": "339",
@@ -21716,7 +22524,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 1.9,
+    "CatchRate": 190
   },
   {
     "ID": "340",
@@ -21766,7 +22576,9 @@
           "Condition": "Level 30"
         }
       }
-    }
+    },
+    "Weight": 23.6,
+    "CatchRate": 75
   },
   {
     "ID": "341",
@@ -21824,7 +22636,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 11.5,
+    "CatchRate": 205
   },
   {
     "ID": "342",
@@ -21881,7 +22695,9 @@
           "Condition": "Level 30"
         }
       }
-    }
+    },
+    "Weight": 32.8,
+    "CatchRate": 155
   },
   {
     "ID": "343",
@@ -21930,7 +22746,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 21.5,
+    "CatchRate": 255
   },
   {
     "ID": "344",
@@ -21980,7 +22798,9 @@
           "Condition": "Level 32"
         }
       }
-    }
+    },
+    "Weight": 108,
+    "CatchRate": 90
   },
   {
     "ID": "345",
@@ -22043,7 +22863,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 23.8,
+    "CatchRate": 45
   },
   {
     "ID": "346",
@@ -22106,7 +22928,9 @@
           "Condition": "Level 30"
         }
       }
-    }
+    },
+    "Weight": 60.4,
+    "CatchRate": 45
   },
   {
     "ID": "347",
@@ -22169,7 +22993,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 12.5,
+    "CatchRate": 45
   },
   {
     "ID": "348",
@@ -22231,7 +23057,9 @@
           "Condition": "Level 30"
         }
       }
-    }
+    },
+    "Weight": 68.2,
+    "CatchRate": 45
   },
   {
     "ID": "349",
@@ -22297,7 +23125,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 7.4,
+    "CatchRate": 255
   },
   {
     "ID": "350",
@@ -22377,7 +23207,9 @@
           "Condition": "Prism Scale"
         }
       }
-    }
+    },
+    "Weight": 162,
+    "CatchRate": 60
   },
   {
     "ID": "351",
@@ -22421,7 +23253,9 @@
     },
     "Evolution": {
       "Base": {}
-    }
+    },
+    "Weight": 0.8,
+    "CatchRate": 45
   },
   {
     "ID": "351-W",
@@ -22467,7 +23301,9 @@
     },
     "Evolution": {
       "Base": {}
-    }
+    },
+    "Weight": 0.8,
+    "CatchRate": 45
   },
   {
     "ID": "352",
@@ -22511,7 +23347,9 @@
     },
     "Evolution": {
       "Base": {}
-    }
+    },
+    "Weight": 22,
+    "CatchRate": 200
   },
   {
     "ID": "353",
@@ -22571,7 +23409,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 2.3,
+    "CatchRate": 225
   },
   {
     "ID": "354",
@@ -22651,7 +23491,9 @@
           "Condition": "Level 32"
         }
       }
-    }
+    },
+    "Weight": 12.5,
+    "CatchRate": 45
   },
   {
     "ID": "354-M",
@@ -22699,7 +23541,9 @@
           "Condition": "Level 37"
         }
       }
-    }
+    },
+    "Weight": 13,
+    "CatchRate": 45
   },
   {
     "ID": "355",
@@ -22761,7 +23605,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 15,
+    "CatchRate": 190
   },
   {
     "ID": "356",
@@ -22831,7 +23677,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 30.6,
+    "CatchRate": 90
   },
   {
     "ID": "357",
@@ -22896,7 +23744,9 @@
     },
     "Evolution": {
       "Base": {}
-    }
+    },
+    "Weight": 100,
+    "CatchRate": 200
   },
   {
     "ID": "358",
@@ -22949,7 +23799,9 @@
           "Condition": "High Friendship"
         }
       }
-    }
+    },
+    "Weight": 1,
+    "CatchRate": 45
   },
   {
     "ID": "359",
@@ -23004,7 +23856,9 @@
     },
     "Evolution": {
       "Base": {}
-    }
+    },
+    "Weight": 47,
+    "CatchRate": 30
   },
   {
     "ID": "359-M",
@@ -23037,7 +23891,9 @@
     },
     "Evolution": {
       "Base": {}
-    }
+    },
+    "Weight": 49,
+    "CatchRate": 30
   },
   {
     "ID": "360",
@@ -23081,7 +23937,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 14,
+    "CatchRate": 125
   },
   {
     "ID": "361",
@@ -23145,7 +24003,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 16.8,
+    "CatchRate": 190
   },
   {
     "ID": "362",
@@ -23223,7 +24083,9 @@
           "Condition": "Level 32"
         }
       }
-    }
+    },
+    "Weight": 256.5,
+    "CatchRate": 75
   },
   {
     "ID": "362-M",
@@ -23261,7 +24123,9 @@
           "Condition": "Level 42"
         }
       }
-    }
+    },
+    "Weight": 350.2,
+    "CatchRate": 75
   },
   {
     "ID": "363",
@@ -23318,7 +24182,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 39.5,
+    "CatchRate": 255
   },
   {
     "ID": "364",
@@ -23383,7 +24249,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 87.6,
+    "CatchRate": 120
   },
   {
     "ID": "365",
@@ -23439,7 +24307,9 @@
           "Condition": "Level 40"
         }
       }
-    }
+    },
+    "Weight": 150.6,
+    "CatchRate": 45
   },
   {
     "ID": "366",
@@ -23497,7 +24367,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 52.5,
+    "CatchRate": 255
   },
   {
     "ID": "367",
@@ -23567,7 +24439,9 @@
           "Condition": "Deep Sea Tooth"
         }
       }
-    }
+    },
+    "Weight": 27,
+    "CatchRate": 60
   },
   {
     "ID": "368",
@@ -23619,7 +24493,9 @@
           "Condition": "Deep Sea Scale"
         }
       }
-    }
+    },
+    "Weight": 22.6,
+    "CatchRate": 60
   },
   {
     "ID": "369",
@@ -23674,7 +24550,9 @@
     },
     "Evolution": {
       "Base": {}
-    }
+    },
+    "Weight": 23.4,
+    "CatchRate": 25
   },
   {
     "ID": "370",
@@ -23735,7 +24613,9 @@
     },
     "Evolution": {
       "Base": {}
-    }
+    },
+    "Weight": 8.7,
+    "CatchRate": 225
   },
   {
     "ID": "371",
@@ -23779,7 +24659,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 42.1,
+    "CatchRate": 45
   },
   {
     "ID": "372",
@@ -23827,7 +24709,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 110.5,
+    "CatchRate": 45
   },
   {
     "ID": "373",
@@ -23870,7 +24754,9 @@
           "Condition": "Level 50"
         }
       }
-    }
+    },
+    "Weight": 102.6,
+    "CatchRate": 45
   },
   {
     "ID": "373-M",
@@ -23909,7 +24795,9 @@
           "Condition": "Level 50"
         }
       }
-    }
+    },
+    "Weight": 112.6,
+    "CatchRate": 45
   },
   {
     "ID": "374",
@@ -23974,7 +24862,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 95.2,
+    "CatchRate": 3
   },
   {
     "ID": "375",
@@ -24043,7 +24933,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 202.5,
+    "CatchRate": 3
   },
   {
     "ID": "376",
@@ -24106,7 +24998,9 @@
           "Condition": "Level 45"
         }
       }
-    }
+    },
+    "Weight": 550,
+    "CatchRate": 3
   },
   {
     "ID": "376-M",
@@ -24145,7 +25039,9 @@
           "Condition": "Level 45"
         }
       }
-    }
+    },
+    "Weight": 942.9,
+    "CatchRate": 3
   },
   {
     "ID": "377",
@@ -24182,7 +25078,9 @@
     },
     "Evolution": {
       "Base": {}
-    }
+    },
+    "Weight": 230,
+    "CatchRate": 3
   },
   {
     "ID": "378",
@@ -24219,7 +25117,9 @@
     },
     "Evolution": {
       "Base": {}
-    }
+    },
+    "Weight": 175,
+    "CatchRate": 3
   },
   {
     "ID": "379",
@@ -24256,7 +25156,9 @@
     },
     "Evolution": {
       "Base": {}
-    }
+    },
+    "Weight": 205,
+    "CatchRate": 3
   },
   {
     "ID": "380",
@@ -24290,7 +25192,9 @@
     },
     "Evolution": {
       "Base": {}
-    }
+    },
+    "Weight": 40,
+    "CatchRate": 3
   },
   {
     "ID": "380-M",
@@ -24324,7 +25228,9 @@
     },
     "Evolution": {
       "Base": {}
-    }
+    },
+    "Weight": 52,
+    "CatchRate": 3
   },
   {
     "ID": "381",
@@ -24358,7 +25264,9 @@
     },
     "Evolution": {
       "Base": {}
-    }
+    },
+    "Weight": 60,
+    "CatchRate": 3
   },
   {
     "ID": "381-M",
@@ -24392,7 +25300,9 @@
     },
     "Evolution": {
       "Base": {}
-    }
+    },
+    "Weight": 70,
+    "CatchRate": 3
   },
   {
     "ID": "382",
@@ -24425,7 +25335,9 @@
     },
     "Evolution": {
       "Base": {}
-    }
+    },
+    "Weight": 352,
+    "CatchRate": 3
   },
   {
     "ID": "382-P",
@@ -24458,7 +25370,9 @@
     },
     "Evolution": {
       "Base": {}
-    }
+    },
+    "Weight": 430,
+    "CatchRate": 5
   },
   {
     "ID": "383",
@@ -24491,7 +25405,9 @@
     },
     "Evolution": {
       "Base": {}
-    }
+    },
+    "Weight": 950,
+    "CatchRate": 3
   },
   {
     "ID": "383-P",
@@ -24525,7 +25441,9 @@
     },
     "Evolution": {
       "Base": {}
-    }
+    },
+    "Weight": 999.7,
+    "CatchRate": 5
   },
   {
     "ID": "384",
@@ -24559,7 +25477,9 @@
     },
     "Evolution": {
       "Base": {}
-    }
+    },
+    "Weight": 206.5,
+    "CatchRate": 45
   },
   {
     "ID": "384-M",
@@ -24593,7 +25513,9 @@
     },
     "Evolution": {
       "Base": {}
-    }
+    },
+    "Weight": 392,
+    "CatchRate": 3
   },
   {
     "ID": "385",
@@ -24627,7 +25549,9 @@
     },
     "Evolution": {
       "Base": {}
-    }
+    },
+    "Weight": 1.1,
+    "CatchRate": 3
   },
   {
     "ID": "386",
@@ -24660,7 +25584,9 @@
     },
     "Evolution": {
       "Base": {}
-    }
+    },
+    "Weight": 60.8,
+    "CatchRate": 3
   },
   {
     "ID": "386-A",
@@ -24693,7 +25619,9 @@
     },
     "Evolution": {
       "Base": {}
-    }
+    },
+    "Weight": 60.8,
+    "CatchRate": 3
   },
   {
     "ID": "386-D",
@@ -24726,7 +25654,9 @@
     },
     "Evolution": {
       "Base": {}
-    }
+    },
+    "Weight": 60.8,
+    "CatchRate": 3
   },
   {
     "ID": "386-S",
@@ -24759,7 +25689,9 @@
     },
     "Evolution": {
       "Base": {}
-    }
+    },
+    "Weight": 60.8,
+    "CatchRate": 3
   },
   {
     "ID": "387",
@@ -24827,7 +25759,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 10.2,
+    "CatchRate": 45
   },
   {
     "ID": "388",
@@ -24899,7 +25833,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 97,
+    "CatchRate": 45
   },
   {
     "ID": "389",
@@ -24973,7 +25909,9 @@
           "Condition": "Level 32"
         }
       }
-    }
+    },
+    "Weight": 310,
+    "CatchRate": 45
   },
   {
     "ID": "390",
@@ -25027,7 +25965,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 6.2,
+    "CatchRate": 45
   },
   {
     "ID": "391",
@@ -25086,7 +26026,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 22,
+    "CatchRate": 45
   },
   {
     "ID": "392",
@@ -25142,7 +26084,9 @@
           "Condition": "Level 36"
         }
       }
-    }
+    },
+    "Weight": 55,
+    "CatchRate": 45
   },
   {
     "ID": "393",
@@ -25210,7 +26154,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 5.2,
+    "CatchRate": 45
   },
   {
     "ID": "394",
@@ -25282,7 +26228,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 23,
+    "CatchRate": 45
   },
   {
     "ID": "395",
@@ -25352,7 +26300,9 @@
           "Condition": "Level 36"
         }
       }
-    }
+    },
+    "Weight": 84.5,
+    "CatchRate": 45
   },
   {
     "ID": "396",
@@ -25407,7 +26357,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 2,
+    "CatchRate": 255
   },
   {
     "ID": "397",
@@ -25466,7 +26418,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 15.5,
+    "CatchRate": 120
   },
   {
     "ID": "398",
@@ -25519,7 +26473,9 @@
           "Condition": "Level 34"
         }
       }
-    }
+    },
+    "Weight": 24.9,
+    "CatchRate": 45
   },
   {
     "ID": "399",
@@ -25567,7 +26523,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 20,
+    "CatchRate": 255
   },
   {
     "ID": "400",
@@ -25624,7 +26582,9 @@
           "Condition": "Level 15"
         }
       }
-    }
+    },
+    "Weight": 31.5,
+    "CatchRate": 127
   },
   {
     "ID": "401",
@@ -25682,7 +26642,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 2.2,
+    "CatchRate": 255
   },
   {
     "ID": "402",
@@ -25745,7 +26707,9 @@
           "Condition": "Level 10"
         }
       }
-    }
+    },
+    "Weight": 25.5,
+    "CatchRate": 45
   },
   {
     "ID": "403",
@@ -25803,7 +26767,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 9.5,
+    "CatchRate": 235
   },
   {
     "ID": "404",
@@ -25865,7 +26831,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 30.5,
+    "CatchRate": 120
   },
   {
     "ID": "405",
@@ -25948,7 +26916,9 @@
           "Condition": "Level 30"
         }
       }
-    }
+    },
+    "Weight": 42,
+    "CatchRate": 45
   },
   {
     "ID": "406",
@@ -26015,7 +26985,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 1.2,
+    "CatchRate": 255
   },
   {
     "ID": "407",
@@ -26072,7 +27044,9 @@
           "Condition": "Shiny Stone"
         }
       }
-    }
+    },
+    "Weight": 14.5,
+    "CatchRate": 75
   },
   {
     "ID": "408",
@@ -26126,7 +27100,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 31.5,
+    "CatchRate": 45
   },
   {
     "ID": "409",
@@ -26181,7 +27157,9 @@
           "Condition": "Level 30"
         }
       }
-    }
+    },
+    "Weight": 102.5,
+    "CatchRate": 45
   },
   {
     "ID": "410",
@@ -26240,7 +27218,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 57,
+    "CatchRate": 45
   },
   {
     "ID": "411",
@@ -26300,7 +27280,9 @@
           "Condition": "Level 30"
         }
       }
-    }
+    },
+    "Weight": 149.5,
+    "CatchRate": 45
   },
   {
     "ID": "412",
@@ -26363,7 +27345,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 3.4,
+    "CatchRate": 120
   },
   {
     "ID": "413",
@@ -26427,7 +27411,9 @@
           "Condition": "Level 20, Female"
         }
       }
-    }
+    },
+    "Weight": 6.5,
+    "CatchRate": 45
   },
   {
     "ID": "413-GD",
@@ -26491,7 +27477,9 @@
           "Condition": "Level 20, Female"
         }
       }
-    }
+    },
+    "Weight": 6.5,
+    "CatchRate": 45
   },
   {
     "ID": "413-S",
@@ -26554,7 +27542,9 @@
           "Condition": "Level 20, Female"
         }
       }
-    }
+    },
+    "Weight": 6.5,
+    "CatchRate": 45
   },
   {
     "ID": "414",
@@ -26618,7 +27608,9 @@
           "Condition": "Level 20, Male"
         }
       }
-    }
+    },
+    "Weight": 23.3,
+    "CatchRate": 45
   },
   {
     "ID": "415",
@@ -26673,7 +27665,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 5.5,
+    "CatchRate": 120
   },
   {
     "ID": "416",
@@ -26740,7 +27734,9 @@
           "Condition": "Level 21, Female"
         }
       }
-    }
+    },
+    "Weight": 38.5,
+    "CatchRate": 45
   },
   {
     "ID": "417",
@@ -26810,7 +27806,9 @@
     },
     "Evolution": {
       "Base": {}
-    }
+    },
+    "Weight": 3.9,
+    "CatchRate": 200
   },
   {
     "ID": "418",
@@ -26864,7 +27862,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 29.5,
+    "CatchRate": 190
   },
   {
     "ID": "419",
@@ -26920,7 +27920,9 @@
           "Condition": "Level 26"
         }
       }
-    }
+    },
+    "Weight": 33.5,
+    "CatchRate": 75
   },
   {
     "ID": "420",
@@ -26964,7 +27966,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 3.3,
+    "CatchRate": 190
   },
   {
     "ID": "421",
@@ -27013,7 +28017,9 @@
           "Condition": "Level 25"
         }
       }
-    }
+    },
+    "Weight": 9.3,
+    "CatchRate": 75
   },
   {
     "ID": "421-S",
@@ -27062,7 +28068,9 @@
           "Condition": "Level 25"
         }
       }
-    }
+    },
+    "Weight": 9.3,
+    "CatchRate": 75
   },
   {
     "ID": "422",
@@ -27110,7 +28118,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 6.3,
+    "CatchRate": 190
   },
   {
     "ID": "423",
@@ -27157,7 +28167,9 @@
           "Condition": "Level 30"
         }
       }
-    }
+    },
+    "Weight": 29.9,
+    "CatchRate": 75
   },
   {
     "ID": "424",
@@ -27206,7 +28218,9 @@
           "Condition": "Learn Double Hit @ 32"
         }
       }
-    }
+    },
+    "Weight": 20.3,
+    "CatchRate": 45
   },
   {
     "ID": "425",
@@ -27265,7 +28279,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 1.2,
+    "CatchRate": 125
   },
   {
     "ID": "426",
@@ -27326,7 +28342,9 @@
           "Condition": "Level 28"
         }
       }
-    }
+    },
+    "Weight": 15,
+    "CatchRate": 60
   },
   {
     "ID": "427",
@@ -27384,7 +28402,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 5.5,
+    "CatchRate": 190
   },
   {
     "ID": "428",
@@ -27463,7 +28483,9 @@
           "Condition": "High Friendship"
         }
       }
-    }
+    },
+    "Weight": 33.3,
+    "CatchRate": 60
   },
   {
     "ID": "428-M",
@@ -27502,7 +28524,9 @@
           "Condition": "High Friendship"
         }
       }
-    }
+    },
+    "Weight": 28.3,
+    "CatchRate": 60
   },
   {
     "ID": "429",
@@ -27553,7 +28577,9 @@
           "Condition": "Dusk Stone"
         }
       }
-    }
+    },
+    "Weight": 4.4,
+    "CatchRate": 45
   },
   {
     "ID": "430",
@@ -27610,7 +28636,9 @@
           "Condition": "Dusk Stone"
         }
       }
-    }
+    },
+    "Weight": 27.3,
+    "CatchRate": 30
   },
   {
     "ID": "431",
@@ -27674,7 +28702,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 3.9,
+    "CatchRate": 190
   },
   {
     "ID": "432",
@@ -27737,7 +28767,9 @@
           "Condition": "Level 32"
         }
       }
-    }
+    },
+    "Weight": 43.8,
+    "CatchRate": 75
   },
   {
     "ID": "433",
@@ -27789,7 +28821,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 0.6,
+    "CatchRate": 120
   },
   {
     "ID": "434",
@@ -27864,7 +28898,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 19.2,
+    "CatchRate": 225
   },
   {
     "ID": "435",
@@ -27938,7 +28974,9 @@
           "Condition": "Level 32"
         }
       }
-    }
+    },
+    "Weight": 38,
+    "CatchRate": 60
   },
   {
     "ID": "436",
@@ -27987,7 +29025,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 60.5,
+    "CatchRate": 255
   },
   {
     "ID": "437",
@@ -28034,7 +29074,9 @@
           "Condition": "Level 33"
         }
       }
-    }
+    },
+    "Weight": 187,
+    "CatchRate": 90
   },
   {
     "ID": "438",
@@ -28105,7 +29147,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 15,
+    "CatchRate": 255
   },
   {
     "ID": "439",
@@ -28177,7 +29221,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 13,
+    "CatchRate": 145
   },
   {
     "ID": "440",
@@ -28235,7 +29281,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 24.4,
+    "CatchRate": 130
   },
   {
     "ID": "441",
@@ -28299,7 +29347,9 @@
     },
     "Evolution": {
       "Base": {}
-    }
+    },
+    "Weight": 1.9,
+    "CatchRate": 30
   },
   {
     "ID": "442",
@@ -28340,7 +29390,9 @@
     },
     "Evolution": {
       "Base": {}
-    }
+    },
+    "Weight": 108,
+    "CatchRate": 100
   },
   {
     "ID": "443",
@@ -28395,7 +29447,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 20.5,
+    "CatchRate": 45
   },
   {
     "ID": "444",
@@ -28454,7 +29508,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 56,
+    "CatchRate": 45
   },
   {
     "ID": "445",
@@ -28507,7 +29563,9 @@
           "Condition": "Level 48"
         }
       }
-    }
+    },
+    "Weight": 95,
+    "CatchRate": 45
   },
   {
     "ID": "445-M",
@@ -28546,7 +29604,9 @@
           "Condition": "Level 48"
         }
       }
-    }
+    },
+    "Weight": 95,
+    "CatchRate": 45
   },
   {
     "ID": "446",
@@ -28604,7 +29664,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 105,
+    "CatchRate": 50
   },
   {
     "ID": "447",
@@ -28660,7 +29722,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 20.2,
+    "CatchRate": 75
   },
   {
     "ID": "448",
@@ -28723,7 +29787,9 @@
           "Condition": "High Friendship"
         }
       }
-    }
+    },
+    "Weight": 54,
+    "CatchRate": 45
   },
   {
     "ID": "448-M",
@@ -28762,7 +29828,9 @@
           "Condition": "High Friendship, Daytime"
         }
       }
-    }
+    },
+    "Weight": 57.5,
+    "CatchRate": 45
   },
   {
     "ID": "449",
@@ -28806,7 +29874,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 49.5,
+    "CatchRate": 140
   },
   {
     "ID": "450",
@@ -28848,7 +29918,9 @@
           "Condition": "Level 34"
         }
       }
-    }
+    },
+    "Weight": 300,
+    "CatchRate": 60
   },
   {
     "ID": "451",
@@ -28915,7 +29987,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 12,
+    "CatchRate": 120
   },
   {
     "ID": "452",
@@ -28982,7 +30056,9 @@
           "Condition": "Level 30"
         }
       }
-    }
+    },
+    "Weight": 61.5,
+    "CatchRate": 45
   },
   {
     "ID": "453",
@@ -29049,7 +30125,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 23,
+    "CatchRate": 140
   },
   {
     "ID": "454",
@@ -29115,7 +30193,9 @@
           "Condition": "Level 33"
         }
       }
-    }
+    },
+    "Weight": 44.4,
+    "CatchRate": 75
   },
   {
     "ID": "455",
@@ -29157,7 +30237,9 @@
     },
     "Evolution": {
       "Base": {}
-    }
+    },
+    "Weight": 27,
+    "CatchRate": 200
   },
   {
     "ID": "456",
@@ -29213,7 +30295,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 7,
+    "CatchRate": 190
   },
   {
     "ID": "457",
@@ -29270,7 +30354,9 @@
           "Condition": "Level 31"
         }
       }
-    }
+    },
+    "Weight": 24,
+    "CatchRate": 75
   },
   {
     "ID": "458",
@@ -29319,7 +30405,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 65,
+    "CatchRate": 25
   },
   {
     "ID": "459",
@@ -29374,7 +30462,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 50.5,
+    "CatchRate": 120
   },
   {
     "ID": "460",
@@ -29427,7 +30517,9 @@
           "Condition": "Level 40"
         }
       }
-    }
+    },
+    "Weight": 135.5,
+    "CatchRate": 60
   },
   {
     "ID": "460-M",
@@ -29466,7 +30558,9 @@
           "Condition": "Level 40"
         }
       }
-    }
+    },
+    "Weight": 185,
+    "CatchRate": 60
   },
   {
     "ID": "461",
@@ -29529,7 +30623,9 @@
           "Condition": "Razor Claw, Nighttime"
         }
       }
-    }
+    },
+    "Weight": 34,
+    "CatchRate": 45
   },
   {
     "ID": "462",
@@ -29576,7 +30672,9 @@
           "Condition": "Magnetic Field Area"
         }
       }
-    }
+    },
+    "Weight": 180,
+    "CatchRate": 30
   },
   {
     "ID": "463",
@@ -29632,7 +30730,9 @@
           "Condition": "Learn Rollout @ 33"
         }
       }
-    }
+    },
+    "Weight": 140,
+    "CatchRate": 30
   },
   {
     "ID": "464",
@@ -29689,7 +30789,9 @@
           "Condition": "Protector"
         }
       }
-    }
+    },
+    "Weight": 282.8,
+    "CatchRate": 30
   },
   {
     "ID": "465",
@@ -29741,7 +30843,9 @@
           "Condition": "Learn Ancient Power @ 33"
         }
       }
-    }
+    },
+    "Weight": 128.6,
+    "CatchRate": 30
   },
   {
     "ID": "466",
@@ -29801,7 +30905,9 @@
           "Condition": "Electirizer"
         }
       }
-    }
+    },
+    "Weight": 138.6,
+    "CatchRate": 30
   },
   {
     "ID": "467",
@@ -29867,7 +30973,9 @@
           "Condition": "Magmarizer"
         }
       }
-    }
+    },
+    "Weight": 68,
+    "CatchRate": 30
   },
   {
     "ID": "468",
@@ -29924,7 +31032,9 @@
           "Condition": "Shiny Stone"
         }
       }
-    }
+    },
+    "Weight": 38,
+    "CatchRate": 30
   },
   {
     "ID": "469",
@@ -29974,7 +31084,9 @@
           "Condition": "Learn Ancient Power @ 33"
         }
       }
-    }
+    },
+    "Weight": 51.5,
+    "CatchRate": 30
   },
   {
     "ID": "470",
@@ -30028,7 +31140,9 @@
           "Condition": "Leaf Stone"
         }
       }
-    }
+    },
+    "Weight": 25.5,
+    "CatchRate": 45
   },
   {
     "ID": "471",
@@ -30086,7 +31200,9 @@
           "Condition": "Shiny Stone"
         }
       }
-    }
+    },
+    "Weight": 25.9,
+    "CatchRate": 45
   },
   {
     "ID": "472",
@@ -30143,7 +31259,9 @@
           "Condition": "Razor Fang, Nighttime"
         }
       }
-    }
+    },
+    "Weight": 42.5,
+    "CatchRate": 30
   },
   {
     "ID": "473",
@@ -30200,7 +31318,9 @@
           "Condition": "Learn Ancient Power @ 1"
         }
       }
-    }
+    },
+    "Weight": 291,
+    "CatchRate": 50
   },
   {
     "ID": "474",
@@ -30246,7 +31366,9 @@
           "Condition": "Dubious Disc"
         }
       }
-    }
+    },
+    "Weight": 34,
+    "CatchRate": 30
   },
   {
     "ID": "475",
@@ -30289,7 +31411,9 @@
           "Condition": "Dawn Stone, Male"
         }
       }
-    }
+    },
+    "Weight": 52,
+    "CatchRate": 45
   },
   {
     "ID": "475-M",
@@ -30328,7 +31452,9 @@
           "Condition": "Dawn Stone, Male"
         }
       }
-    }
+    },
+    "Weight": 56.4,
+    "CatchRate": 45
   },
   {
     "ID": "476",
@@ -30382,7 +31508,9 @@
           "Condition": "Magnetic Field Area"
         }
       }
-    }
+    },
+    "Weight": 340,
+    "CatchRate": 60
   },
   {
     "ID": "477",
@@ -30448,7 +31576,9 @@
           "Condition": "Reaper Cloth"
         }
       }
-    }
+    },
+    "Weight": 106.6,
+    "CatchRate": 45
   },
   {
     "ID": "478",
@@ -30509,7 +31639,9 @@
           "Condition": "Dawn Stone, Female"
         }
       }
-    }
+    },
+    "Weight": 26.6,
+    "CatchRate": 75
   },
   {
     "ID": "479",
@@ -30546,7 +31678,9 @@
     },
     "Evolution": {
       "Base": {}
-    }
+    },
+    "Weight": 0.3,
+    "CatchRate": 45
   },
   {
     "ID": "479-H",
@@ -30580,7 +31714,9 @@
     },
     "Evolution": {
       "Base": {}
-    }
+    },
+    "Weight": 0.3,
+    "CatchRate": 45
   },
   {
     "ID": "479-W",
@@ -30614,7 +31750,9 @@
     },
     "Evolution": {
       "Base": {}
-    }
+    },
+    "Weight": 0.3,
+    "CatchRate": 45
   },
   {
     "ID": "479-FR",
@@ -30648,7 +31786,9 @@
     },
     "Evolution": {
       "Base": {}
-    }
+    },
+    "Weight": 0.3,
+    "CatchRate": 45
   },
   {
     "ID": "479-FN",
@@ -30694,7 +31834,9 @@
     },
     "Evolution": {
       "Base": {}
-    }
+    },
+    "Weight": 0.3,
+    "CatchRate": 45
   },
   {
     "ID": "479-M",
@@ -30728,7 +31870,9 @@
     },
     "Evolution": {
       "Base": {}
-    }
+    },
+    "Weight": 0.3,
+    "CatchRate": 45
   },
   {
     "ID": "480",
@@ -30765,7 +31909,9 @@
     },
     "Evolution": {
       "Base": {}
-    }
+    },
+    "Weight": 0.3,
+    "CatchRate": 3
   },
   {
     "ID": "481",
@@ -30802,7 +31948,9 @@
     },
     "Evolution": {
       "Base": {}
-    }
+    },
+    "Weight": 0.3,
+    "CatchRate": 3
   },
   {
     "ID": "482",
@@ -30839,7 +31987,9 @@
     },
     "Evolution": {
       "Base": {}
-    }
+    },
+    "Weight": 0.3,
+    "CatchRate": 3
   },
   {
     "ID": "483",
@@ -30877,7 +32027,9 @@
     },
     "Evolution": {
       "Base": {}
-    }
+    },
+    "Weight": 683,
+    "CatchRate": 3
   },
   {
     "ID": "484",
@@ -30915,7 +32067,9 @@
     },
     "Evolution": {
       "Base": {}
-    }
+    },
+    "Weight": 336,
+    "CatchRate": 3
   },
   {
     "ID": "485",
@@ -30963,7 +32117,9 @@
     },
     "Evolution": {
       "Base": {}
-    }
+    },
+    "Weight": 430,
+    "CatchRate": 3
   },
   {
     "ID": "486",
@@ -30996,7 +32152,9 @@
     },
     "Evolution": {
       "Base": {}
-    }
+    },
+    "Weight": 420,
+    "CatchRate": 3
   },
   {
     "ID": "487",
@@ -31034,7 +32192,9 @@
     },
     "Evolution": {
       "Base": {}
-    }
+    },
+    "Weight": 750,
+    "CatchRate": 3
   },
   {
     "ID": "487-O",
@@ -31068,7 +32228,9 @@
     },
     "Evolution": {
       "Base": {}
-    }
+    },
+    "Weight": 650,
+    "CatchRate": 3
   },
   {
     "ID": "488",
@@ -31101,7 +32263,9 @@
     },
     "Evolution": {
       "Base": {}
-    }
+    },
+    "Weight": 85.6,
+    "CatchRate": 3
   },
   {
     "ID": "489",
@@ -31134,7 +32298,9 @@
     },
     "Evolution": {
       "Base": {}
-    }
+    },
+    "Weight": 3.1,
+    "CatchRate": 30
   },
   {
     "ID": "490",
@@ -31167,7 +32333,9 @@
     },
     "Evolution": {
       "Base": {}
-    }
+    },
+    "Weight": 1.4,
+    "CatchRate": 3
   },
   {
     "ID": "491",
@@ -31200,7 +32368,9 @@
     },
     "Evolution": {
       "Base": {}
-    }
+    },
+    "Weight": 50.5,
+    "CatchRate": 3
   },
   {
     "ID": "492",
@@ -31233,7 +32403,9 @@
     },
     "Evolution": {
       "Base": {}
-    }
+    },
+    "Weight": 2.1,
+    "CatchRate": 45
   },
   {
     "ID": "492-S",
@@ -31267,7 +32439,9 @@
     },
     "Evolution": {
       "Base": {}
-    }
+    },
+    "Weight": 5.2,
+    "CatchRate": 45
   },
   {
     "ID": "493",
@@ -31300,7 +32474,9 @@
     },
     "Evolution": {
       "Base": {}
-    }
+    },
+    "Weight": 320,
+    "CatchRate": 3
   },
   {
     "ID": "494",
@@ -31334,7 +32510,9 @@
     },
     "Evolution": {
       "Base": {}
-    }
+    },
+    "Weight": 4,
+    "CatchRate": 3
   },
   {
     "ID": "495",
@@ -31378,7 +32556,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 8.1,
+    "CatchRate": 45
   },
   {
     "ID": "496",
@@ -31426,7 +32606,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 16,
+    "CatchRate": 45
   },
   {
     "ID": "497",
@@ -31472,7 +32654,9 @@
           "Condition": "Level 36"
         }
       }
-    }
+    },
+    "Weight": 63,
+    "CatchRate": 45
   },
   {
     "ID": "498",
@@ -31516,7 +32700,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 9.9,
+    "CatchRate": 45
   },
   {
     "ID": "499",
@@ -31565,7 +32751,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 55.5,
+    "CatchRate": 45
   },
   {
     "ID": "500",
@@ -31613,7 +32801,9 @@
           "Condition": "Level 36"
         }
       }
-    }
+    },
+    "Weight": 150,
+    "CatchRate": 45
   },
   {
     "ID": "501",
@@ -31657,7 +32847,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 5.9,
+    "CatchRate": 45
   },
   {
     "ID": "502",
@@ -31709,7 +32901,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 24.5,
+    "CatchRate": 45
   },
   {
     "ID": "503",
@@ -31755,7 +32949,9 @@
           "Condition": "Level 36"
         }
       }
-    }
+    },
+    "Weight": 94.6,
+    "CatchRate": 45
   },
   {
     "ID": "504",
@@ -31803,7 +32999,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 11.6,
+    "CatchRate": 255
   },
   {
     "ID": "505",
@@ -31853,7 +33051,9 @@
           "Condition": "Level 20"
         }
       }
-    }
+    },
+    "Weight": 27,
+    "CatchRate": 255
   },
   {
     "ID": "506",
@@ -31901,7 +33101,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 4.1,
+    "CatchRate": 255
   },
   {
     "ID": "507",
@@ -31953,7 +33155,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 14.7,
+    "CatchRate": 120
   },
   {
     "ID": "508",
@@ -31999,7 +33203,9 @@
           "Condition": "Level 32"
         }
       }
-    }
+    },
+    "Weight": 61,
+    "CatchRate": 45
   },
   {
     "ID": "509",
@@ -32047,7 +33253,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 10.1,
+    "CatchRate": 255
   },
   {
     "ID": "510",
@@ -32097,7 +33305,9 @@
           "Condition": "Level 20"
         }
       }
-    }
+    },
+    "Weight": 37.5,
+    "CatchRate": 90
   },
   {
     "ID": "511",
@@ -32141,7 +33351,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 10.5,
+    "CatchRate": 190
   },
   {
     "ID": "512",
@@ -32187,7 +33399,9 @@
           "Condition": "Leaf Stone"
         }
       }
-    }
+    },
+    "Weight": 30.5,
+    "CatchRate": 75
   },
   {
     "ID": "513",
@@ -32231,7 +33445,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 11,
+    "CatchRate": 190
   },
   {
     "ID": "514",
@@ -32277,7 +33493,9 @@
           "Condition": "Fire Stone"
         }
       }
-    }
+    },
+    "Weight": 28,
+    "CatchRate": 75
   },
   {
     "ID": "515",
@@ -32325,7 +33543,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 13.5,
+    "CatchRate": 190
   },
   {
     "ID": "516",
@@ -32367,7 +33587,9 @@
           "Condition": "Water Stone"
         }
       }
-    }
+    },
+    "Weight": 29,
+    "CatchRate": 75
   },
   {
     "ID": "517",
@@ -32425,7 +33647,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 23.3,
+    "CatchRate": 190
   },
   {
     "ID": "518",
@@ -32484,7 +33708,9 @@
           "Condition": "Moon Stone"
         }
       }
-    }
+    },
+    "Weight": 60.5,
+    "CatchRate": 75
   },
   {
     "ID": "519",
@@ -32533,7 +33759,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 2.1,
+    "CatchRate": 255
   },
   {
     "ID": "520",
@@ -32586,7 +33814,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 15,
+    "CatchRate": 120
   },
   {
     "ID": "521",
@@ -32646,7 +33876,9 @@
           "Condition": "Level 32"
         }
       }
-    }
+    },
+    "Weight": 29,
+    "CatchRate": 45
   },
   {
     "ID": "522",
@@ -32694,7 +33926,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 29.8,
+    "CatchRate": 190
   },
   {
     "ID": "523",
@@ -32744,7 +33978,9 @@
           "Condition": "Level 27"
         }
       }
-    }
+    },
+    "Weight": 79.5,
+    "CatchRate": 75
   },
   {
     "ID": "524",
@@ -32796,7 +34032,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 18,
+    "CatchRate": 255
   },
   {
     "ID": "525",
@@ -32864,7 +34102,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 102,
+    "CatchRate": 120
   },
   {
     "ID": "526",
@@ -32920,7 +34160,9 @@
           "Condition": "High Friendship"
         }
       }
-    }
+    },
+    "Weight": 260,
+    "CatchRate": 45
   },
   {
     "ID": "527",
@@ -32969,7 +34211,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 2.1,
+    "CatchRate": 190
   },
   {
     "ID": "528",
@@ -33019,7 +34263,9 @@
           "Condition": "High Friendship"
         }
       }
-    }
+    },
+    "Weight": 10.5,
+    "CatchRate": 45
   },
   {
     "ID": "529",
@@ -33067,7 +34313,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 8.5,
+    "CatchRate": 120
   },
   {
     "ID": "530",
@@ -33114,7 +34362,9 @@
           "Condition": "Level 31"
         }
       }
-    }
+    },
+    "Weight": 40.4,
+    "CatchRate": 60
   },
   {
     "ID": "531",
@@ -33169,7 +34419,9 @@
     },
     "Evolution": {
       "Base": {}
-    }
+    },
+    "Weight": 31,
+    "CatchRate": 255
   },
   {
     "ID": "531-M",
@@ -33203,7 +34455,9 @@
     },
     "Evolution": {
       "Base": {}
-    }
+    },
+    "Weight": 32,
+    "CatchRate": 255
   },
   {
     "ID": "532",
@@ -33251,7 +34505,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 12.5,
+    "CatchRate": 180
   },
   {
     "ID": "533",
@@ -33315,7 +34571,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 40,
+    "CatchRate": 90
   },
   {
     "ID": "534",
@@ -33367,7 +34625,9 @@
           "Condition": "High Friendship"
         }
       }
-    }
+    },
+    "Weight": 87,
+    "CatchRate": 45
   },
   {
     "ID": "535",
@@ -33415,7 +34675,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 4.5,
+    "CatchRate": 255
   },
   {
     "ID": "536",
@@ -33468,7 +34730,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 17,
+    "CatchRate": 120
   },
   {
     "ID": "537",
@@ -33519,7 +34783,9 @@
           "Condition": "Level 36"
         }
       }
-    }
+    },
+    "Weight": 62,
+    "CatchRate": 45
   },
   {
     "ID": "538",
@@ -33560,7 +34826,9 @@
     },
     "Evolution": {
       "Base": {}
-    }
+    },
+    "Weight": 55.5,
+    "CatchRate": 45
   },
   {
     "ID": "539",
@@ -33601,7 +34869,9 @@
     },
     "Evolution": {
       "Base": {}
-    }
+    },
+    "Weight": 51,
+    "CatchRate": 45
   },
   {
     "ID": "540",
@@ -33650,7 +34920,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 2.5,
+    "CatchRate": 255
   },
   {
     "ID": "541",
@@ -33703,7 +34975,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 7.3,
+    "CatchRate": 120
   },
   {
     "ID": "542",
@@ -33754,7 +35028,9 @@
           "Condition": "High Friendship"
         }
       }
-    }
+    },
+    "Weight": 20.5,
+    "CatchRate": 45
   },
   {
     "ID": "543",
@@ -33803,7 +35079,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 5.3,
+    "CatchRate": 255
   },
   {
     "ID": "544",
@@ -33856,7 +35134,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 58.5,
+    "CatchRate": 120
   },
   {
     "ID": "545",
@@ -33903,7 +35183,9 @@
           "Condition": "Level 30"
         }
       }
-    }
+    },
+    "Weight": 200.5,
+    "CatchRate": 45
   },
   {
     "ID": "546",
@@ -33952,7 +35234,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 0.6,
+    "CatchRate": 190
   },
   {
     "ID": "547",
@@ -33999,7 +35283,9 @@
           "Condition": "Sun Stone"
         }
       }
-    }
+    },
+    "Weight": 6.6,
+    "CatchRate": 75
   },
   {
     "ID": "548",
@@ -34051,7 +35337,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 6.6,
+    "CatchRate": 190
   },
   {
     "ID": "549",
@@ -34101,7 +35389,9 @@
           "Condition": "Sun Stone"
         }
       }
-    }
+    },
+    "Weight": 16.3,
+    "CatchRate": 75
   },
   {
     "ID": "550",
@@ -34142,7 +35432,9 @@
     },
     "Evolution": {
       "Base": {}
-    }
+    },
+    "Weight": 18,
+    "CatchRate": 25
   },
   {
     "ID": "551",
@@ -34191,7 +35483,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 15.2,
+    "CatchRate": 180
   },
   {
     "ID": "552",
@@ -34244,7 +35538,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 33.4,
+    "CatchRate": 90
   },
   {
     "ID": "553",
@@ -34291,7 +35587,9 @@
           "Condition": "Level 40"
         }
       }
-    }
+    },
+    "Weight": 96.3,
+    "CatchRate": 45
   },
   {
     "ID": "554",
@@ -34335,7 +35633,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 37.5,
+    "CatchRate": 120
   },
   {
     "ID": "554-G",
@@ -34379,7 +35679,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 40,
+    "CatchRate": 120
   },
   {
     "ID": "555",
@@ -34421,7 +35723,9 @@
           "Condition": "Level 35"
         }
       }
-    }
+    },
+    "Weight": 92.9,
+    "CatchRate": 60
   },
   {
     "ID": "555-Z",
@@ -34460,7 +35764,9 @@
           "Condition": "Level 35"
         }
       }
-    }
+    },
+    "Weight": 92.9,
+    "CatchRate": 60
   },
   {
     "ID": "555-G",
@@ -34502,7 +35808,9 @@
           "Condition": "Ice Stone"
         }
       }
-    }
+    },
+    "Weight": 120,
+    "CatchRate": 60
   },
   {
     "ID": "555-GZ",
@@ -34541,7 +35849,9 @@
           "Condition": "Ice Stone"
         }
       }
-    }
+    },
+    "Weight": 120,
+    "CatchRate": 60
   },
   {
     "ID": "556",
@@ -34597,7 +35907,9 @@
     },
     "Evolution": {
       "Base": {}
-    }
+    },
+    "Weight": 28,
+    "CatchRate": 255
   },
   {
     "ID": "557",
@@ -34646,7 +35958,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 14.5,
+    "CatchRate": 190
   },
   {
     "ID": "558",
@@ -34697,7 +36011,9 @@
           "Condition": "Level 34"
         }
       }
-    }
+    },
+    "Weight": 200,
+    "CatchRate": 75
   },
   {
     "ID": "559",
@@ -34746,7 +36062,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 11.8,
+    "CatchRate": 180
   },
   {
     "ID": "560",
@@ -34793,7 +36111,9 @@
           "Condition": "Level 39"
         }
       }
-    }
+    },
+    "Weight": 30,
+    "CatchRate": 90
   },
   {
     "ID": "561",
@@ -34835,7 +36155,9 @@
     },
     "Evolution": {
       "Base": {}
-    }
+    },
+    "Weight": 14,
+    "CatchRate": 45
   },
   {
     "ID": "562",
@@ -34875,7 +36197,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 1.5,
+    "CatchRate": 190
   },
   {
     "ID": "562-G",
@@ -34916,7 +36240,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 1.5,
+    "CatchRate": 190
   },
   {
     "ID": "563",
@@ -34958,7 +36284,9 @@
           "Condition": "Level 34"
         }
       }
-    }
+    },
+    "Weight": 76.5,
+    "CatchRate": 90
   },
   {
     "ID": "564",
@@ -35007,7 +36335,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 16.5,
+    "CatchRate": 45
   },
   {
     "ID": "565",
@@ -35057,7 +36387,9 @@
           "Condition": "Level 37"
         }
       }
-    }
+    },
+    "Weight": 81,
+    "CatchRate": 45
   },
   {
     "ID": "566",
@@ -35108,7 +36440,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 9.5,
+    "CatchRate": 45
   },
   {
     "ID": "567",
@@ -35157,7 +36491,9 @@
           "Condition": "Level 37"
         }
       }
-    }
+    },
+    "Weight": 32,
+    "CatchRate": 45
   },
   {
     "ID": "568",
@@ -35205,7 +36541,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 31,
+    "CatchRate": 190
   },
   {
     "ID": "569",
@@ -35251,7 +36589,9 @@
           "Condition": "Level 36"
         }
       }
-    }
+    },
+    "Weight": 107.3,
+    "CatchRate": 60
   },
   {
     "ID": "570",
@@ -35291,7 +36631,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 12.5,
+    "CatchRate": 75
   },
   {
     "ID": "571",
@@ -35329,7 +36671,9 @@
           "Condition": "Level 30"
         }
       }
-    }
+    },
+    "Weight": 81.1,
+    "CatchRate": 45
   },
   {
     "ID": "572",
@@ -35377,7 +36721,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 5.8,
+    "CatchRate": 255
   },
   {
     "ID": "573",
@@ -35423,7 +36769,9 @@
           "Condition": "Shiny Stone"
         }
       }
-    }
+    },
+    "Weight": 7.5,
+    "CatchRate": 60
   },
   {
     "ID": "574",
@@ -35471,7 +36819,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 5.8,
+    "CatchRate": 200
   },
   {
     "ID": "575",
@@ -35523,7 +36873,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 18,
+    "CatchRate": 100
   },
   {
     "ID": "576",
@@ -35569,7 +36921,9 @@
           "Condition": "Level 41"
         }
       }
-    }
+    },
+    "Weight": 44,
+    "CatchRate": 50
   },
   {
     "ID": "577",
@@ -35617,7 +36971,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 1,
+    "CatchRate": 200
   },
   {
     "ID": "578",
@@ -35669,7 +37025,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 8,
+    "CatchRate": 100
   },
   {
     "ID": "579",
@@ -35715,7 +37073,9 @@
           "Condition": "Level 41"
         }
       }
-    }
+    },
+    "Weight": 20.1,
+    "CatchRate": 50
   },
   {
     "ID": "580",
@@ -35774,7 +37134,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 5.5,
+    "CatchRate": 190
   },
   {
     "ID": "581",
@@ -35831,7 +37193,9 @@
           "Condition": "Level 35"
         }
       }
-    }
+    },
+    "Weight": 24.2,
+    "CatchRate": 45
   },
   {
     "ID": "582",
@@ -35879,7 +37243,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 5.7,
+    "CatchRate": 255
   },
   {
     "ID": "583",
@@ -35931,7 +37297,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 41,
+    "CatchRate": 120
   },
   {
     "ID": "584",
@@ -35982,7 +37350,9 @@
           "Condition": "Level 47"
         }
       }
-    }
+    },
+    "Weight": 57.5,
+    "CatchRate": 45
   },
   {
     "ID": "585",
@@ -36031,7 +37401,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 19.5,
+    "CatchRate": 190
   },
   {
     "ID": "586",
@@ -36082,7 +37454,9 @@
           "Condition": "Level 34"
         }
       }
-    }
+    },
+    "Weight": 92.5,
+    "CatchRate": 75
   },
   {
     "ID": "587",
@@ -36125,7 +37499,9 @@
     },
     "Evolution": {
       "Base": {}
-    }
+    },
+    "Weight": 5,
+    "CatchRate": 200
   },
   {
     "ID": "588",
@@ -36181,7 +37557,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 5.9,
+    "CatchRate": 200
   },
   {
     "ID": "589",
@@ -36234,7 +37612,9 @@
           "Condition": "Level Up w/ Shelmet"
         }
       }
-    }
+    },
+    "Weight": 33,
+    "CatchRate": 75
   },
   {
     "ID": "590",
@@ -36279,7 +37659,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 1,
+    "CatchRate": 190
   },
   {
     "ID": "591",
@@ -36322,7 +37704,9 @@
           "Condition": "Level 39"
         }
       }
-    }
+    },
+    "Weight": 10.5,
+    "CatchRate": 75
   },
   {
     "ID": "592",
@@ -36371,7 +37755,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 33,
+    "CatchRate": 190
   },
   {
     "ID": "593",
@@ -36418,7 +37804,9 @@
           "Condition": "Level 40"
         }
       }
-    }
+    },
+    "Weight": 135,
+    "CatchRate": 60
   },
   {
     "ID": "594",
@@ -36459,7 +37847,9 @@
     },
     "Evolution": {
       "Base": {}
-    }
+    },
+    "Weight": 31.6,
+    "CatchRate": 75
   },
   {
     "ID": "595",
@@ -36508,7 +37898,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 0.6,
+    "CatchRate": 190
   },
   {
     "ID": "596",
@@ -36555,7 +37947,9 @@
           "Condition": "Level 36"
         }
       }
-    }
+    },
+    "Weight": 14.3,
+    "CatchRate": 75
   },
   {
     "ID": "597",
@@ -36596,7 +37990,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 18.8,
+    "CatchRate": 255
   },
   {
     "ID": "598",
@@ -36639,7 +38035,9 @@
           "Condition": "Level 40"
         }
       }
-    }
+    },
+    "Weight": 110,
+    "CatchRate": 90
   },
   {
     "ID": "599",
@@ -36697,7 +38095,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 21,
+    "CatchRate": 130
   },
   {
     "ID": "600",
@@ -36759,7 +38159,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 51,
+    "CatchRate": 60
   },
   {
     "ID": "601",
@@ -36815,7 +38217,9 @@
           "Condition": "Level 49"
         }
       }
-    }
+    },
+    "Weight": 81,
+    "CatchRate": 30
   },
   {
     "ID": "602",
@@ -36855,7 +38259,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 0.3,
+    "CatchRate": 190
   },
   {
     "ID": "603",
@@ -36899,7 +38305,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 22,
+    "CatchRate": 60
   },
   {
     "ID": "604",
@@ -36937,7 +38345,9 @@
           "Condition": "Thunder Stone"
         }
       }
-    }
+    },
+    "Weight": 80.5,
+    "CatchRate": 30
   },
   {
     "ID": "605",
@@ -36985,7 +38395,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 9,
+    "CatchRate": 255
   },
   {
     "ID": "606",
@@ -37037,7 +38449,9 @@
           "Condition": "Level 42"
         }
       }
-    }
+    },
+    "Weight": 34.5,
+    "CatchRate": 90
   },
   {
     "ID": "607",
@@ -37086,7 +38500,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 3.1,
+    "CatchRate": 190
   },
   {
     "ID": "608",
@@ -37139,7 +38555,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 13,
+    "CatchRate": 90
   },
   {
     "ID": "609",
@@ -37186,7 +38604,9 @@
           "Condition": "Dusk Stone"
         }
       }
-    }
+    },
+    "Weight": 34.3,
+    "CatchRate": 45
   },
   {
     "ID": "610",
@@ -37234,7 +38654,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 18,
+    "CatchRate": 75
   },
   {
     "ID": "611",
@@ -37286,7 +38708,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 36,
+    "CatchRate": 60
   },
   {
     "ID": "612",
@@ -37332,7 +38756,9 @@
           "Condition": "Level 48"
         }
       }
-    }
+    },
+    "Weight": 105.5,
+    "CatchRate": 45
   },
   {
     "ID": "613",
@@ -37380,7 +38806,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 8.5,
+    "CatchRate": 120
   },
   {
     "ID": "614",
@@ -37447,7 +38875,9 @@
           "Condition": "Level 37"
         }
       }
-    }
+    },
+    "Weight": 260,
+    "CatchRate": 60
   },
   {
     "ID": "615",
@@ -37480,7 +38910,9 @@
     },
     "Evolution": {
       "Base": {}
-    }
+    },
+    "Weight": 148,
+    "CatchRate": 25
   },
   {
     "ID": "616",
@@ -37536,7 +38968,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 7.7,
+    "CatchRate": 200
   },
   {
     "ID": "617",
@@ -37598,7 +39032,9 @@
           "Condition": "Level Up w/ Karrablast"
         }
       }
-    }
+    },
+    "Weight": 25.3,
+    "CatchRate": 75
   },
   {
     "ID": "618",
@@ -37653,7 +39089,9 @@
     },
     "Evolution": {
       "Base": {}
-    }
+    },
+    "Weight": 11,
+    "CatchRate": 75
   },
   {
     "ID": "618-G",
@@ -37687,7 +39125,9 @@
     },
     "Evolution": {
       "Base": {}
-    }
+    },
+    "Weight": 20.5,
+    "CatchRate": 75
   },
   {
     "ID": "619",
@@ -37743,7 +39183,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 20,
+    "CatchRate": 180
   },
   {
     "ID": "620",
@@ -37795,7 +39237,9 @@
           "Condition": "Level 40"
         }
       }
-    }
+    },
+    "Weight": 35.5,
+    "CatchRate": 45
   },
   {
     "ID": "621",
@@ -37839,7 +39283,9 @@
     },
     "Evolution": {
       "Base": {}
-    }
+    },
+    "Weight": 139,
+    "CatchRate": 45
   },
   {
     "ID": "622",
@@ -37888,7 +39334,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 92,
+    "CatchRate": 190
   },
   {
     "ID": "623",
@@ -37940,7 +39388,9 @@
           "Condition": "Level 43"
         }
       }
-    }
+    },
+    "Weight": 330,
+    "CatchRate": 90
   },
   {
     "ID": "624",
@@ -37997,7 +39447,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 10.2,
+    "CatchRate": 120
   },
   {
     "ID": "625",
@@ -38050,7 +39502,9 @@
           "Condition": "Level 42"
         }
       }
-    }
+    },
+    "Weight": 70,
+    "CatchRate": 45
   },
   {
     "ID": "626",
@@ -38094,7 +39548,9 @@
     },
     "Evolution": {
       "Base": {}
-    }
+    },
+    "Weight": 94.6,
+    "CatchRate": 45
   },
   {
     "ID": "627",
@@ -38151,7 +39607,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 10.5,
+    "CatchRate": 190
   },
   {
     "ID": "628",
@@ -38204,7 +39662,9 @@
           "Condition": "Level 34"
         }
       }
-    }
+    },
+    "Weight": 41,
+    "CatchRate": 60
   },
   {
     "ID": "629",
@@ -38261,7 +39721,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 9,
+    "CatchRate": 190
   },
   {
     "ID": "630",
@@ -38314,7 +39776,9 @@
           "Condition": "Level 34"
         }
       }
-    }
+    },
+    "Weight": 39.5,
+    "CatchRate": 60
   },
   {
     "ID": "631",
@@ -38370,7 +39834,9 @@
     },
     "Evolution": {
       "Base": {}
-    }
+    },
+    "Weight": 58,
+    "CatchRate": 90
   },
   {
     "ID": "632",
@@ -38412,7 +39878,9 @@
     },
     "Evolution": {
       "Base": {}
-    }
+    },
+    "Weight": 33,
+    "CatchRate": 90
   },
   {
     "ID": "633",
@@ -38461,7 +39929,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 17.3,
+    "CatchRate": 45
   },
   {
     "ID": "634",
@@ -38518,7 +39988,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 50,
+    "CatchRate": 45
   },
   {
     "ID": "635",
@@ -38563,7 +40035,9 @@
           "Condition": "Level 54"
         }
       }
-    }
+    },
+    "Weight": 160,
+    "CatchRate": 45
   },
   {
     "ID": "636",
@@ -38616,7 +40090,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 28.8,
+    "CatchRate": 45
   },
   {
     "ID": "637",
@@ -38665,7 +40141,9 @@
           "Condition": "Level 49"
         }
       }
-    }
+    },
+    "Weight": 46,
+    "CatchRate": 15
   },
   {
     "ID": "638",
@@ -38699,7 +40177,9 @@
     },
     "Evolution": {
       "Base": {}
-    }
+    },
+    "Weight": 250,
+    "CatchRate": 3
   },
   {
     "ID": "639",
@@ -38733,7 +40213,9 @@
     },
     "Evolution": {
       "Base": {}
-    }
+    },
+    "Weight": 260,
+    "CatchRate": 3
   },
   {
     "ID": "640",
@@ -38767,7 +40249,9 @@
     },
     "Evolution": {
       "Base": {}
-    }
+    },
+    "Weight": 200,
+    "CatchRate": 3
   },
   {
     "ID": "641",
@@ -38804,7 +40288,9 @@
     },
     "Evolution": {
       "Base": {}
-    }
+    },
+    "Weight": 63,
+    "CatchRate": 3
   },
   {
     "ID": "641-T",
@@ -38837,7 +40323,9 @@
     },
     "Evolution": {
       "Base": {}
-    }
+    },
+    "Weight": 63,
+    "CatchRate": 3
   },
   {
     "ID": "642",
@@ -38875,7 +40363,9 @@
     },
     "Evolution": {
       "Base": {}
-    }
+    },
+    "Weight": 61,
+    "CatchRate": 3
   },
   {
     "ID": "642-T",
@@ -38909,7 +40399,9 @@
     },
     "Evolution": {
       "Base": {}
-    }
+    },
+    "Weight": 61,
+    "CatchRate": 3
   },
   {
     "ID": "643",
@@ -38943,7 +40435,9 @@
     },
     "Evolution": {
       "Base": {}
-    }
+    },
+    "Weight": 330,
+    "CatchRate": 3
   },
   {
     "ID": "644",
@@ -38977,7 +40471,9 @@
     },
     "Evolution": {
       "Base": {}
-    }
+    },
+    "Weight": 345,
+    "CatchRate": 3
   },
   {
     "ID": "645",
@@ -39015,7 +40511,9 @@
     },
     "Evolution": {
       "Base": {}
-    }
+    },
+    "Weight": 68,
+    "CatchRate": 3
   },
   {
     "ID": "645-T",
@@ -39049,7 +40547,9 @@
     },
     "Evolution": {
       "Base": {}
-    }
+    },
+    "Weight": 68,
+    "CatchRate": 3
   },
   {
     "ID": "646",
@@ -39083,7 +40583,9 @@
     },
     "Evolution": {
       "Base": {}
-    }
+    },
+    "Weight": 325,
+    "CatchRate": 3
   },
   {
     "ID": "646-B",
@@ -39117,7 +40619,9 @@
     },
     "Evolution": {
       "Base": {}
-    }
+    },
+    "Weight": 325,
+    "CatchRate": 3
   },
   {
     "ID": "646-W",
@@ -39151,7 +40655,9 @@
     },
     "Evolution": {
       "Base": {}
-    }
+    },
+    "Weight": 325,
+    "CatchRate": 3
   },
   {
     "ID": "647",
@@ -39185,7 +40691,9 @@
     },
     "Evolution": {
       "Base": {}
-    }
+    },
+    "Weight": 48.5,
+    "CatchRate": 3
   },
   {
     "ID": "648",
@@ -39219,7 +40727,9 @@
     },
     "Evolution": {
       "Base": {}
-    }
+    },
+    "Weight": 6.5,
+    "CatchRate": 3
   },
   {
     "ID": "648-P",
@@ -39253,7 +40763,9 @@
     },
     "Evolution": {
       "Base": {}
-    }
+    },
+    "Weight": 6.5,
+    "CatchRate": 3
   },
   {
     "ID": "649",
@@ -39287,7 +40799,9 @@
     },
     "Evolution": {
       "Base": {}
-    }
+    },
+    "Weight": 82.5,
+    "CatchRate": 3
   },
   {
     "ID": "650",
@@ -39331,7 +40845,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 9,
+    "CatchRate": 45
   },
   {
     "ID": "651",
@@ -39379,7 +40895,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 29,
+    "CatchRate": 45
   },
   {
     "ID": "652",
@@ -39422,7 +40940,9 @@
           "Condition": "Level 36"
         }
       }
-    }
+    },
+    "Weight": 90,
+    "CatchRate": 45
   },
   {
     "ID": "653",
@@ -39480,7 +41000,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 9.4,
+    "CatchRate": 45
   },
   {
     "ID": "654",
@@ -39542,7 +41064,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 14.5,
+    "CatchRate": 45
   },
   {
     "ID": "655",
@@ -39599,7 +41123,9 @@
           "Condition": "Level 36"
         }
       }
-    }
+    },
+    "Weight": 39,
+    "CatchRate": 45
   },
   {
     "ID": "656",
@@ -39643,7 +41169,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 7,
+    "CatchRate": 45
   },
   {
     "ID": "657",
@@ -39691,7 +41219,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 10.9,
+    "CatchRate": 45
   },
   {
     "ID": "658",
@@ -39734,7 +41264,9 @@
           "Condition": "Level 36"
         }
       }
-    }
+    },
+    "Weight": 40,
+    "CatchRate": 45
   },
   {
     "ID": "658-A",
@@ -39773,7 +41305,8 @@
           "Condition": "Level 36"
         }
       }
-    }
+    },
+    "CatchRate": 45
   },
   {
     "ID": "659",
@@ -39821,7 +41354,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 5,
+    "CatchRate": 255
   },
   {
     "ID": "660",
@@ -39868,7 +41403,9 @@
           "Condition": "Level 20"
         }
       }
-    }
+    },
+    "Weight": 42.4,
+    "CatchRate": 127
   },
   {
     "ID": "661",
@@ -39913,7 +41450,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 1.7,
+    "CatchRate": 255
   },
   {
     "ID": "662",
@@ -39962,7 +41501,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 16,
+    "CatchRate": 120
   },
   {
     "ID": "663",
@@ -40005,7 +41546,9 @@
           "Condition": "Level 35"
         }
       }
-    }
+    },
+    "Weight": 24.5,
+    "CatchRate": 45
   },
   {
     "ID": "664",
@@ -40053,7 +41596,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 2.5,
+    "CatchRate": 255
   },
   {
     "ID": "665",
@@ -40101,7 +41646,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 8.4,
+    "CatchRate": 120
   },
   {
     "ID": "666",
@@ -40148,7 +41695,9 @@
           "Condition": "Level 12"
         }
       }
-    }
+    },
+    "Weight": 17,
+    "CatchRate": 45
   },
   {
     "ID": "667",
@@ -40197,7 +41746,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 13.5,
+    "CatchRate": 220
   },
   {
     "ID": "668",
@@ -40257,7 +41808,9 @@
           "Condition": "Level 35"
         }
       }
-    }
+    },
+    "Weight": 81.5,
+    "CatchRate": 65
   },
   {
     "ID": "669",
@@ -40311,7 +41864,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 0.1,
+    "CatchRate": 255
   },
   {
     "ID": "670",
@@ -40369,7 +41924,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 0.9,
+    "CatchRate": 120
   },
   {
     "ID": "671",
@@ -40421,7 +41978,9 @@
           "Condition": "Shiny Stone"
         }
       }
-    }
+    },
+    "Weight": 10,
+    "CatchRate": 45
   },
   {
     "ID": "672",
@@ -40465,7 +42024,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 31,
+    "CatchRate": 200
   },
   {
     "ID": "673",
@@ -40511,7 +42072,9 @@
           "Condition": "Level 32"
         }
       }
-    }
+    },
+    "Weight": 91,
+    "CatchRate": 45
   },
   {
     "ID": "674",
@@ -40559,7 +42122,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 8,
+    "CatchRate": 220
   },
   {
     "ID": "675",
@@ -40606,7 +42171,9 @@
           "Condition": "Level 32, Dark Type in Party"
         }
       }
-    }
+    },
+    "Weight": 136,
+    "CatchRate": 65
   },
   {
     "ID": "676",
@@ -40639,7 +42206,9 @@
     },
     "Evolution": {
       "Base": {}
-    }
+    },
+    "Weight": 28,
+    "CatchRate": 160
   },
   {
     "ID": "677",
@@ -40691,7 +42260,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 3.5,
+    "CatchRate": 190
   },
   {
     "ID": "678",
@@ -40751,7 +42322,9 @@
           "Condition": "Level 25"
         }
       }
-    }
+    },
+    "Weight": 8.5,
+    "CatchRate": 75
   },
   {
     "ID": "678-F",
@@ -40810,7 +42383,9 @@
           "Condition": "Level 25"
         }
       }
-    }
+    },
+    "Weight": 8.5,
+    "CatchRate": 75
   },
   {
     "ID": "679",
@@ -40851,7 +42426,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 2,
+    "CatchRate": 180
   },
   {
     "ID": "680",
@@ -40896,7 +42473,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 4.5,
+    "CatchRate": 90
   },
   {
     "ID": "681",
@@ -40935,7 +42514,9 @@
           "Condition": "Dusk Stone"
         }
       }
-    }
+    },
+    "Weight": 53,
+    "CatchRate": 45
   },
   {
     "ID": "681-B",
@@ -40974,7 +42555,8 @@
           "Condition": "Dusk Stone"
         }
       }
-    }
+    },
+    "CatchRate": 45
   },
   {
     "ID": "682",
@@ -41018,7 +42600,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 0.5,
+    "CatchRate": 200
   },
   {
     "ID": "683",
@@ -41060,7 +42644,9 @@
           "Condition": "Sachet"
         }
       }
-    }
+    },
+    "Weight": 15.5,
+    "CatchRate": 140
   },
   {
     "ID": "684",
@@ -41104,7 +42690,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 3.5,
+    "CatchRate": 200
   },
   {
     "ID": "685",
@@ -41146,7 +42734,9 @@
           "Condition": "Whipped Dream"
         }
       }
-    }
+    },
+    "Weight": 5,
+    "CatchRate": 140
   },
   {
     "ID": "686",
@@ -41195,7 +42785,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 3.5,
+    "CatchRate": 190
   },
   {
     "ID": "687",
@@ -41242,7 +42834,9 @@
           "Condition": "Level 30, Console Upside Down"
         }
       }
-    }
+    },
+    "Weight": 47,
+    "CatchRate": 80
   },
   {
     "ID": "688",
@@ -41291,7 +42885,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 31,
+    "CatchRate": 120
   },
   {
     "ID": "689",
@@ -41341,7 +42937,9 @@
           "Condition": "Level 39"
         }
       }
-    }
+    },
+    "Weight": 96,
+    "CatchRate": 45
   },
   {
     "ID": "690",
@@ -41390,7 +42988,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 7.3,
+    "CatchRate": 225
   },
   {
     "ID": "691",
@@ -41437,7 +43037,9 @@
           "Condition": "Level 48"
         }
       }
-    }
+    },
+    "Weight": 81.5,
+    "CatchRate": 55
   },
   {
     "ID": "692",
@@ -41477,7 +43079,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 8.3,
+    "CatchRate": 225
   },
   {
     "ID": "693",
@@ -41515,7 +43119,9 @@
           "Condition": "Level 37"
         }
       }
-    }
+    },
+    "Weight": 35.3,
+    "CatchRate": 55
   },
   {
     "ID": "694",
@@ -41564,7 +43170,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 6,
+    "CatchRate": 190
   },
   {
     "ID": "695",
@@ -41614,7 +43222,9 @@
           "Condition": "Sun Stone"
         }
       }
-    }
+    },
+    "Weight": 21,
+    "CatchRate": 75
   },
   {
     "ID": "696",
@@ -41659,7 +43269,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 26,
+    "CatchRate": 45
   },
   {
     "ID": "697",
@@ -41706,7 +43318,9 @@
           "Condition": "Level 39, Daytime"
         }
       }
-    }
+    },
+    "Weight": 270,
+    "CatchRate": 45
   },
   {
     "ID": "698",
@@ -41751,7 +43365,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 25.2,
+    "CatchRate": 45
   },
   {
     "ID": "699",
@@ -41797,7 +43413,9 @@
           "Condition": "Level 39, Nighttime"
         }
       }
-    }
+    },
+    "Weight": 225,
+    "CatchRate": 45
   },
   {
     "ID": "700",
@@ -41839,7 +43457,9 @@
           "Condition": "High Affection + Fairy Move or High Friendship"
         }
       }
-    }
+    },
+    "Weight": 23.5,
+    "CatchRate": 45
   },
   {
     "ID": "701",
@@ -41881,7 +43501,9 @@
     },
     "Evolution": {
       "Base": {}
-    }
+    },
+    "Weight": 21.5,
+    "CatchRate": 100
   },
   {
     "ID": "702",
@@ -41937,7 +43559,9 @@
     },
     "Evolution": {
       "Base": {}
-    }
+    },
+    "Weight": 2.2,
+    "CatchRate": 180
   },
   {
     "ID": "703",
@@ -41975,7 +43599,9 @@
     },
     "Evolution": {
       "Base": {}
-    }
+    },
+    "Weight": 5.7,
+    "CatchRate": 60
   },
   {
     "ID": "704",
@@ -42023,7 +43649,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 2.8,
+    "CatchRate": 45
   },
   {
     "ID": "705",
@@ -42075,7 +43703,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 17.5,
+    "CatchRate": 45
   },
   {
     "ID": "706",
@@ -42139,7 +43769,9 @@
           "Condition": "Level 50, During Rain"
         }
       }
-    }
+    },
+    "Weight": 150.5,
+    "CatchRate": 45
   },
   {
     "ID": "707",
@@ -42177,7 +43809,9 @@
     },
     "Evolution": {
       "Base": {}
-    }
+    },
+    "Weight": 3,
+    "CatchRate": 75
   },
   {
     "ID": "708",
@@ -42234,7 +43868,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 7,
+    "CatchRate": 120
   },
   {
     "ID": "709",
@@ -42291,7 +43927,9 @@
           "Condition": "Dusk Stone"
         }
       }
-    }
+    },
+    "Weight": 71,
+    "CatchRate": 60
   },
   {
     "ID": "710",
@@ -42366,7 +44004,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 3.5,
+    "CatchRate": 120
   },
   {
     "ID": "710-A",
@@ -42441,7 +44081,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 5,
+    "CatchRate": 120
   },
   {
     "ID": "710-L",
@@ -42516,7 +44158,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 7.5,
+    "CatchRate": 120
   },
   {
     "ID": "710-S",
@@ -42591,7 +44235,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 15,
+    "CatchRate": 120
   },
   {
     "ID": "711",
@@ -42662,7 +44308,9 @@
           "Condition": "Dusk Stone"
         }
       }
-    }
+    },
+    "Weight": 9.5,
+    "CatchRate": 60
   },
   {
     "ID": "711-A",
@@ -42733,7 +44381,9 @@
           "Condition": "Dusk Stone"
         }
       }
-    }
+    },
+    "Weight": 12.5,
+    "CatchRate": 60
   },
   {
     "ID": "711-L",
@@ -42804,7 +44454,9 @@
           "Condition": "Dusk Stone"
         }
       }
-    }
+    },
+    "Weight": 14,
+    "CatchRate": 60
   },
   {
     "ID": "711-S",
@@ -42875,7 +44527,9 @@
           "Condition": "Dusk Stone"
         }
       }
-    }
+    },
+    "Weight": 39,
+    "CatchRate": 60
   },
   {
     "ID": "712",
@@ -42923,7 +44577,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 99.5,
+    "CatchRate": 190
   },
   {
     "ID": "713",
@@ -42969,7 +44625,9 @@
           "Condition": "Level 37"
         }
       }
-    }
+    },
+    "Weight": 505,
+    "CatchRate": 55
   },
   {
     "ID": "714",
@@ -43018,7 +44676,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 8,
+    "CatchRate": 190
   },
   {
     "ID": "715",
@@ -43065,7 +44725,9 @@
           "Condition": "Level 48"
         }
       }
-    }
+    },
+    "Weight": 85,
+    "CatchRate": 45
   },
   {
     "ID": "716",
@@ -43098,7 +44760,9 @@
     },
     "Evolution": {
       "Base": {}
-    }
+    },
+    "Weight": 215,
+    "CatchRate": 45
   },
   {
     "ID": "717",
@@ -43132,7 +44796,9 @@
     },
     "Evolution": {
       "Base": {}
-    }
+    },
+    "Weight": 203,
+    "CatchRate": 45
   },
   {
     "ID": "718-10",
@@ -43170,7 +44836,9 @@
     },
     "Evolution": {
       "Base": {}
-    }
+    },
+    "Weight": 33.5,
+    "CatchRate": 3
   },
   {
     "ID": "718",
@@ -43208,7 +44876,9 @@
     },
     "Evolution": {
       "Base": {}
-    }
+    },
+    "Weight": 305,
+    "CatchRate": 3
   },
   {
     "ID": "718-C",
@@ -43242,7 +44912,9 @@
     },
     "Evolution": {
       "Base": {}
-    }
+    },
+    "Weight": 610,
+    "CatchRate": 3
   },
   {
     "ID": "719",
@@ -43276,7 +44948,9 @@
     },
     "Evolution": {
       "Base": {}
-    }
+    },
+    "Weight": 8.8,
+    "CatchRate": 3
   },
   {
     "ID": "719-M",
@@ -43310,7 +44984,9 @@
     },
     "Evolution": {
       "Base": {}
-    }
+    },
+    "Weight": 27.8,
+    "CatchRate": 3
   },
   {
     "ID": "720",
@@ -43344,7 +45020,9 @@
     },
     "Evolution": {
       "Base": {}
-    }
+    },
+    "Weight": 9,
+    "CatchRate": 3
   },
   {
     "ID": "720-U",
@@ -43378,7 +45056,9 @@
     },
     "Evolution": {
       "Base": {}
-    }
+    },
+    "Weight": 490,
+    "CatchRate": 3
   },
   {
     "ID": "721",
@@ -43412,7 +45092,9 @@
     },
     "Evolution": {
       "Base": {}
-    }
+    },
+    "Weight": 195,
+    "CatchRate": 3
   },
   {
     "ID": "722",
@@ -43457,7 +45139,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 1.5,
+    "CatchRate": 45
   },
   {
     "ID": "723",
@@ -43506,7 +45190,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 16,
+    "CatchRate": 45
   },
   {
     "ID": "724",
@@ -43549,7 +45235,9 @@
           "Condition": "Level 34"
         }
       }
-    }
+    },
+    "Weight": 36.6,
+    "CatchRate": 45
   },
   {
     "ID": "725",
@@ -43593,7 +45281,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 4.3,
+    "CatchRate": 45
   },
   {
     "ID": "726",
@@ -43641,7 +45331,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 25,
+    "CatchRate": 45
   },
   {
     "ID": "727",
@@ -43684,7 +45376,9 @@
           "Condition": "Level 34"
         }
       }
-    }
+    },
+    "Weight": 83,
+    "CatchRate": 45
   },
   {
     "ID": "728",
@@ -43728,7 +45422,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 7.5,
+    "CatchRate": 45
   },
   {
     "ID": "729",
@@ -43776,7 +45472,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 17.5,
+    "CatchRate": 45
   },
   {
     "ID": "730",
@@ -43819,7 +45517,9 @@
           "Condition": "Level 34"
         }
       }
-    }
+    },
+    "Weight": 44,
+    "CatchRate": 45
   },
   {
     "ID": "731",
@@ -43868,7 +45568,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 1.2,
+    "CatchRate": 255
   },
   {
     "ID": "732",
@@ -43921,7 +45623,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 14.8,
+    "CatchRate": 120
   },
   {
     "ID": "733",
@@ -43968,7 +45672,9 @@
           "Condition": "Level 28"
         }
       }
-    }
+    },
+    "Weight": 26,
+    "CatchRate": 45
   },
   {
     "ID": "734",
@@ -44016,7 +45722,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 6,
+    "CatchRate": 255
   },
   {
     "ID": "735",
@@ -44062,7 +45770,9 @@
           "Condition": "Level 20, Daytime"
         }
       }
-    }
+    },
+    "Weight": 14.2,
+    "CatchRate": 127
   },
   {
     "ID": "736",
@@ -44102,7 +45812,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 4.4,
+    "CatchRate": 255
   },
   {
     "ID": "737",
@@ -44147,7 +45859,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 10.5,
+    "CatchRate": 120
   },
   {
     "ID": "738",
@@ -44186,7 +45900,9 @@
           "Condition": "Thunder Stone or Magnetic Field Area"
         }
       }
-    }
+    },
+    "Weight": 45,
+    "CatchRate": 45
   },
   {
     "ID": "739",
@@ -44234,7 +45950,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 7,
+    "CatchRate": 225
   },
   {
     "ID": "740",
@@ -44281,7 +45999,9 @@
           "Condition": "Mount Lanakila"
         }
       }
-    }
+    },
+    "Weight": 180,
+    "CatchRate": 60
   },
   {
     "ID": "741",
@@ -44315,7 +46035,9 @@
     },
     "Evolution": {
       "Base": {}
-    }
+    },
+    "Weight": 3.4,
+    "CatchRate": 45
   },
   {
     "ID": "741-E",
@@ -44349,7 +46071,9 @@
     },
     "Evolution": {
       "Base": {}
-    }
+    },
+    "Weight": 3.4,
+    "CatchRate": 45
   },
   {
     "ID": "741-P",
@@ -44383,7 +46107,9 @@
     },
     "Evolution": {
       "Base": {}
-    }
+    },
+    "Weight": 3.4,
+    "CatchRate": 45
   },
   {
     "ID": "741-G",
@@ -44417,7 +46143,9 @@
     },
     "Evolution": {
       "Base": {}
-    }
+    },
+    "Weight": 3.4,
+    "CatchRate": 45
   },
   {
     "ID": "742",
@@ -44466,7 +46194,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 0.2,
+    "CatchRate": 190
   },
   {
     "ID": "743",
@@ -44513,7 +46243,9 @@
           "Condition": "Level 25"
         }
       }
-    }
+    },
+    "Weight": 0.5,
+    "CatchRate": 75
   },
   {
     "ID": "744",
@@ -44561,7 +46293,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 9.2,
+    "CatchRate": 190
   },
   {
     "ID": "745",
@@ -44607,7 +46341,9 @@
           "Condition": "Level 25"
         }
       }
-    }
+    },
+    "Weight": 25,
+    "CatchRate": 90
   },
   {
     "ID": "745-M",
@@ -44653,7 +46389,9 @@
           "Condition": "Level 25"
         }
       }
-    }
+    },
+    "Weight": 25,
+    "CatchRate": 90
   },
   {
     "ID": "745-D",
@@ -44691,7 +46429,9 @@
           "Condition": "Level 25"
         }
       }
-    }
+    },
+    "Weight": 25,
+    "CatchRate": 90
   },
   {
     "ID": "746",
@@ -44724,7 +46464,9 @@
     },
     "Evolution": {
       "Base": {}
-    }
+    },
+    "Weight": 0.3,
+    "CatchRate": 60
   },
   {
     "ID": "746-S",
@@ -44757,7 +46499,9 @@
     },
     "Evolution": {
       "Base": {}
-    }
+    },
+    "Weight": 78.6,
+    "CatchRate": 60
   },
   {
     "ID": "747",
@@ -44806,7 +46550,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 8,
+    "CatchRate": 190
   },
   {
     "ID": "748",
@@ -44853,7 +46599,9 @@
           "Condition": "Level 38"
         }
       }
-    }
+    },
+    "Weight": 14.5,
+    "CatchRate": 75
   },
   {
     "ID": "749",
@@ -44901,7 +46649,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 110,
+    "CatchRate": 190
   },
   {
     "ID": "750",
@@ -44947,7 +46697,9 @@
           "Condition": "Level 30"
         }
       }
-    }
+    },
+    "Weight": 920,
+    "CatchRate": 60
   },
   {
     "ID": "751",
@@ -44992,7 +46744,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 4,
+    "CatchRate": 200
   },
   {
     "ID": "752",
@@ -45035,7 +46789,9 @@
           "Condition": "Level 22"
         }
       }
-    }
+    },
+    "Weight": 82,
+    "CatchRate": 100
   },
   {
     "ID": "753",
@@ -45079,7 +46835,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 1.5,
+    "CatchRate": 190
   },
   {
     "ID": "754",
@@ -45121,7 +46879,9 @@
           "Condition": "Level 34, Daytime"
         }
       }
-    }
+    },
+    "Weight": 18.5,
+    "CatchRate": 75
   },
   {
     "ID": "755",
@@ -45170,7 +46930,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 1.5,
+    "CatchRate": 190
   },
   {
     "ID": "756",
@@ -45217,7 +46979,9 @@
           "Condition": "Level 24"
         }
       }
-    }
+    },
+    "Weight": 11.5,
+    "CatchRate": 75
   },
   {
     "ID": "757",
@@ -45262,7 +47026,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 4.8,
+    "CatchRate": 120
   },
   {
     "ID": "758",
@@ -45305,7 +47071,9 @@
           "Condition": "Level 33, Female"
         }
       }
-    }
+    },
+    "Weight": 22.2,
+    "CatchRate": 45
   },
   {
     "ID": "759",
@@ -45354,7 +47122,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 6.8,
+    "CatchRate": 140
   },
   {
     "ID": "760",
@@ -45401,7 +47171,9 @@
           "Condition": "Level 27"
         }
       }
-    }
+    },
+    "Weight": 135,
+    "CatchRate": 70
   },
   {
     "ID": "761",
@@ -45449,7 +47221,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 3.2,
+    "CatchRate": 235
   },
   {
     "ID": "762",
@@ -45501,7 +47275,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 8.2,
+    "CatchRate": 120
   },
   {
     "ID": "763",
@@ -45547,7 +47323,9 @@
           "Condition": "Learn Stomp @ 28"
         }
       }
-    }
+    },
+    "Weight": 21.4,
+    "CatchRate": 45
   },
   {
     "ID": "764",
@@ -45588,7 +47366,9 @@
     },
     "Evolution": {
       "Base": {}
-    }
+    },
+    "Weight": 0.3,
+    "CatchRate": 60
   },
   {
     "ID": "765",
@@ -45630,7 +47410,9 @@
     },
     "Evolution": {
       "Base": {}
-    }
+    },
+    "Weight": 76,
+    "CatchRate": 45
   },
   {
     "ID": "766",
@@ -45667,7 +47449,9 @@
     },
     "Evolution": {
       "Base": {}
-    }
+    },
+    "Weight": 82.8,
+    "CatchRate": 45
   },
   {
     "ID": "767",
@@ -45708,7 +47492,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 12,
+    "CatchRate": 90
   },
   {
     "ID": "768",
@@ -45747,7 +47533,9 @@
           "Condition": "Level 30"
         }
       }
-    }
+    },
+    "Weight": 108,
+    "CatchRate": 45
   },
   {
     "ID": "769",
@@ -45792,7 +47580,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 70,
+    "CatchRate": 140
   },
   {
     "ID": "770",
@@ -45835,7 +47625,9 @@
           "Condition": "Level 42"
         }
       }
-    }
+    },
+    "Weight": 250,
+    "CatchRate": 60
   },
   {
     "ID": "771",
@@ -45872,7 +47664,9 @@
     },
     "Evolution": {
       "Base": {}
-    }
+    },
+    "Weight": 1.2,
+    "CatchRate": 60
   },
   {
     "ID": "772",
@@ -45912,7 +47706,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 120.5,
+    "CatchRate": 3
   },
   {
     "ID": "773",
@@ -45950,7 +47746,9 @@
           "Condition": "High Friendship"
         }
       }
-    }
+    },
+    "Weight": 100.5,
+    "CatchRate": 3
   },
   {
     "ID": "774",
@@ -45984,7 +47782,9 @@
     },
     "Evolution": {
       "Base": {}
-    }
+    },
+    "Weight": 40,
+    "CatchRate": 30
   },
   {
     "ID": "774-C",
@@ -46018,7 +47818,9 @@
     },
     "Evolution": {
       "Base": {}
-    }
+    },
+    "Weight": 0.3,
+    "CatchRate": 30
   },
   {
     "ID": "775",
@@ -46051,7 +47853,9 @@
     },
     "Evolution": {
       "Base": {}
-    }
+    },
+    "Weight": 19.9,
+    "CatchRate": 45
   },
   {
     "ID": "776",
@@ -46085,7 +47889,9 @@
     },
     "Evolution": {
       "Base": {}
-    }
+    },
+    "Weight": 212,
+    "CatchRate": 70
   },
   {
     "ID": "777",
@@ -46127,7 +47933,9 @@
     },
     "Evolution": {
       "Base": {}
-    }
+    },
+    "Weight": 3.3,
+    "CatchRate": 180
   },
   {
     "ID": "778",
@@ -46161,7 +47969,9 @@
     },
     "Evolution": {
       "Base": {}
-    }
+    },
+    "Weight": 0.7,
+    "CatchRate": 45
   },
   {
     "ID": "779",
@@ -46203,7 +48013,9 @@
     },
     "Evolution": {
       "Base": {}
-    }
+    },
+    "Weight": 19,
+    "CatchRate": 80
   },
   {
     "ID": "780",
@@ -46245,7 +48057,9 @@
     },
     "Evolution": {
       "Base": {}
-    }
+    },
+    "Weight": 185,
+    "CatchRate": 70
   },
   {
     "ID": "781",
@@ -46279,7 +48093,9 @@
     },
     "Evolution": {
       "Base": {}
-    }
+    },
+    "Weight": 210,
+    "CatchRate": 25
   },
   {
     "ID": "782",
@@ -46327,7 +48143,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 29.7,
+    "CatchRate": 45
   },
   {
     "ID": "783",
@@ -46380,7 +48198,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 47,
+    "CatchRate": 45
   },
   {
     "ID": "784",
@@ -46427,7 +48247,9 @@
           "Condition": "Level 45"
         }
       }
-    }
+    },
+    "Weight": 78.2,
+    "CatchRate": 45
   },
   {
     "ID": "785",
@@ -46465,7 +48287,9 @@
     },
     "Evolution": {
       "Base": {}
-    }
+    },
+    "Weight": 20.5,
+    "CatchRate": 3
   },
   {
     "ID": "786",
@@ -46503,7 +48327,9 @@
     },
     "Evolution": {
       "Base": {}
-    }
+    },
+    "Weight": 18.6,
+    "CatchRate": 3
   },
   {
     "ID": "787",
@@ -46541,7 +48367,9 @@
     },
     "Evolution": {
       "Base": {}
-    }
+    },
+    "Weight": 45.5,
+    "CatchRate": 3
   },
   {
     "ID": "788",
@@ -46579,7 +48407,9 @@
     },
     "Evolution": {
       "Base": {}
-    }
+    },
+    "Weight": 21.2,
+    "CatchRate": 3
   },
   {
     "ID": "789",
@@ -46619,7 +48449,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 0.1,
+    "CatchRate": 45
   },
   {
     "ID": "790",
@@ -46667,7 +48499,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 999.9,
+    "CatchRate": 45
   },
   {
     "ID": "791",
@@ -46706,7 +48540,9 @@
           "Condition": "Level 53, Sun/US/Sword"
         }
       }
-    }
+    },
+    "Weight": 230,
+    "CatchRate": 45
   },
   {
     "ID": "792",
@@ -46745,7 +48581,9 @@
           "Condition": "Level 53, Moon/UM/Shield"
         }
       }
-    }
+    },
+    "Weight": 120,
+    "CatchRate": 45
   },
   {
     "ID": "793",
@@ -46779,7 +48617,9 @@
     },
     "Evolution": {
       "Base": {}
-    }
+    },
+    "Weight": 55.5,
+    "CatchRate": 45
   },
   {
     "ID": "794",
@@ -46813,7 +48653,9 @@
     },
     "Evolution": {
       "Base": {}
-    }
+    },
+    "Weight": 333.6,
+    "CatchRate": 45
   },
   {
     "ID": "795",
@@ -46847,7 +48689,9 @@
     },
     "Evolution": {
       "Base": {}
-    }
+    },
+    "Weight": 25,
+    "CatchRate": 45
   },
   {
     "ID": "796",
@@ -46880,7 +48724,9 @@
     },
     "Evolution": {
       "Base": {}
-    }
+    },
+    "Weight": 100,
+    "CatchRate": 45
   },
   {
     "ID": "797",
@@ -46914,7 +48760,9 @@
     },
     "Evolution": {
       "Base": {}
-    }
+    },
+    "Weight": 999.9,
+    "CatchRate": 45
   },
   {
     "ID": "798",
@@ -46948,7 +48796,9 @@
     },
     "Evolution": {
       "Base": {}
-    }
+    },
+    "Weight": 0.1,
+    "CatchRate": 45
   },
   {
     "ID": "799",
@@ -46982,7 +48832,9 @@
     },
     "Evolution": {
       "Base": {}
-    }
+    },
+    "Weight": 888,
+    "CatchRate": 45
   },
   {
     "ID": "800",
@@ -47015,7 +48867,9 @@
     },
     "Evolution": {
       "Base": {}
-    }
+    },
+    "Weight": 230,
+    "CatchRate": 255
   },
   {
     "ID": "800-DM",
@@ -47049,7 +48903,9 @@
     },
     "Evolution": {
       "Base": {}
-    }
+    },
+    "Weight": 460,
+    "CatchRate": 3
   },
   {
     "ID": "800-DW",
@@ -47083,7 +48939,9 @@
     },
     "Evolution": {
       "Base": {}
-    }
+    },
+    "Weight": 350,
+    "CatchRate": 3
   },
   {
     "ID": "800-U",
@@ -47117,7 +48975,9 @@
     },
     "Evolution": {
       "Base": {}
-    }
+    },
+    "Weight": 230,
+    "CatchRate": 3
   },
   {
     "ID": "801",
@@ -47151,7 +49011,9 @@
     },
     "Evolution": {
       "Base": {}
-    }
+    },
+    "Weight": 80.5,
+    "CatchRate": 3
   },
   {
     "ID": "802",
@@ -47185,7 +49047,9 @@
     },
     "Evolution": {
       "Base": {}
-    }
+    },
+    "Weight": 22.2,
+    "CatchRate": 3
   },
   {
     "ID": "803",
@@ -47225,7 +49089,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 1.8,
+    "CatchRate": 45
   },
   {
     "ID": "804",
@@ -47264,7 +49130,9 @@
           "Condition": "Learn Dragon Pulse @ 1"
         }
       }
-    }
+    },
+    "Weight": 150,
+    "CatchRate": 45
   },
   {
     "ID": "805",
@@ -47298,7 +49166,9 @@
     },
     "Evolution": {
       "Base": {}
-    }
+    },
+    "Weight": 820,
+    "CatchRate": 30
   },
   {
     "ID": "806",
@@ -47332,7 +49202,9 @@
     },
     "Evolution": {
       "Base": {}
-    }
+    },
+    "Weight": 13,
+    "CatchRate": 30
   },
   {
     "ID": "807",
@@ -47365,7 +49237,9 @@
     },
     "Evolution": {
       "Base": {}
-    }
+    },
+    "Weight": 44.5,
+    "CatchRate": 3
   },
   {
     "ID": "808",
@@ -47405,7 +49279,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 8,
+    "CatchRate": 3
   },
   {
     "ID": "809",
@@ -47443,7 +49319,9 @@
           "Condition": "Pokémon GO - 400 Meltan Candies"
         }
       }
-    }
+    },
+    "Weight": 800,
+    "CatchRate": 3
   },
   {
     "ID": "810",
@@ -47487,7 +49365,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 5,
+    "CatchRate": 45
   },
   {
     "ID": "811",
@@ -47535,7 +49415,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 14,
+    "CatchRate": 45
   },
   {
     "ID": "812",
@@ -47577,7 +49459,9 @@
           "Condition": "Level 35"
         }
       }
-    }
+    },
+    "Weight": 90,
+    "CatchRate": 45
   },
   {
     "ID": "813",
@@ -47621,7 +49505,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 4.5,
+    "CatchRate": 45
   },
   {
     "ID": "814",
@@ -47669,7 +49555,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 9,
+    "CatchRate": 45
   },
   {
     "ID": "815",
@@ -47711,7 +49599,9 @@
           "Condition": "Level 35"
         }
       }
-    }
+    },
+    "Weight": 33,
+    "CatchRate": 45
   },
   {
     "ID": "816",
@@ -47755,7 +49645,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 4,
+    "CatchRate": 45
   },
   {
     "ID": "817",
@@ -47803,7 +49695,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 11.5,
+    "CatchRate": 45
   },
   {
     "ID": "818",
@@ -47845,7 +49739,9 @@
           "Condition": "Level 35"
         }
       }
-    }
+    },
+    "Weight": 45.2,
+    "CatchRate": 45
   },
   {
     "ID": "819",
@@ -47889,7 +49785,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 2.5,
+    "CatchRate": 255
   },
   {
     "ID": "820",
@@ -47931,7 +49829,9 @@
           "Condition": "Level 24"
         }
       }
-    }
+    },
+    "Weight": 6,
+    "CatchRate": 90
   },
   {
     "ID": "821",
@@ -47979,7 +49879,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 1.8,
+    "CatchRate": 255
   },
   {
     "ID": "822",
@@ -48031,7 +49933,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 16,
+    "CatchRate": 120
   },
   {
     "ID": "823",
@@ -48078,7 +49982,9 @@
           "Condition": "Level 38"
         }
       }
-    }
+    },
+    "Weight": 75,
+    "CatchRate": 45
   },
   {
     "ID": "824",
@@ -48126,7 +50032,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 8,
+    "CatchRate": 255
   },
   {
     "ID": "825",
@@ -48179,7 +50087,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 19.5,
+    "CatchRate": 120
   },
   {
     "ID": "826",
@@ -48226,7 +50136,9 @@
           "Condition": "Level 30"
         }
       }
-    }
+    },
+    "Weight": 40.8,
+    "CatchRate": 45
   },
   {
     "ID": "827",
@@ -48274,7 +50186,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 8.9,
+    "CatchRate": 255
   },
   {
     "ID": "828",
@@ -48320,7 +50234,9 @@
           "Condition": "Level 18"
         }
       }
-    }
+    },
+    "Weight": 19.9,
+    "CatchRate": 127
   },
   {
     "ID": "829",
@@ -48368,7 +50284,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 2.2,
+    "CatchRate": 190
   },
   {
     "ID": "830",
@@ -48414,7 +50332,9 @@
           "Condition": "Level 20"
         }
       }
-    }
+    },
+    "Weight": 2.5,
+    "CatchRate": 75
   },
   {
     "ID": "831",
@@ -48462,7 +50382,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 6,
+    "CatchRate": 255
   },
   {
     "ID": "832",
@@ -48508,7 +50430,9 @@
           "Condition": "Level 24"
         }
       }
-    }
+    },
+    "Weight": 43,
+    "CatchRate": 127
   },
   {
     "ID": "833",
@@ -48556,7 +50480,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 8.5,
+    "CatchRate": 255
   },
   {
     "ID": "834",
@@ -48603,7 +50529,9 @@
           "Condition": "Level 22"
         }
       }
-    }
+    },
+    "Weight": 115.5,
+    "CatchRate": 75
   },
   {
     "ID": "835",
@@ -48647,7 +50575,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 13.5,
+    "CatchRate": 255
   },
   {
     "ID": "836",
@@ -48689,7 +50619,9 @@
           "Condition": "Level 25"
         }
       }
-    }
+    },
+    "Weight": 34,
+    "CatchRate": 45
   },
   {
     "ID": "837",
@@ -48737,7 +50669,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 12,
+    "CatchRate": 255
   },
   {
     "ID": "838",
@@ -48790,7 +50724,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 78,
+    "CatchRate": 120
   },
   {
     "ID": "839",
@@ -48837,7 +50773,9 @@
           "Condition": "Level 34"
         }
       }
-    }
+    },
+    "Weight": 310.5,
+    "CatchRate": 45
   },
   {
     "ID": "840",
@@ -48890,7 +50828,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 0.5,
+    "CatchRate": 255
   },
   {
     "ID": "841",
@@ -48937,7 +50877,9 @@
           "Condition": "Tart Apple"
         }
       }
-    }
+    },
+    "Weight": 1,
+    "CatchRate": 45
   },
   {
     "ID": "842",
@@ -48984,7 +50926,9 @@
           "Condition": "Sweet Apple"
         }
       }
-    }
+    },
+    "Weight": 13,
+    "CatchRate": 45
   },
   {
     "ID": "843",
@@ -49032,7 +50976,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 7.6,
+    "CatchRate": 255
   },
   {
     "ID": "844",
@@ -49078,7 +51024,9 @@
           "Condition": "Level 36"
         }
       }
-    }
+    },
+    "Weight": 65.5,
+    "CatchRate": 120
   },
   {
     "ID": "845",
@@ -49112,7 +51060,9 @@
     },
     "Evolution": {
       "Base": {}
-    }
+    },
+    "Weight": 18,
+    "CatchRate": 45
   },
   {
     "ID": "846",
@@ -49156,7 +51106,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 1,
+    "CatchRate": 255
   },
   {
     "ID": "847",
@@ -49198,7 +51150,9 @@
           "Condition": "Level 26"
         }
       }
-    }
+    },
+    "Weight": 30,
+    "CatchRate": 60
   },
   {
     "ID": "848",
@@ -49247,7 +51201,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 11,
+    "CatchRate": 75
   },
   {
     "ID": "849",
@@ -49296,7 +51252,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 40,
+    "CatchRate": 45
   },
   {
     "ID": "849-LK",
@@ -49345,7 +51303,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 40,
+    "CatchRate": 45
   },
   {
     "ID": "850",
@@ -49394,7 +51354,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 1,
+    "CatchRate": 190
   },
   {
     "ID": "851",
@@ -49441,7 +51403,9 @@
           "Condition": "Level 28"
         }
       }
-    }
+    },
+    "Weight": 120,
+    "CatchRate": 75
   },
   {
     "ID": "852",
@@ -49485,7 +51449,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 4,
+    "CatchRate": 180
   },
   {
     "ID": "853",
@@ -49527,7 +51493,9 @@
           "Condition": "Learn Taunt @ 35"
         }
       }
-    }
+    },
+    "Weight": 39,
+    "CatchRate": 45
   },
   {
     "ID": "854",
@@ -49571,7 +51539,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 0.2,
+    "CatchRate": 120
   },
   {
     "ID": "855",
@@ -49613,7 +51583,9 @@
           "Condition": "Cracked/Chipped Pot"
         }
       }
-    }
+    },
+    "Weight": 0.4,
+    "CatchRate": 60
   },
   {
     "ID": "856",
@@ -49661,7 +51633,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 3.4,
+    "CatchRate": 235
   },
   {
     "ID": "857",
@@ -49713,7 +51687,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 4.8,
+    "CatchRate": 120
   },
   {
     "ID": "858",
@@ -49760,7 +51736,9 @@
           "Condition": "Level 42"
         }
       }
-    }
+    },
+    "Weight": 5.1,
+    "CatchRate": 45
   },
   {
     "ID": "859",
@@ -49809,7 +51787,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 5.5,
+    "CatchRate": 255
   },
   {
     "ID": "860",
@@ -49862,7 +51842,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 12.5,
+    "CatchRate": 120
   },
   {
     "ID": "861",
@@ -49909,7 +51891,9 @@
           "Condition": "Level 42"
         }
       }
-    }
+    },
+    "Weight": 61,
+    "CatchRate": 45
   },
   {
     "ID": "862",
@@ -49956,7 +51940,9 @@
           "Condition": "Level 35, Nighttime"
         }
       }
-    }
+    },
+    "Weight": 46,
+    "CatchRate": 45
   },
   {
     "ID": "863",
@@ -50002,7 +51988,9 @@
           "Condition": "Level 28"
         }
       }
-    }
+    },
+    "Weight": 28,
+    "CatchRate": 90
   },
   {
     "ID": "864",
@@ -50044,7 +52032,9 @@
           "Condition": "Level 38"
         }
       }
-    }
+    },
+    "Weight": 0.4,
+    "CatchRate": 30
   },
   {
     "ID": "865",
@@ -50086,7 +52076,9 @@
           "Condition": "3 Crits in 1 Battle"
         }
       }
-    }
+    },
+    "Weight": 117,
+    "CatchRate": 45
   },
   {
     "ID": "866",
@@ -50133,7 +52125,9 @@
           "Condition": "Level 42"
         }
       }
-    }
+    },
+    "Weight": 58.2,
+    "CatchRate": 45
   },
   {
     "ID": "867",
@@ -50172,7 +52166,9 @@
           "Condition": "Dusty Bowl"
         }
       }
-    }
+    },
+    "Weight": 66.6,
+    "CatchRate": 90
   },
   {
     "ID": "868",
@@ -50216,7 +52212,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 0.3,
+    "CatchRate": 200
   },
   {
     "ID": "869",
@@ -50258,7 +52256,9 @@
           "Condition": "Spin w/ Sweet"
         }
       }
-    }
+    },
+    "Weight": 0.5,
+    "CatchRate": 100
   },
   {
     "ID": "870",
@@ -50295,7 +52295,9 @@
     },
     "Evolution": {
       "Base": {}
-    }
+    },
+    "Weight": 62,
+    "CatchRate": 45
   },
   {
     "ID": "871",
@@ -50332,7 +52334,9 @@
     },
     "Evolution": {
       "Base": {}
-    }
+    },
+    "Weight": 1,
+    "CatchRate": 75
   },
   {
     "ID": "872",
@@ -50377,7 +52381,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 3.8,
+    "CatchRate": 190
   },
   {
     "ID": "873",
@@ -50420,7 +52426,9 @@
           "Condition": "High Friendship, Nighttime"
         }
       }
-    }
+    },
+    "Weight": 42,
+    "CatchRate": 75
   },
   {
     "ID": "874",
@@ -50453,7 +52461,9 @@
     },
     "Evolution": {
       "Base": {}
-    }
+    },
+    "Weight": 520,
+    "CatchRate": 60
   },
   {
     "ID": "875",
@@ -50486,7 +52496,9 @@
     },
     "Evolution": {
       "Base": {}
-    }
+    },
+    "Weight": 89,
+    "CatchRate": 60
   },
   {
     "ID": "875-N",
@@ -50519,7 +52531,9 @@
     },
     "Evolution": {
       "Base": {}
-    }
+    },
+    "Weight": 89,
+    "CatchRate": 60
   },
   {
     "ID": "876",
@@ -50561,7 +52575,9 @@
     },
     "Evolution": {
       "Base": {}
-    }
+    },
+    "Weight": 28,
+    "CatchRate": 30
   },
   {
     "ID": "876-F",
@@ -50603,7 +52619,9 @@
     },
     "Evolution": {
       "Base": {}
-    }
+    },
+    "Weight": 28,
+    "CatchRate": 30
   },
   {
     "ID": "877",
@@ -50637,7 +52655,9 @@
     },
     "Evolution": {
       "Base": {}
-    }
+    },
+    "Weight": 3,
+    "CatchRate": 180
   },
   {
     "ID": "878",
@@ -50681,7 +52701,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 100,
+    "CatchRate": 190
   },
   {
     "ID": "879",
@@ -50723,7 +52745,9 @@
           "Condition": "Level 34"
         }
       }
-    }
+    },
+    "Weight": 650,
+    "CatchRate": 90
   },
   {
     "ID": "880",
@@ -50765,7 +52789,9 @@
     },
     "Evolution": {
       "Base": {}
-    }
+    },
+    "Weight": 190,
+    "CatchRate": 45
   },
   {
     "ID": "881",
@@ -50807,7 +52833,9 @@
     },
     "Evolution": {
       "Base": {}
-    }
+    },
+    "Weight": 150,
+    "CatchRate": 45
   },
   {
     "ID": "882",
@@ -50849,7 +52877,9 @@
     },
     "Evolution": {
       "Base": {}
-    }
+    },
+    "Weight": 215,
+    "CatchRate": 45
   },
   {
     "ID": "883",
@@ -50891,7 +52921,9 @@
     },
     "Evolution": {
       "Base": {}
-    }
+    },
+    "Weight": 175,
+    "CatchRate": 45
   },
   {
     "ID": "884",
@@ -50933,7 +52965,9 @@
     },
     "Evolution": {
       "Base": {}
-    }
+    },
+    "Weight": 40,
+    "CatchRate": 45
   },
   {
     "ID": "885",
@@ -50982,7 +53016,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 2,
+    "CatchRate": 45
   },
   {
     "ID": "886",
@@ -51035,7 +53071,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 11,
+    "CatchRate": 45
   },
   {
     "ID": "887",
@@ -51082,7 +53120,9 @@
           "Condition": "Level 60"
         }
       }
-    }
+    },
+    "Weight": 50,
+    "CatchRate": 45
   },
   {
     "ID": "888",
@@ -51115,7 +53155,9 @@
     },
     "Evolution": {
       "Base": {}
-    }
+    },
+    "Weight": 110,
+    "CatchRate": 10
   },
   {
     "ID": "888-CS",
@@ -51149,7 +53191,9 @@
     },
     "Evolution": {
       "Base": {}
-    }
+    },
+    "Weight": 355,
+    "CatchRate": 10
   },
   {
     "ID": "889",
@@ -51182,7 +53226,9 @@
     },
     "Evolution": {
       "Base": {}
-    }
+    },
+    "Weight": 210,
+    "CatchRate": 10
   },
   {
     "ID": "889-CS",
@@ -51216,7 +53262,9 @@
     },
     "Evolution": {
       "Base": {}
-    }
+    },
+    "Weight": 785,
+    "CatchRate": 10
   },
   {
     "ID": "890",
@@ -51250,7 +53298,9 @@
     },
     "Evolution": {
       "Base": {}
-    }
+    },
+    "Weight": 950,
+    "CatchRate": 255
   },
   {
     "ID": "891",
@@ -51294,7 +53344,9 @@
           }
         ]
       }
-    }
+    },
+    "Weight": 12,
+    "CatchRate": 3
   },
   {
     "ID": "892",
@@ -51333,7 +53385,9 @@
           "Condition": "Tower of Darkness"
         }
       }
-    }
+    },
+    "Weight": 105,
+    "CatchRate": 3
   },
   {
     "ID": "892-RS",
@@ -51372,7 +53426,9 @@
           "Condition": "Tower of Water"
         }
       }
-    }
+    },
+    "Weight": 105,
+    "CatchRate": 3
   },
   {
     "ID": "893",
@@ -51406,7 +53462,9 @@
     },
     "Evolution": {
       "Base": {}
-    }
+    },
+    "Weight": 70,
+    "CatchRate": 3
   },
   {
     "ID": "894",
@@ -51439,7 +53497,9 @@
     },
     "Evolution": {
       "Base": {}
-    }
+    },
+    "Weight": 145,
+    "CatchRate": 3
   },
   {
     "ID": "895",
@@ -51472,7 +53532,9 @@
     },
     "Evolution": {
       "Base": {}
-    }
+    },
+    "Weight": 200,
+    "CatchRate": 3
   },
   {
     "ID": "896",
@@ -51505,7 +53567,9 @@
     },
     "Evolution": {
       "Base": {}
-    }
+    },
+    "Weight": 800,
+    "CatchRate": 3
   },
   {
     "ID": "897",
@@ -51538,7 +53602,9 @@
     },
     "Evolution": {
       "Base": {}
-    }
+    },
+    "Weight": 44.5,
+    "CatchRate": 3
   },
   {
     "ID": "898",
@@ -51572,7 +53638,9 @@
     },
     "Evolution": {
       "Base": {}
-    }
+    },
+    "Weight": 7.7,
+    "CatchRate": 3
   },
   {
     "ID": "898-IR",
@@ -51606,7 +53674,9 @@
     },
     "Evolution": {
       "Base": {}
-    }
+    },
+    "Weight": 809.1,
+    "CatchRate": 3
   },
   {
     "ID": "898-SR",
@@ -51640,6 +53710,8 @@
     },
     "Evolution": {
       "Base": {}
-    }
+    },
+    "Weight": 53.6,
+    "CatchRate": 3
   }
 ]

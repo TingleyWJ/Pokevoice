@@ -80,6 +80,8 @@ namespace PokemonSpeechApp
         public Stats Stats { get; set; }
         public Abilities Abilities { get; set; }
         public Evolution Evolution { get; set; }
+        public float Weight { get; set; }
+        public int CatchRate { get; set; }
     }
 
     class ConfigData

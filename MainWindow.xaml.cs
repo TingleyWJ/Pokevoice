@@ -46,6 +46,7 @@ namespace PokemonSpeechApp
 
         bool CloseApp { get; set; }
         bool Recording { get; set; }
+        bool DisposingRecording { get; set; }
 
         LowLevelKeyboardHook KBH { get; set; }
 
@@ -100,14 +101,15 @@ namespace PokemonSpeechApp
         async void KBH_OnKeyUp(object sender, Keys e)
         {
             //Trace.WriteLine($"KBH Key Up: {e}");
-            if (e == Keys.F13)
+            if (e == Keys.F13 && Recording && !DisposingRecording)
             {
                 Trace.WriteLine("Recording Ending");
-                UpdateRecordingUI();
-                Recording = false;
+                DisposingRecording = true;
 
                 await Recognizer.StopContinuousRecognitionAsync();
+                UpdateRecordingUI();
                 TerminateRecognizer();
+                Recording = DisposingRecording = false;
             }
         }
 
@@ -182,17 +184,17 @@ namespace PokemonSpeechApp
 
             Recognizer.Canceled += (s, e) =>
             {
-                Trace.WriteLine($"\n    Canceled. Error Code: {e.ErrorCode}. Error Details: {e.ErrorDetails}. Reason: {e.Reason}.");
+                Trace.WriteLine($"Canceled. Error Code: {e.ErrorCode}. Error Details: {e.ErrorDetails}. Reason: {e.Reason}.\n");
             };
 
             Recognizer.SessionStarted += (s, e) =>
             {
-                Trace.WriteLine("\n    Session started event.");
+                Trace.WriteLine("Session started event.\n");
             };
 
             Recognizer.SessionStopped += (s, e) =>
             {
-                Trace.WriteLine("\n    Session stopped event.");
+                Trace.WriteLine("Session stopped event.\n");
             };
         }
 
@@ -739,6 +741,9 @@ namespace PokemonSpeechApp
 
                     EvoPanel.Children.Add(nextNames);
                 }
+
+                CatchRate.Text = mon.CatchRate.ToString();
+                Weight.Text = mon.Weight.ToString("F1");
 
                 int HPVal = mon.Stats.Base.HP;
                 int AtkVal = mon.Stats.Base.Atk;
