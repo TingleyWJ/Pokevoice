@@ -10,24 +10,32 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="Fonts\FiraSans-Black.ttf" />
-    <None Remove="Fonts\FiraSans-BlackItalic.ttf" />
-    <None Remove="Fonts\FiraSans-Bold.ttf" />
-    <None Remove="Fonts\FiraSans-BoldItalic.ttf" />
-    <None Remove="Fonts\FiraSans-ExtraBold.ttf" />
-    <None Remove="Fonts\FiraSans-ExtraBoldItalic.ttf" />
-    <None Remove="Fonts\FiraSans-ExtraLight.ttf" />
-    <None Remove="Fonts\FiraSans-ExtraLightItalic.ttf" />
-    <None Remove="Fonts\FiraSans-Italic.ttf" />
-    <None Remove="Fonts\FiraSans-Light.ttf" />
-    <None Remove="Fonts\FiraSans-LightItalic.ttf" />
-    <None Remove="Fonts\FiraSans-Medium.ttf" />
-    <None Remove="Fonts\FiraSans-MediumItalic.ttf" />
-    <None Remove="Fonts\FiraSans-Regular.ttf" />
-    <None Remove="Fonts\FiraSans-SemiBold.ttf" />
-    <None Remove="Fonts\FiraSans-SemiBoldItalic.ttf" />
-    <None Remove="Fonts\FiraSans-Thin.ttf" />
-    <None Remove="Fonts\FiraSans-ThinItalic.ttf" />
+    <None Remove="fonts\FiraSans-Black.ttf" />
+    <None Remove="fonts\FiraSans-BlackItalic.ttf" />
+    <None Remove="fonts\FiraSans-Bold.ttf" />
+    <None Remove="fonts\FiraSans-BoldItalic.ttf" />
+    <None Remove="fonts\FiraSans-ExtraBold.ttf" />
+    <None Remove="fonts\FiraSans-ExtraBoldItalic.ttf" />
+    <None Remove="fonts\FiraSans-ExtraLight.ttf" />
+    <None Remove="fonts\FiraSans-ExtraLightItalic.ttf" />
+    <None Remove="fonts\FiraSans-Italic.ttf" />
+    <None Remove="fonts\FiraSans-Light.ttf" />
+    <None Remove="fonts\FiraSans-LightItalic.ttf" />
+    <None Remove="fonts\FiraSans-Medium.ttf" />
+    <None Remove="fonts\FiraSans-MediumItalic.ttf" />
+    <None Remove="fonts\FiraSans-Regular.ttf" />
+    <None Remove="fonts\FiraSans-SemiBold.ttf" />
+    <None Remove="fonts\FiraSans-SemiBoldItalic.ttf" />
+    <None Remove="fonts\FiraSans-Thin.ttf" />
+    <None Remove="fonts\FiraSans-ThinItalic.ttf" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Page Remove="src\App.xaml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ApplicationDefinition Include="src\App.xaml" />
   </ItemGroup>
 
   <ItemGroup>
@@ -37,24 +45,24 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Resource Include="Fonts\FiraSans-Black.ttf" />
-    <Resource Include="Fonts\FiraSans-BlackItalic.ttf" />
-    <Resource Include="Fonts\FiraSans-Bold.ttf" />
-    <Resource Include="Fonts\FiraSans-BoldItalic.ttf" />
-    <Resource Include="Fonts\FiraSans-ExtraBold.ttf" />
-    <Resource Include="Fonts\FiraSans-ExtraBoldItalic.ttf" />
-    <Resource Include="Fonts\FiraSans-ExtraLight.ttf" />
-    <Resource Include="Fonts\FiraSans-ExtraLightItalic.ttf" />
-    <Resource Include="Fonts\FiraSans-Italic.ttf" />
-    <Resource Include="Fonts\FiraSans-Light.ttf" />
-    <Resource Include="Fonts\FiraSans-LightItalic.ttf" />
-    <Resource Include="Fonts\FiraSans-Medium.ttf" />
-    <Resource Include="Fonts\FiraSans-MediumItalic.ttf" />
-    <Resource Include="Fonts\FiraSans-Regular.ttf" />
-    <Resource Include="Fonts\FiraSans-SemiBold.ttf" />
-    <Resource Include="Fonts\FiraSans-SemiBoldItalic.ttf" />
-    <Resource Include="Fonts\FiraSans-Thin.ttf" />
-    <Resource Include="Fonts\FiraSans-ThinItalic.ttf" />
+    <Resource Include="fonts\FiraSans-Black.ttf" />
+    <Resource Include="fonts\FiraSans-BlackItalic.ttf" />
+    <Resource Include="fonts\FiraSans-Bold.ttf" />
+    <Resource Include="fonts\FiraSans-BoldItalic.ttf" />
+    <Resource Include="fonts\FiraSans-ExtraBold.ttf" />
+    <Resource Include="fonts\FiraSans-ExtraBoldItalic.ttf" />
+    <Resource Include="fonts\FiraSans-ExtraLight.ttf" />
+    <Resource Include="fonts\FiraSans-ExtraLightItalic.ttf" />
+    <Resource Include="fonts\FiraSans-Italic.ttf" />
+    <Resource Include="fonts\FiraSans-Light.ttf" />
+    <Resource Include="fonts\FiraSans-LightItalic.ttf" />
+    <Resource Include="fonts\FiraSans-Medium.ttf" />
+    <Resource Include="fonts\FiraSans-MediumItalic.ttf" />
+    <Resource Include="fonts\FiraSans-Regular.ttf" />
+    <Resource Include="fonts\FiraSans-SemiBold.ttf" />
+    <Resource Include="fonts\FiraSans-SemiBoldItalic.ttf" />
+    <Resource Include="fonts\FiraSans-Thin.ttf" />
+    <Resource Include="fonts\FiraSans-ThinItalic.ttf" />
   </ItemGroup>
 
 </Project>
