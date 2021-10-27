@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Pokevoice
+namespace PokemonSpeechApp
 {
     enum Mode
     {

@@ -2,7 +2,7 @@
 using System.Windows;
 using System.Windows.Controls;
 
-namespace Pokevoice
+namespace PokemonSpeechApp
 {
     public class AlignableWrapPanel : Panel
     {

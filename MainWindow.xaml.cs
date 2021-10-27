@@ -7,7 +7,6 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Diagnostics;
 using System.IO;
-using System.Runtime.InteropServices;
 using System.Text.RegularExpressions;
 using System.Threading;
 using System.Threading.Tasks;
@@ -15,13 +14,12 @@ using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Forms;
 using System.Windows.Input;
-using System.Windows.Interop;
 using System.Windows.Media;
 using KeyEventArgs = System.Windows.Input.KeyEventArgs;
 using Label = System.Windows.Controls.Label;
 using Orientation = System.Windows.Controls.Orientation;
 
-namespace Pokevoice
+namespace PokemonSpeechApp
 {
     /* Ideas & To-do
      * -Make UI larger for better readability
@@ -33,7 +31,6 @@ namespace Pokevoice
 
     public partial class MainWindow : Window
     {
-        #region Vars
         ConfigData Config { get; set; }
         SpeechRecognizer Recognizer { get; set; }
         MMDevice MicToUse { get; set; } = null;
@@ -53,16 +50,9 @@ namespace Pokevoice
 
         LowLevelKeyboardHook KBH { get; set; }
 
-        static readonly DependencyProperty ScaleValueProperty = DependencyProperty.Register("ScaleValue", typeof(double), typeof(MainWindow), new UIPropertyMetadata(1.0, new PropertyChangedCallback(OnScaleValueChanged), new CoerceValueCallback(OnCoerceScaleValue)));
-
-        double AspectRatio { get; set; }
-        bool? AdjustingHeight { get; set; }
-        #endregion
-
         public MainWindow()
         {
             InitializeComponent();
-            SourceInitialized += OnSourceInitialized;
             Loaded += OnLoad;
             Closing += OnClosing;
             //Trace.WriteLine("\n\nWINDOW 1\n\n");
@@ -823,147 +813,6 @@ namespace Pokevoice
                 SpDefBar.Background = new SolidColorBrush((Color)ColorConverter.ConvertFromString(BarColors.GetColor(SpDefRatio)));
                 SpdBar.Background = new SolidColorBrush((Color)ColorConverter.ConvertFromString(BarColors.GetColor(SpdRatio)));
             }));
-        }
-        #endregion
-
-        #region ScaleValue Dependency Property
-        //https://stackoverflow.com/questions/3193339/tips-on-developing-resolution-independent-application/5000120#5000120
-
-        static object OnCoerceScaleValue(DependencyObject o, object value)
-        {
-            return o is MainWindow ? OnCoerceScaleValue((double)value) : value;
-        }
-
-        static void OnScaleValueChanged(DependencyObject o, DependencyPropertyChangedEventArgs e)
-        {
-            //Trace.WriteLine($"OV: {e.OldValue}, NV: {e.NewValue}");
-            /*if (o is MainWindow mainWindow)
-                mainWindow.OnScaleValueChanged((double)e.OldValue, (double)e.NewValue);*/
-        }
-
-        static double OnCoerceScaleValue(double value)
-        {
-            if (double.IsNaN(value))
-                return 1.0f;
-
-            value = Math.Max(0.1, value);
-            return value;
-        }
-
-        //protected virtual void OnScaleValueChanged(double oldValue, double newValue) { }
-
-        public double ScaleValue
-        {
-            get => (double)GetValue(ScaleValueProperty);
-            set => SetValue(ScaleValueProperty, value);
-        }
-
-        void OnGridSizeChanged(object sender, EventArgs e) => CalculateScale();
-
-        void CalculateScale()
-        {
-            double yScale = ActualHeight / 400f;
-            double xScale = ActualWidth / 500f;
-            double value = Math.Min(xScale, yScale);
-
-            ScaleValue = (double)OnCoerceScaleValue(PrimaryWindow, value);
-        }
-        #endregion
-
-        #region Aspect Ratio
-        //https://stackoverflow.com/questions/2471867/resize-a-wpf-window-but-maintain-proportions
-
-        internal enum SWP
-        {
-            NOMOVE = 0x0002
-        }
-        internal enum WM
-        {
-            WINDOWPOSCHANGING = 0x0046,
-            EXITSIZEMOVE = 0x0232,
-        }
-
-        [StructLayout(LayoutKind.Sequential)]
-        internal struct WINDOWPOS
-        {
-            public IntPtr hwnd;
-            public IntPtr hwndInsertAfter;
-            public int x;
-            public int y;
-            public int cx;
-            public int cy;
-            public int flags;
-        }
-
-        [DllImport("user32.dll")]
-        [return: MarshalAs(UnmanagedType.Bool)]
-        internal static extern bool GetCursorPos(ref Win32Point pt);
-
-        [StructLayout(LayoutKind.Sequential)]
-        internal struct Win32Point
-        {
-            public int X;
-            public int Y;
-        };
-
-        public static Point GetMousePosition() // mouse position relative to screen
-        {
-            Win32Point w32Mouse = new();
-            GetCursorPos(ref w32Mouse);
-            return new Point(w32Mouse.X, w32Mouse.Y);
-        }
-
-
-        private void OnSourceInitialized(object sender, EventArgs e)
-        {
-            HwndSource hwndSource = (HwndSource)PresentationSource.FromVisual((Window)sender);
-            hwndSource.AddHook(DragHook);
-
-            AspectRatio = Width / Height;
-        }
-
-        private IntPtr DragHook(IntPtr hwnd, int msg, IntPtr wParam, IntPtr lParam, ref bool handled)
-        {
-            switch ((WM)msg)
-            {
-                case WM.WINDOWPOSCHANGING:
-                    {
-                        WINDOWPOS pos = (WINDOWPOS)Marshal.PtrToStructure(lParam, typeof(WINDOWPOS));
-
-                        if ((pos.flags & (int)SWP.NOMOVE) != 0)
-                            return IntPtr.Zero;
-
-                        Window wnd = (Window)HwndSource.FromHwnd(hwnd).RootVisual;
-                        if (wnd == null)
-                            return IntPtr.Zero;
-
-                        // determine what dimension is changed by detecting the mouse position relative to the 
-                        // window bounds. if gripped in the corner, either will work.
-                        if (!AdjustingHeight.HasValue)
-                        {
-                            Point p = GetMousePosition();
-
-                            double diffWidth = Math.Min(Math.Abs(p.X - pos.x), Math.Abs(p.X - pos.x - pos.cx));
-                            double diffHeight = Math.Min(Math.Abs(p.Y - pos.y), Math.Abs(p.Y - pos.y - pos.cy));
-
-                            AdjustingHeight = diffHeight > diffWidth;
-                        }
-
-                        if (AdjustingHeight.Value)
-                            pos.cy = (int)(pos.cx / AspectRatio); // adjusting height to width change
-                        else
-                            pos.cx = (int)(pos.cy * AspectRatio); // adjusting width to heigth change
-
-                        Marshal.StructureToPtr(pos, lParam, true);
-                        handled = true;
-                    }
-                    break;
-                case WM.EXITSIZEMOVE:
-                    AdjustingHeight = null; // reset adjustment dimension and detect again next time window is resized
-                    break;
-            }
-
-            return IntPtr.Zero;
         }
         #endregion
     }

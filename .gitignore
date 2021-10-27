@@ -4,9 +4,9 @@
 ## Get latest from https://github.com/github/gitignore/blob/master/VisualStudio.gitignore
 
 # My Files
-json/config.json
-json-old/
-images-old/
+Json/config.json
+Json-Old/
+Images-Old/
 error.txt
 
 # User-specific files
