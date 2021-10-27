@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Windows.Data;
 
-namespace PokemonSpeechApp
+namespace Pokevoice
 {
     public class PercentageConverter : IValueConverter
     {

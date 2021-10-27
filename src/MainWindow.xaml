@@ -1,11 +1,13 @@
-﻿<Window x:Class="PokemonSpeechApp.MainWindow"
+﻿<Window x:Class="Pokevoice.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:PokemonSpeechApp"
+        xmlns:local="clr-namespace:Pokevoice"
         mc:Ignorable="d"
-        Title="Pokevoice" Width="500" Height="400"
+        Title="Pokevoice"
+        Name="PrimaryWindow"
+        Width="500" Height="400"
         Background="#222">
     <!--SizeToContent="Height"-->
     <Window.Resources>
@@ -192,7 +194,14 @@
             <Setter Property="Background" Value="White"/>
         </Style>
     </Window.Resources>
-    <Grid>
+    <Grid SizeChanged="OnGridSizeChanged">
+        <Grid.LayoutTransform>
+            <ScaleTransform
+                        CenterX="0"
+                        CenterY="0"
+                        ScaleX="{Binding ElementName=PrimaryWindow, Path=ScaleValue}"
+                        ScaleY="{Binding ElementName=PrimaryWindow, Path=ScaleValue}"/>
+        </Grid.LayoutTransform>
         <Grid.RowDefinitions>
             <RowDefinition Height="1*"/>
             <RowDefinition Height="0.75*"/>

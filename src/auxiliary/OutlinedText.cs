@@ -4,7 +4,7 @@ using System.Globalization;
 using System.Windows;
 using System.Windows.Markup;
 
-namespace PokemonSpeechApp
+namespace Pokevoice
 {
     public class OutlinedText : FrameworkElement, IAddChild
     {
